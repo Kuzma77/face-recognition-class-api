@@ -10,6 +10,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -32,6 +33,7 @@ public class StudentController {
 
     @GetMapping("/all")
     @ControllerWebLog
+//    @Cacheable(value = "students")
     @ApiOperation(value = "查询所有学生信息",notes = "查询所有学生信息")
     public ResponseResult test(){
         return ResponseResult.success(this.studentService.queryAllStudent());
