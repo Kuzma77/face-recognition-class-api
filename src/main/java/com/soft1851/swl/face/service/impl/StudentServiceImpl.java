@@ -9,6 +9,7 @@ import com.soft1851.swl.face.dto.StudentDto;
 import com.soft1851.swl.face.entity.Student;
 import com.soft1851.swl.face.exception.CustomException;
 import com.soft1851.swl.face.mapper.StudentMapper;
+import com.soft1851.swl.face.service.RedisService;
 import com.soft1851.swl.face.service.StudentService;
 import com.soft1851.swl.face.util.JwtTokenUtil;
 import com.soft1851.swl.face.util.Md5Util;
@@ -35,6 +36,7 @@ public class StudentServiceImpl implements StudentService {
 
     public final StudentMapper studentMapper;
     public final JwtTokenUtil jwtTokenUtil;
+    public  final RedisService redisService;
 
 
     @Override
@@ -75,6 +77,8 @@ public class StudentServiceImpl implements StudentService {
                                 .expirationTime(jwtTokenUtil.getExpirationTime().getTime())
                                 .build())
                         .build();
+//                将token添加到redis
+                redisService.set("token",token);
                 return ResponseResult.success(loginResDto);
             }else {
                 log.error("密码错误");

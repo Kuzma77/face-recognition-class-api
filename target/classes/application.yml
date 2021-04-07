@@ -39,8 +39,7 @@ spring:
         max-active: 8
         max-wait: 1ms
       shutdown-timeout: 100ms
-#Mybatis-Plus配置
-
+#Mybatis配置
 mybatis:
   # mapper映射文件路径
   mapper-locations: classpath:mapper/*.xml

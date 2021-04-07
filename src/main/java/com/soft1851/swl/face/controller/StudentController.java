@@ -1,19 +1,15 @@
 package com.soft1851.swl.face.controller;
 
-import com.soft1851.swl.face.ControllerWebLog;
+import com.soft1851.swl.face.annocation.ControllerWebLog;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.LoginDto;
-import com.soft1851.swl.face.entity.Student;
 import com.soft1851.swl.face.service.StudentService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /**
  * @author wl_sun

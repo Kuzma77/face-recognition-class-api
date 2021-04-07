@@ -1,6 +1,6 @@
 package com.soft1851.swl.face.aspect;
 
-import com.soft1851.swl.face.ControllerWebLog;
+import com.soft1851.swl.face.annocation.ControllerWebLog;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
