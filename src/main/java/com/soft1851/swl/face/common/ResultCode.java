@@ -7,7 +7,7 @@ package com.soft1851.swl.face.common;
  */
 public enum ResultCode {
     /* 成功状态码 */
-    SUCCESS(1, "成功"),
+    SUCCESS(200, "成功"),
 
     /* 通用错误：10001-19999 */
     PARAM_IS_INVALID(10001, "参数无效"),

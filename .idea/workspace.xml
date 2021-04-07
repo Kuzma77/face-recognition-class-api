@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/SwaggerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/common/ResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/common/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/LoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/LoginResDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/PhoneCodeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/exception/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/StudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/SmsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/SmsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/Md5Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0facefb3-d670-4231-8c28-ad0af498b631.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0facefb3-d670-4231-8c28-ad0af498b631.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/TestController.class" beforeDir="false" />
-    </list>
+    <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -272,7 +243,7 @@
       <updated>1617606307418</updated>
       <workItem from="1617606309175" duration="3197000" />
       <workItem from="1617714960283" duration="2597000" />
-      <workItem from="1617769652712" duration="18141000" />
+      <workItem from="1617769652712" duration="18460000" />
     </task>
     <servers />
   </component>
