@@ -39,15 +39,12 @@ spring:
         max-active: 8
         max-wait: 1ms
       shutdown-timeout: 100ms
-##Mybatis-Plus配置
-#mybatis-plus:
-#  # mapper映射文件路径
-#  mapper-locations: classpath:mapper/*.xml
-#  # pojo类所在包路径
-#  type-aliases-package: com.sofot1851.music.admin.entity
-#  global-config:
-#    db-config:
-#      #主键类型：auto主键自增，input用户输入id，id_worker全局唯一的数字id，UUID全局唯一的UUID
-#      id-type: auto
-#      #开启驼峰式转换
-#      table-underline: true
+#Mybatis-Plus配置
+
+mybatis:
+  # mapper映射文件路径
+  mapper-locations: classpath:mapper/*.xml
+  # pojo类所在包路径
+  type-aliases-package: com.sofot1851.swl.face.entity
+  configuration:
+    map-underscore-to-camel-case: true

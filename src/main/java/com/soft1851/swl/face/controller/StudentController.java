@@ -40,6 +40,7 @@ public class StudentController {
     }
 
     @PostMapping("/login")
+    @ControllerWebLog
     @ApiOperation(value = "账密登录",notes = "账密登录")
     public ResponseResult login(@RequestBody LoginDto loginDto){
         return this.studentService.loginByAccount(loginDto);

@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/RedisServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/soft1851/swl/face/service/impl/RedisServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/JwtTokenRespDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/StudentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/JwtTokenUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/cofiguration/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/cofiguration/CorsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/cofiguration/SwaggerConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/LoginResDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/LoginResDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/dto/LoginResDto$LoginResDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/dto/LoginResDto$LoginResDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/dto/LoginResDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/dto/LoginResDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/entity/Student$StudentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/entity/Student$StudentBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/StudentServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +63,8 @@
         <option value="Enum" />
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -118,7 +125,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RedisServiceImplTest.set">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="Md5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.util.Md5Util" />
       <module name="face-recognition-class-api" />
@@ -240,8 +247,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RedisServiceImplTest.set" />
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="JUnit.RedisServiceImplTest.set" />
         <item itemvalue="Application.Md5Util" />
         <item itemvalue="Application.StudentGenerator" />
       </list>
@@ -283,7 +290,7 @@
       <updated>1617606307418</updated>
       <workItem from="1617606309175" duration="3197000" />
       <workItem from="1617714960283" duration="2597000" />
-      <workItem from="1617769652712" duration="23041000" />
+      <workItem from="1617769652712" duration="27293000" />
     </task>
     <servers />
   </component>
@@ -310,38 +317,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1617782642743" />
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom" timestamp="1617799096167">
+    <state width="1493" height="279" key="GridCell.Tab.0.bottom" timestamp="1617803395458">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617799096167" />
-    <state width="1493" height="195" key="GridCell.Tab.0.center" timestamp="1617799096166">
+    <state width="1493" height="279" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617803395458" />
+    <state width="1493" height="279" key="GridCell.Tab.0.center" timestamp="1617803395458">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1617799096166" />
-    <state width="1493" height="195" key="GridCell.Tab.0.left" timestamp="1617799096166">
+    <state width="1493" height="279" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1617803395458" />
+    <state width="1493" height="279" key="GridCell.Tab.0.left" timestamp="1617803395458">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1617799096166" />
-    <state width="1493" height="195" key="GridCell.Tab.0.right" timestamp="1617799096167">
+    <state width="1493" height="279" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1617803395458" />
+    <state width="1493" height="279" key="GridCell.Tab.0.right" timestamp="1617803395458">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="195" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1617799096167" />
-    <state width="1493" height="289" key="GridCell.Tab.1.bottom" timestamp="1617798939362">
+    <state width="1493" height="279" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1617803395458" />
+    <state width="1493" height="279" key="GridCell.Tab.1.bottom" timestamp="1617803395459">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="289" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617798939362" />
-    <state width="1493" height="289" key="GridCell.Tab.1.center" timestamp="1617798939362">
+    <state width="1493" height="279" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617803395459" />
+    <state width="1493" height="279" key="GridCell.Tab.1.center" timestamp="1617803395458">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="289" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1617798939362" />
-    <state width="1493" height="289" key="GridCell.Tab.1.left" timestamp="1617798939362">
+    <state width="1493" height="279" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1617803395458" />
+    <state width="1493" height="279" key="GridCell.Tab.1.left" timestamp="1617803395458">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="289" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1617798939362" />
-    <state width="1493" height="289" key="GridCell.Tab.1.right" timestamp="1617798939362">
+    <state width="1493" height="279" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1617803395458" />
+    <state width="1493" height="279" key="GridCell.Tab.1.right" timestamp="1617803395459">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="289" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1617798939362" />
+    <state width="1493" height="279" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1617803395459" />
     <state x="270" y="15" key="SettingsEditor" timestamp="1617781304564">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

@@ -1,6 +1,5 @@
 package com.soft1851.swl.face.dto;
 
-import com.soft1851.swl.face.entity.Student;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,7 +16,12 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoginResDto {
-    private StudentDto studentDto;
-    private JwtTokenRespDto token;
+public class StudentDto {
+    private String studentId;
+    private String studentName;
+    private String account;
+    private String classroom;
+    private String phoneNumber;
+    private String avatar;
+    private String gender;
 }
