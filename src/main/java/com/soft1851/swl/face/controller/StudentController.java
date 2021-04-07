@@ -1,5 +1,6 @@
 package com.soft1851.swl.face.controller;
 
+import com.soft1851.swl.face.ControllerWebLog;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.LoginDto;
 import com.soft1851.swl.face.entity.Student;
@@ -9,10 +10,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,6 +22,7 @@ import java.util.List;
 
 @RestController
 @Slf4j
+@RequestMapping("/student")
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Api(tags = "用户接口",value = "提供用户相关的Rest API")
 public class StudentController {
@@ -31,7 +30,8 @@ public class StudentController {
 
     public final StudentService studentService;
 
-    @GetMapping("/get")
+    @GetMapping("/all")
+    @ControllerWebLog
     @ApiOperation(value = "查询所有学生信息",notes = "查询所有学生信息")
     public ResponseResult test(){
         return ResponseResult.success(this.studentService.queryAllStudent());
