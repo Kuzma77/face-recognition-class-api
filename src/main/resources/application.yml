@@ -9,7 +9,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cloud-music?useUnide=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
+    url: jdbc:mysql://localhost:3306/face_class?useUnide=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
     username: root
     password: root
     hikari:

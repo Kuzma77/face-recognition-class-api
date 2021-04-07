@@ -13,9 +13,7 @@
     <artifactId>face-recognition-class-api</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
-        <java.version>11</java.version>
-    </properties>
+
     <dependencies>
         <!--SpringBoot 相关依赖-->
         <!--SpringBoot Web-->
@@ -70,19 +68,32 @@
             <artifactId>HikariCP</artifactId>
             <version>3.4.2</version>
         </dependency>
-        <!--mybatis-plus-->
+
+        <!--mapper-->
         <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.3.1</version>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>2.1.5</version>
         </dependency>
-        <!--代码生成器配置依赖-->
-        <!--mybatis-plus-generator-->
         <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.3.1</version>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.3</version>
         </dependency>
+
+        <!--		接口文档-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+
         <!--freemarker模板引擎-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -113,6 +124,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <!--        log-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
         </dependency>
         <!--fastjson-->
         <dependency>
@@ -185,6 +202,8 @@
             <artifactId>aliyun-java-sdk-core</artifactId>
             <version>4.0.3</version>
         </dependency>
+
+
 
 
     </dependencies>

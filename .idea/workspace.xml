@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="" />
+    <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/SwaggerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/common/ResponseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/common/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/LoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/LoginResDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/PhoneCodeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/SmsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/SmsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/Md5Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0facefb3-d670-4231-8c28-ad0af498b631.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0facefb3-d670-4231-8c28-ad0af498b631.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/TestController.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,15 +50,36 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="face_class@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="face_class@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="face_class@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="face_class: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -47,28 +97,61 @@
     </option>
   </component>
   <component name="ProjectId" id="1qjwSZAxUfgZhyunegIcZg7E4Pc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Md5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.util.Md5Util" />
+      <module name="face-recognition-class-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.swl.face.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.mybatis.utils.StudentGenerator" />
+      <module name="face-recognition-class-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.swl.face.mybatis.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="face-recognition-class-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft1851.swl.face.Application" />
@@ -140,12 +223,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.tomcat" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Tomcat Server.tomcat" />
+      <item itemvalue="Application.StudentGenerator" />
+      <item itemvalue="Application.Md5Util" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.Md5Util" />
+        <item itemvalue="Application.StudentGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -161,17 +248,7 @@
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Failed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@706b7883" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="root:face_class@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -194,53 +271,66 @@
       <option name="presentableId" value="Default" />
       <updated>1617606307418</updated>
       <workItem from="1617606309175" duration="3197000" />
+      <workItem from="1617714960283" duration="2597000" />
+      <workItem from="1617769652712" duration="18141000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617606761671">
+    <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617782491733">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1617606761671" />
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom" timestamp="1617612633994">
+    <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1617782491733" />
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1617792622847">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617612633994" />
-    <state width="1493" height="215" key="GridCell.Tab.0.center" timestamp="1617612633994">
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1617792622847" />
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1617782642743">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1617612633994" />
-    <state width="1493" height="215" key="GridCell.Tab.0.left" timestamp="1617612633993">
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1617782642743" />
+    <state width="1493" height="267" key="GridCell.Tab.0.bottom" timestamp="1617793312914">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1617612633993" />
-    <state width="1493" height="215" key="GridCell.Tab.0.right" timestamp="1617612633994">
+    <state width="1493" height="267" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617793312914" />
+    <state width="1493" height="267" key="GridCell.Tab.0.center" timestamp="1617793312914">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1617612633994" />
-    <state width="1493" height="215" key="GridCell.Tab.1.bottom" timestamp="1617612633996">
+    <state width="1493" height="267" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1617793312914" />
+    <state width="1493" height="267" key="GridCell.Tab.0.left" timestamp="1617793312913">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617612633996" />
-    <state width="1493" height="215" key="GridCell.Tab.1.center" timestamp="1617612633995">
+    <state width="1493" height="267" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1617793312913" />
+    <state width="1493" height="267" key="GridCell.Tab.0.right" timestamp="1617793312914">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1617612633995" />
-    <state width="1493" height="215" key="GridCell.Tab.1.left" timestamp="1617612633995">
+    <state width="1493" height="267" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1617793312914" />
+    <state width="1493" height="267" key="GridCell.Tab.1.bottom" timestamp="1617793312914">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1617612633995" />
-    <state width="1493" height="215" key="GridCell.Tab.1.right" timestamp="1617612633995">
+    <state width="1493" height="267" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617793312914" />
+    <state width="1493" height="267" key="GridCell.Tab.1.center" timestamp="1617793312914">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="215" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1617612633995" />
-    <state x="270" y="15" key="SettingsEditor" timestamp="1617606714858">
+    <state width="1493" height="267" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1617793312914" />
+    <state width="1493" height="267" key="GridCell.Tab.1.left" timestamp="1617793312914">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="270" y="15" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1617606714858" />
+    <state width="1493" height="267" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1617793312914" />
+    <state width="1493" height="267" key="GridCell.Tab.1.right" timestamp="1617793312914">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="267" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1617793312914" />
+    <state x="270" y="15" key="SettingsEditor" timestamp="1617781304564">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="270" y="15" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1617781304564" />
     <state x="178" y="0" key="new project wizard" timestamp="1617606927176">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
