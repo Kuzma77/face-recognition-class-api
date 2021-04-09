@@ -14,8 +14,28 @@ import java.util.List;
  */
 public interface StudentService {
 
+    /**
+     * 查询所有学生信息
+     *
+     * @return
+     */
     List<Student> queryAllStudent();
 
 
+    /**
+     * 账密登录
+     *
+     * @param loginDto
+     * @return
+     */
     ResponseResult loginByAccount(LoginDto loginDto);
+
+
+    /**
+     * 退出登录
+     *
+     * @param userId
+     * @return
+     */
+    ResponseResult layout(String userId);
 }

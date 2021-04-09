@@ -78,7 +78,7 @@ public class StudentServiceImpl implements StudentService {
                                 .build())
                         .build();
 //                将token添加到redis
-                redisService.set("token",token);
+                redisService.set("USER_TOKEN:"+student.getStudentId(),token);
                 return ResponseResult.success(loginResDto);
             }else {
                 log.error("密码错误");
@@ -88,5 +88,14 @@ public class StudentServiceImpl implements StudentService {
             log.error("账号不存在");
             return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
         }
+    }
+
+    @Override
+    public ResponseResult layout(String userId) {
+        if(redisService.existsKey("USER_TOKEN:"+userId)){
+            redisService.removeKey("USER_TOKEN:"+userId);
+            return ResponseResult.success();
+        }
+        return ResponseResult.failure(ResultCode.PARAM_IS_INVALID);
     }
 }

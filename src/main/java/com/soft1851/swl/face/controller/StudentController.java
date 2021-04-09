@@ -9,7 +9,10 @@ import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 /**
  * @author wl_sun
@@ -20,6 +23,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @Slf4j
 @RequestMapping("/student")
+@Validated
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Api(tags = "用户接口",value = "提供用户相关的Rest API")
 public class StudentController {
@@ -29,7 +33,6 @@ public class StudentController {
 
     @GetMapping("/all")
     @ControllerWebLog
-//    @Cacheable(value = "students")
     @ApiOperation(value = "查询所有学生信息",notes = "查询所有学生信息")
     public ResponseResult test(){
         return ResponseResult.success(this.studentService.queryAllStudent());
@@ -38,7 +41,14 @@ public class StudentController {
     @PostMapping("/login")
     @ControllerWebLog
     @ApiOperation(value = "账密登录",notes = "账密登录")
-    public ResponseResult login(@RequestBody LoginDto loginDto){
+    public ResponseResult login(@RequestBody @Valid LoginDto loginDto){
         return this.studentService.loginByAccount(loginDto);
+    }
+
+    @PostMapping("/layout")
+    @ControllerWebLog
+    @ApiOperation(value = "退出登录",notes = "退出登录")
+    public ResponseResult login(@RequestParam @Valid String userId){
+        return studentService.layout(userId);
     }
 }

@@ -17,13 +17,8 @@ public interface StudentMapper extends Mapper<Student> {
 
 
 
-    /**
-     * 账密登录
-     *
-     * @param loginDto
-     * @return
-     */
-    LoginResDto loginByAccount(LoginDto loginDto);
+
+
 
     /**
      * 通过账号查询学生
