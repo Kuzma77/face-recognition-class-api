@@ -38,6 +38,14 @@ public class StudentController {
         return ResponseResult.success(this.studentService.queryAllStudent());
     }
 
+
+    @GetMapping("/one")
+    @ControllerWebLog
+    @ApiOperation(value = "通过id查询学生信息",notes = "通过id所有学生信息")
+    public ResponseResult getStudentById (@RequestParam String studentId){
+        return ResponseResult.success(this.studentService.getStudentById(studentId));
+    }
+
     @PostMapping("/login")
     @ControllerWebLog
     @ApiOperation(value = "学生账密登录",notes = "学生账密登录")
@@ -45,10 +53,4 @@ public class StudentController {
         return this.studentService.loginByStudentId(loginDto);
     }
 
-    @PostMapping("/layout")
-    @ControllerWebLog
-    @ApiOperation(value = "退出登录",notes = "退出登录")
-    public ResponseResult login(@RequestParam @Valid String userId){
-        return studentService.layout(userId);
-    }
 }

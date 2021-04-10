@@ -37,6 +37,12 @@ public class TeacherServiceImpl implements TeacherService {
     public  final RedisService redisService;
 
     @Override
+    public ResponseResult getTeacherById(String teacherId) {
+        Teacher teacher = this.teacherMapper.getTeacherById(teacherId);
+        return  teacher == null ? ResponseResult.failure(ResultCode.USER_NOT_FOUND):ResponseResult.success(teacher);
+    }
+
+    @Override
     public ResponseResult loginByTeacherId(LoginDto loginDto) {
         Teacher teacher = this.teacherMapper.selectByPrimaryKey(loginDto.getId());
         System.out.println(teacher);

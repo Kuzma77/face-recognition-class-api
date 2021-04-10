@@ -20,5 +20,5 @@ public interface TeacherMapper extends Mapper<Teacher> {
      * @return
      */
     @Select("SELECT * FROM teacher WHERE teacher_id = #{teacherId}")
-    Student getTeacherById(String teacherId);
+    Teacher getTeacherById(String teacherId);
 }

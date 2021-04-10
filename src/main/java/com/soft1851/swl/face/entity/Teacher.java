@@ -1,6 +1,7 @@
 package com.soft1851.swl.face.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.soft1851.swl.face.annocation.PhoneNumber;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -50,6 +51,7 @@ public class Teacher {
   @NotBlank(message = "手机号不能为空")
   private String phoneNumber;
 
+  @JsonIgnore
   @Column(name = "password")
   @Size(min = 6,message = "密码不能小于6位")
   private String password;

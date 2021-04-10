@@ -542,3 +542,910 @@ Consider defining a bean of type 'com.soft1851.swl.face.service.StudentService' 
 2021-04-10 17:29:18.184 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2021-04-10 17:29:18.184 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 1.981 seconds (JVM running for 2144.952)
 2021-04-10 17:29:18.186 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-04-10 17:29:34.202 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 11220 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-10 17:29:34.204 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-10 17:29:34.251 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-10 17:29:34.252 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 17:29:34.252 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 17:29:35.509 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-10 17:29:35.511 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-10 17:29:35.576 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52ms. Found 0 Redis repository interfaces.
+2021-04-10 17:29:35.751 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-10 17:29:36.200 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$182/31694756.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.soft1851.swl.face.Application.main(Application.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-10 17:29:36.545 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-04-10 17:29:36.553 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:29:36.553 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-10 17:29:36.553 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-04-10 17:29:36.652 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-10 17:29:36.653 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2401 ms
+2021-04-10 17:29:38.273 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-10 17:29:38.574 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 17:29:38.713 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-10 17:29:38.864 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-10 17:29:38.865 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-10 17:29:38.865 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-10 17:29:38.866 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-04-10 17:29:39.278 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-04-10 17:29:39.439 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-04-10 17:29:39.462 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-04-10 17:29:39.492 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-04-10 17:29:39.620 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-04-10 17:29:39.630 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-04-10 17:29:39.646 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:29:39.679 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-10 17:29:39.681 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 6.127 seconds (JVM running for 7.678)
+2021-04-10 17:30:54.132 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 17:30:54.132 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-04-10 17:30:54.147 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2021-04-10 17:31:10.292 [http-nio-8080-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.soft1851.swl.face.common.ResponseResult com.soft1851.swl.face.controller.TeacherController.login(com.soft1851.swl.face.dto.LoginDto): [Field error in object 'loginDto' on field 'password': rejected value [111]; codes [Size.loginDto.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginDto.password,password]; arguments []; default message [password],2147483647,6]; default message [密码不能小于6位]] ]
+2021-04-10 17:32:52.961 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/teacher/login
+2021-04-10 17:32:52.961 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/teacher/login
+2021-04-10 17:32:52.961 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 17:32:52.961 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 17:32:52.963 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.TeacherController.login
+2021-04-10 17:32:52.963 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=10, password=111111)]
+2021-04-10 17:32:52.963 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 17:32:53.012 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-04-10 17:32:53.174 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-04-10 17:32:53.209 [http-nio-8080-exec-3] ERROR c.s.s.f.s.impl.TeacherServiceImpl - 该教师账号不存在
+2021-04-10 17:32:53.297 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：336
+2021-04-10 17:32:53.297 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=20009, msg=用户不存在, data=null)
+2021-04-10 17:32:58.502 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/teacher/login
+2021-04-10 17:32:58.502 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/teacher/login
+2021-04-10 17:32:58.502 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 17:32:58.502 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 17:32:58.502 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.TeacherController.login
+2021-04-10 17:32:58.502 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=2001, password=111111)]
+2021-04-10 17:32:58.502 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 17:32:58.586 [http-nio-8080-exec-7] INFO  c.s.s.f.s.impl.TeacherServiceImpl - 张老师登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5byg6ICB5biIIiwicGFzc3dvcmQiOiI5NkU3OTIxODk2NUVCNzJDOTJBNTQ5REQ1QTMzMDExMiIsImlkIjoiMjAwMSIsImlhdCI6MTYxODA0NzE3OCwiZXhwIjoxNjE5MjU2Nzc4fQ.3sZxEwnzUxzoRFAydebXuHWiNO7qFFxCXKZcfGl5noU,有效期到:Sat Apr 24 17:32:58 GMT+08:00 2021
+2021-04-10 17:32:58.757 [http-nio-8080-exec-7] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2021-04-10 17:32:58.759 [http-nio-8080-exec-7] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2021-04-10 17:33:00.632 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：2130
+2021-04-10 17:33:00.632 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=2001, name=张老师, phoneNumber=18860816379, avatar=111, gender=女), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5byg6ICB5biIIiwicGFzc3dvcmQiOiI5NkU3OTIxODk2NUVCNzJDOTJBNTQ5REQ1QTMzMDExMiIsImlkIjoiMjAwMSIsImlhdCI6MTYxODA0NzE3OCwiZXhwIjoxNjE5MjU2Nzc4fQ.3sZxEwnzUxzoRFAydebXuHWiNO7qFFxCXKZcfGl5noU, expirationTime=1619256778614)))
+2021-04-10 17:45:53.077 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 8152 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-10 17:45:53.080 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-10 17:45:53.130 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-10 17:45:53.131 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 17:45:53.131 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 17:45:54.274 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-10 17:45:54.277 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-10 17:45:54.323 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+2021-04-10 17:45:54.529 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-10 17:45:54.932 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$182/13887821.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.soft1851.swl.face.Application.main(Application.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-10 17:45:55.345 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-04-10 17:45:55.353 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:45:55.354 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-10 17:45:55.354 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-04-10 17:45:55.489 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-10 17:45:55.490 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2359 ms
+2021-04-10 17:45:55.604 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\BaseController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseServiceImpl' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\service\impl\BaseServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'baseServiceImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-10 17:45:55.606 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-04-10 17:45:55.619 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-10 17:45:55.621 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   baseController defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\BaseController.class]
+┌─────┐
+|  baseServiceImpl defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\service\impl\BaseServiceImpl.class]
+└─────┘
+
+
+2021-04-10 17:47:50.608 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 28856 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-10 17:47:50.611 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-10 17:47:50.667 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-10 17:47:50.668 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 17:47:50.668 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 17:47:51.672 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-10 17:47:51.675 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-10 17:47:51.718 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2021-04-10 17:47:51.902 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-10 17:47:52.264 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$182/6828163.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.soft1851.swl.face.Application.main(Application.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-10 17:47:52.663 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-04-10 17:47:52.690 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:47:52.691 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-10 17:47:52.691 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-04-10 17:47:52.828 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-10 17:47:52.828 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2160 ms
+2021-04-10 17:47:52.953 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\BaseController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseServiceImpl' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\service\impl\BaseServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'baseServiceImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-10 17:47:52.958 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-04-10 17:47:52.976 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-10 17:47:52.978 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   baseController defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\BaseController.class]
+┌─────┐
+|  baseServiceImpl defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\service\impl\BaseServiceImpl.class]
+└─────┘
+
+
+2021-04-10 17:52:50.211 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 30152 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-10 17:52:50.214 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-10 17:52:50.264 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-10 17:52:50.265 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 17:52:50.265 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 17:52:51.538 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-10 17:52:51.540 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-10 17:52:51.583 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2021-04-10 17:52:51.746 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-10 17:52:52.167 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$182/21496469.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.soft1851.swl.face.Application.main(Application.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-10 17:52:52.605 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-04-10 17:52:52.614 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:52:52.615 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-10 17:52:52.615 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-04-10 17:52:52.720 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-10 17:52:52.720 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2455 ms
+2021-04-10 17:52:52.817 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\BaseController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseServiceImpl' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\service\impl\BaseServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'baseServiceImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-10 17:52:52.820 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-04-10 17:52:52.834 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-10 17:52:52.836 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   baseController defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\BaseController.class]
+┌─────┐
+|  baseServiceImpl defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\service\impl\BaseServiceImpl.class]
+└─────┘
+
+
+2021-04-10 17:53:19.924 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 23080 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-10 17:53:19.926 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-10 17:53:19.971 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-10 17:53:19.971 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 17:53:19.971 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 17:53:20.936 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-10 17:53:20.938 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-10 17:53:20.982 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2021-04-10 17:53:21.136 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-10 17:53:21.605 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$182/10543929.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.soft1851.swl.face.Application.main(Application.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-10 17:53:21.978 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-04-10 17:53:21.986 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:53:21.987 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-10 17:53:21.987 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-04-10 17:53:22.087 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-10 17:53:22.087 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2115 ms
+2021-04-10 17:53:23.052 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseServiceImpl' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\service\impl\BaseServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'baseServiceImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-10 17:53:23.068 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-04-10 17:53:23.077 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-10 17:53:23.079 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  baseServiceImpl defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\service\impl\BaseServiceImpl.class]
+└─────┘
+
+
+2021-04-10 17:53:45.719 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 15880 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-10 17:53:45.721 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-10 17:53:45.769 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-10 17:53:45.769 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 17:53:45.769 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 17:53:46.761 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-10 17:53:46.765 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-10 17:53:46.811 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2021-04-10 17:53:46.967 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-10 17:53:47.510 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$182/8315162.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.soft1851.swl.face.Application.main(Application.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-10 17:53:47.856 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-04-10 17:53:47.864 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:53:47.864 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-10 17:53:47.864 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-04-10 17:53:48.084 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-10 17:53:48.085 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2315 ms
+2021-04-10 17:53:49.575 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-10 17:53:49.822 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 17:53:49.970 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-10 17:53:50.143 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-10 17:53:50.145 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-10 17:53:50.146 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-10 17:53:50.146 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-04-10 17:53:50.516 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-04-10 17:53:50.674 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-04-10 17:53:50.691 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-04-10 17:53:50.724 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-04-10 17:53:50.848 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-04-10 17:53:50.865 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:53:50.896 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-10 17:53:50.899 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 5.752 seconds (JVM running for 7.305)
+2021-04-10 17:54:21.636 [Thread-5] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 17:54:22.578 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 15880 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-10 17:54:22.579 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-10 17:54:23.309 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-10 17:54:23.309 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-10 17:54:23.355 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45ms. Found 0 Redis repository interfaces.
+2021-04-10 17:54:23.501 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-10 17:54:24.039 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-04-10 17:54:24.040 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:54:24.041 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-10 17:54:24.042 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-04-10 17:54:24.095 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-10 17:54:24.095 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1509 ms
+2021-04-10 17:54:24.174 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\BaseController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'baseServiceImpl' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\service\impl\BaseServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'baseServiceImpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2021-04-10 17:54:24.174 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-04-10 17:54:24.182 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-10 17:54:24.185 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   baseController defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\BaseController.class]
+┌─────┐
+|  baseServiceImpl defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\service\impl\BaseServiceImpl.class]
+└─────┘
+
+
+2021-04-10 17:56:34.619 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 22892 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-10 17:56:34.621 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-10 17:56:34.665 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-10 17:56:34.666 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 17:56:34.666 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 17:56:35.947 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-10 17:56:35.949 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-10 17:56:35.992 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2021-04-10 17:56:36.189 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-10 17:56:36.688 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$182/9722034.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.soft1851.swl.face.Application.main(Application.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-10 17:56:37.034 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-04-10 17:56:37.042 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:56:37.043 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-10 17:56:37.043 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-04-10 17:56:37.259 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-10 17:56:37.259 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2593 ms
+2021-04-10 17:56:38.728 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-10 17:56:38.949 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 17:56:39.046 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-10 17:56:39.168 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-10 17:56:39.169 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-10 17:56:39.169 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-10 17:56:39.169 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-04-10 17:56:39.511 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-04-10 17:56:39.710 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-04-10 17:56:39.731 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-04-10 17:56:39.766 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-04-10 17:56:39.897 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-04-10 17:56:39.903 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-04-10 17:56:39.920 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-04-10 17:56:39.947 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-10 17:56:39.951 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 5.895 seconds (JVM running for 7.538)
+2021-04-10 17:56:45.653 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 17:56:45.653 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-04-10 17:56:45.665 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2021-04-10 17:56:55.708 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/one
+2021-04-10 17:56:55.709 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/student/one
+2021-04-10 17:56:55.709 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 17:56:55.709 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 17:56:55.711 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.getStudentById
+2021-04-10 17:56:55.711 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116]
+2021-04-10 17:56:55.711 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 17:56:55.777 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-04-10 17:56:55.937 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-04-10 17:56:55.960 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：252
+2021-04-10 17:56:55.961 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=null)
+2021-04-10 18:02:41.610 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 27944 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-10 18:02:41.613 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-10 18:02:41.658 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-10 18:02:41.658 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 18:02:41.658 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 18:02:42.683 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-10 18:02:42.685 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-10 18:02:42.746 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48ms. Found 0 Redis repository interfaces.
+2021-04-10 18:02:43.000 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-10 18:02:43.436 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$182/187867.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.soft1851.swl.face.Application.main(Application.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-10 18:02:43.802 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-04-10 18:02:43.813 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-10 18:02:43.813 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-10 18:02:43.814 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-04-10 18:02:44.088 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-10 18:02:44.088 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2429 ms
+2021-04-10 18:02:45.787 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-10 18:02:45.989 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 18:02:46.065 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-10 18:02:46.184 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-10 18:02:46.185 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-10 18:02:46.186 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-10 18:02:46.186 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-04-10 18:02:46.523 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-04-10 18:02:46.710 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-04-10 18:02:46.731 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-04-10 18:02:46.798 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-04-10 18:02:46.938 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-04-10 18:02:46.945 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-04-10 18:02:46.995 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-04-10 18:02:47.061 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-10 18:02:47.068 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 5.994 seconds (JVM running for 7.548)
+2021-04-10 18:02:53.895 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 18:02:53.895 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-04-10 18:02:53.908 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2021-04-10 18:02:53.938 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/one
+2021-04-10 18:02:53.939 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/student/one
+2021-04-10 18:02:53.939 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:02:53.939 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:02:53.941 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.getStudentById
+2021-04-10 18:02:53.941 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116]
+2021-04-10 18:02:53.941 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:02:54.001 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-04-10 18:02:54.215 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-04-10 18:02:54.238 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：300
+2021-04-10 18:02:54.238 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=ResponseResult(code=20009, msg=用户不存在, data=null))
+2021-04-10 18:03:01.493 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/one
+2021-04-10 18:03:01.493 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/student/one
+2021-04-10 18:03:01.494 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:03:01.494 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:03:01.494 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.getStudentById
+2021-04-10 18:03:01.494 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[2002]
+2021-04-10 18:03:01.494 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:03:01.499 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：6
+2021-04-10 18:03:01.499 [http-nio-8080-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=ResponseResult(code=20009, msg=用户不存在, data=null))
+2021-04-10 18:03:04.640 [http-nio-8080-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/one
+2021-04-10 18:03:04.640 [http-nio-8080-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/student/one
+2021-04-10 18:03:04.640 [http-nio-8080-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:03:04.640 [http-nio-8080-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:03:04.640 [http-nio-8080-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.getStudentById
+2021-04-10 18:03:04.640 [http-nio-8080-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[2001]
+2021-04-10 18:03:04.640 [http-nio-8080-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:03:04.644 [http-nio-8080-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：4
+2021-04-10 18:03:04.644 [http-nio-8080-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=ResponseResult(code=20009, msg=用户不存在, data=null))
+2021-04-10 18:03:27.240 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/one
+2021-04-10 18:03:27.241 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/student/one
+2021-04-10 18:03:27.241 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:03:27.241 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:03:27.241 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.getStudentById
+2021-04-10 18:03:27.241 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[2001]
+2021-04-10 18:03:27.241 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:03:27.246 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：6
+2021-04-10 18:03:27.247 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=ResponseResult(code=20009, msg=用户不存在, data=null))
+2021-04-10 18:03:30.506 [http-nio-8080-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/one
+2021-04-10 18:03:30.506 [http-nio-8080-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/student/one
+2021-04-10 18:03:30.506 [http-nio-8080-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:03:30.506 [http-nio-8080-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:03:30.506 [http-nio-8080-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.getStudentById
+2021-04-10 18:03:30.506 [http-nio-8080-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1001]
+2021-04-10 18:03:30.506 [http-nio-8080-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:03:30.514 [http-nio-8080-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：8
+2021-04-10 18:03:30.514 [http-nio-8080-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=ResponseResult(code=200, msg=成功, data=Student(studentId=1001, studentName=kuzma, classroom=软件1851, password=96E79218965EB72C92A549DD5A330112, phoneNumber=18805167526, avatar=111, gender=男, updateTime=Wed Apr 07 16:12:41 GMT+08:00 2021, createTime=Wed Apr 07 16:12:43 GMT+08:00 2021, deleteFlag=0)))
+2021-04-10 18:03:50.380 [http-nio-8080-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/teacher/one
+2021-04-10 18:03:50.381 [http-nio-8080-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/teacher/one
+2021-04-10 18:03:50.381 [http-nio-8080-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:03:50.381 [http-nio-8080-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:03:50.381 [http-nio-8080-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.TeacherController.getTeacherById
+2021-04-10 18:03:50.381 [http-nio-8080-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1001]
+2021-04-10 18:03:50.382 [http-nio-8080-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:03:50.395 [http-nio-8080-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：15
+2021-04-10 18:03:50.395 [http-nio-8080-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=ResponseResult(code=20009, msg=用户不存在, data=null))
+2021-04-10 18:03:53.841 [http-nio-8080-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/teacher/one
+2021-04-10 18:03:53.841 [http-nio-8080-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/teacher/one
+2021-04-10 18:03:53.841 [http-nio-8080-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:03:53.842 [http-nio-8080-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:03:53.842 [http-nio-8080-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.TeacherController.getTeacherById
+2021-04-10 18:03:53.842 [http-nio-8080-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[2001]
+2021-04-10 18:03:53.842 [http-nio-8080-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:03:53.845 [http-nio-8080-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：4
+2021-04-10 18:03:53.846 [http-nio-8080-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=ResponseResult(code=200, msg=成功, data=Teacher(teacherId=2001, teacherName=张老师, avatar=111, gender=女, phoneNumber=18860816379, password=96E79218965EB72C92A549DD5A330112, updateTime=Sat Apr 10 17:32:16 GMT+08:00 2021, createTime=Sat Apr 10 17:32:18 GMT+08:00 2021, deleteFlag=0)))
+2021-04-10 18:04:43.048 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 8952 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-10 18:04:43.051 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-10 18:04:43.094 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-10 18:04:43.095 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 18:04:43.095 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 18:04:44.090 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-10 18:04:44.092 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-10 18:04:44.136 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2021-04-10 18:04:44.310 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-10 18:04:44.704 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$182/19863255.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.soft1851.swl.face.Application.main(Application.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-10 18:04:45.079 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-04-10 18:04:45.087 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-10 18:04:45.088 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-10 18:04:45.088 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-04-10 18:04:45.192 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-10 18:04:45.193 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2098 ms
+2021-04-10 18:04:46.874 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-10 18:04:47.149 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 18:04:47.218 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-10 18:04:47.374 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-10 18:04:47.375 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-10 18:04:47.375 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-10 18:04:47.375 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-04-10 18:04:47.884 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-04-10 18:04:48.083 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-04-10 18:04:48.120 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-04-10 18:04:48.149 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-04-10 18:04:48.371 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-04-10 18:04:48.378 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-04-10 18:04:48.395 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-04-10 18:04:48.420 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-10 18:04:48.423 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 5.984 seconds (JVM running for 7.657)
+2021-04-10 18:04:55.140 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 18:04:55.140 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-04-10 18:04:55.153 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2021-04-10 18:04:55.184 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/teacher/one
+2021-04-10 18:04:55.184 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/teacher/one
+2021-04-10 18:04:55.184 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:04:55.184 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:04:55.186 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.TeacherController.getTeacherById
+2021-04-10 18:04:55.186 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[2001]
+2021-04-10 18:04:55.186 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:04:55.243 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-04-10 18:04:55.381 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-04-10 18:04:55.416 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：233
+2021-04-10 18:04:55.417 [http-nio-8080-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=ResponseResult(code=200, msg=成功, data=Teacher(teacherId=2001, teacherName=张老师, avatar=111, gender=女, phoneNumber=18860816379, password=96E79218965EB72C92A549DD5A330112, updateTime=Sat Apr 10 17:32:16 GMT+08:00 2021, createTime=Sat Apr 10 17:32:18 GMT+08:00 2021, deleteFlag=0)))
+2021-04-10 18:05:12.621 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/base/layout
+2021-04-10 18:05:12.622 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/base/layout
+2021-04-10 18:05:12.622 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:05:12.622 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:05:12.622 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.BaseController.login
+2021-04-10 18:05:12.622 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1001]
+2021-04-10 18:05:12.622 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:05:12.767 [http-nio-8080-exec-7] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2021-04-10 18:05:12.769 [http-nio-8080-exec-7] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2021-04-10 18:05:14.577 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：1956
+2021-04-10 18:05:14.577 [http-nio-8080-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=10001, msg=参数无效, data=null)
+2021-04-10 18:05:19.704 [http-nio-8080-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/base/layout
+2021-04-10 18:05:19.705 [http-nio-8080-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/base/layout
+2021-04-10 18:05:19.705 [http-nio-8080-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:05:19.705 [http-nio-8080-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:05:19.705 [http-nio-8080-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.BaseController.login
+2021-04-10 18:05:19.705 [http-nio-8080-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1002]
+2021-04-10 18:05:19.705 [http-nio-8080-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:05:19.709 [http-nio-8080-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：5
+2021-04-10 18:05:19.710 [http-nio-8080-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=10001, msg=参数无效, data=null)
+2021-04-10 18:05:32.784 [http-nio-8080-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/base/layout
+2021-04-10 18:05:32.784 [http-nio-8080-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/base/layout
+2021-04-10 18:05:32.784 [http-nio-8080-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:05:32.784 [http-nio-8080-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:05:32.784 [http-nio-8080-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.BaseController.login
+2021-04-10 18:05:32.784 [http-nio-8080-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1002]
+2021-04-10 18:05:32.784 [http-nio-8080-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:05:32.788 [http-nio-8080-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：4
+2021-04-10 18:05:32.788 [http-nio-8080-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=10001, msg=参数无效, data=null)
+2021-04-10 18:05:51.066 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/base/layout
+2021-04-10 18:05:51.066 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8080/base/layout
+2021-04-10 18:05:51.066 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-10 18:05:51.066 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-10 18:05:51.066 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.BaseController.login
+2021-04-10 18:05:51.067 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[2001]
+2021-04-10 18:05:51.067 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-10 18:05:51.077 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：12
+2021-04-10 18:05:51.077 [http-nio-8080-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=null)

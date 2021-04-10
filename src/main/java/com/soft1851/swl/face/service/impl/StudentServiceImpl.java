@@ -45,6 +45,12 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    public ResponseResult getStudentById(String studentId) {
+        Student student = this.studentMapper.getStudentById(studentId);
+        return  student == null ? ResponseResult.failure(ResultCode.USER_NOT_FOUND):ResponseResult.success(student);
+    }
+
+    @Override
     public ResponseResult loginByStudentId(LoginDto loginDto) {
         Student student = this.studentMapper.selectByPrimaryKey(loginDto.getId());
         System.out.println(student);
@@ -86,14 +92,5 @@ public class StudentServiceImpl implements StudentService {
             log.error("该学生账号不存在");
             return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
         }
-    }
-
-    @Override
-    public ResponseResult layout(String userId) {
-        if(redisService.existsKey("USER_TOKEN:"+userId)){
-            redisService.removeKey("USER_TOKEN:"+userId);
-            return ResponseResult.success();
-        }
-        return ResponseResult.failure(ResultCode.PARAM_IS_INVALID);
     }
 }

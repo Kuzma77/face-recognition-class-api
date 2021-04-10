@@ -10,10 +10,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -33,6 +30,13 @@ public class TeacherController {
 
     public final TeacherService teacherService;
 
+
+    @GetMapping("/one")
+    @ControllerWebLog
+    @ApiOperation(value = "通过id查询教师信息",notes = "通过id所有教师信息")
+    public ResponseResult getTeacherById (@RequestParam String teacherId){
+        return ResponseResult.success(this.teacherService.getTeacherById(teacherId));
+    }
 
     @PostMapping("/login")
     @ControllerWebLog

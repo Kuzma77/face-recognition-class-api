@@ -13,12 +13,12 @@ import java.util.List;
  * @Data 2021/4/7
  */
 public interface StudentMapper extends Mapper<Student> {
-//    /**
-//     * 通过学号查询学生
-//     *
-//     * @param studentId
-//     * @return
-//     */
-//    @Select("SELECT * FROM student WHERE student_id = #{studentId}")
-//    Student getStudentById(String studentId);
+    /**
+     * 通过学号查询学生
+     *
+     * @param studentId
+     * @return
+     */
+    @Select("SELECT * FROM student WHERE student_id = #{studentId}")
+    Student getStudentById(String studentId);
 }

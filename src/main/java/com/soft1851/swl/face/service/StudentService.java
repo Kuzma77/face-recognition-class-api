@@ -4,6 +4,7 @@ import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.LoginDto;
 import com.soft1851.swl.face.dto.LoginResDto;
 import com.soft1851.swl.face.entity.Student;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -23,6 +24,15 @@ public interface StudentService {
 
 
     /**
+     * 通过学号查询学生
+     *
+     * @param studentId
+     * @return
+     */
+    ResponseResult getStudentById(String studentId);
+
+
+    /**
      * 账密登录
      *
      * @param loginDto
@@ -31,11 +41,4 @@ public interface StudentService {
     ResponseResult loginByStudentId(LoginDto loginDto);
 
 
-    /**
-     * 退出登录
-     *
-     * @param userId
-     * @return
-     */
-    ResponseResult layout(String userId);
 }
