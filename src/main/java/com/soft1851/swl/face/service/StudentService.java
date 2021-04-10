@@ -28,7 +28,7 @@ public interface StudentService {
      * @param loginDto
      * @return
      */
-    ResponseResult loginByAccount(LoginDto loginDto);
+    ResponseResult loginByStudentId(LoginDto loginDto);
 
 
     /**

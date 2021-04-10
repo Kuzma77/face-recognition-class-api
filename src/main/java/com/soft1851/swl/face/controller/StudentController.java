@@ -25,7 +25,7 @@ import javax.validation.Valid;
 @RequestMapping("/student")
 @Validated
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
-@Api(tags = "用户接口",value = "提供用户相关的Rest API")
+@Api(tags = "学生接口",value = "提供学生相关的Rest API")
 public class StudentController {
 
 
@@ -40,9 +40,9 @@ public class StudentController {
 
     @PostMapping("/login")
     @ControllerWebLog
-    @ApiOperation(value = "账密登录",notes = "账密登录")
+    @ApiOperation(value = "学生账密登录",notes = "学生账密登录")
     public ResponseResult login(@RequestBody @Valid LoginDto loginDto){
-        return this.studentService.loginByAccount(loginDto);
+        return this.studentService.loginByStudentId(loginDto);
     }
 
     @PostMapping("/layout")

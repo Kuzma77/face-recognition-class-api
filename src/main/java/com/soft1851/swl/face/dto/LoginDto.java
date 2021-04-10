@@ -19,8 +19,8 @@ import javax.validation.constraints.Size;
 @NoArgsConstructor
 public class LoginDto {
 
-    @NotNull(message = "account 不能为空")
-    private String account;
+    @NotNull(message = "学号或者教工号不能为空")
+    private String id;
 
     @NotNull(message = "password 不能为空")
     @Size(min = 6,message = "密码不能小于6位")

@@ -16,11 +16,9 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentDto {
-    private String studentId;
-    private String studentName;
-    private String account;
-    private String classroom;
+public class UserDto {
+    private String id;
+    private String name;
     private String phoneNumber;
     private String avatar;
     private String gender;

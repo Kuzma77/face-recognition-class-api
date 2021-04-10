@@ -18,6 +18,6 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class LoginResDto {
-    private StudentDto studentDto;
+    private UserDto userDto;
     private JwtTokenRespDto token;
 }
