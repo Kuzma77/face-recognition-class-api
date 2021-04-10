@@ -56,7 +56,7 @@ public class TeacherController {
     @PostMapping("/updatePassword")
     @ControllerWebLog
     @ApiOperation(value = "修改教师密码",notes = "修改教师密码")
-    public ResponseResult updatePassword (@RequestParam @Size(min = 6,message = "密码不能小于6位") String password, @RequestParam String teacherId){
+    public ResponseResult updatePassword (@Valid @RequestParam @Size(min = 6,message = "密码不能小于6位") String password, @RequestParam String teacherId){
         return this.teacherService.updatePassword(password, teacherId);
     }
 

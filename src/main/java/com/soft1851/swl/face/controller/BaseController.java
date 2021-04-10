@@ -3,6 +3,7 @@ package com.soft1851.swl.face.controller;
 import com.soft1851.swl.face.annocation.ControllerWebLog;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.service.BaseService;
+import com.soft1851.swl.face.util.AliOssUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
 
@@ -37,5 +39,13 @@ public class BaseController {
     @ApiOperation(value = "退出登录",notes = "退出登录")
     public ResponseResult login(@RequestParam @Valid String userId){
         return baseService.layout(userId);
+    }
+
+    @PostMapping("/uploadFile")
+    @ControllerWebLog
+    @ApiOperation(value = "上传文件到OSS",notes = "上传文件到OSS")
+    public ResponseResult uploadSingle(@RequestParam("file") MultipartFile sourceFile) {
+        String url = AliOssUtil.upload(sourceFile);
+        return ResponseResult.success(url);
     }
 }
