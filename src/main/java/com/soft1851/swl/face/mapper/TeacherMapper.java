@@ -32,4 +32,14 @@ public interface TeacherMapper extends Mapper<Teacher> {
      */
     @Update("UPDATE teacher SET delete_flag=#{deleteFlag} WHERE teacher_id=#{teacherId}")
     void updateStatus(Integer deleteFlag, String teacherId);
+
+
+    /**
+     * 通过id更改密码
+     *
+     * @param password
+     * @param teacherId
+     */
+    @Update("UPDATE teacher SET password=#{password} WHERE teacher_id=#{teacherId}")
+    void updatePassword(String password, String teacherId);
 }

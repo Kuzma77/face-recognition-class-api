@@ -50,5 +50,13 @@ public interface StudentService {
      */
     ResponseResult updateStatus(String studentId);
 
+    /**
+     * 通过id修改密码
+     *
+     * @param password,studentId
+     * @return
+     */
+    ResponseResult updatePassword(String password,String studentId);
+
 
 }

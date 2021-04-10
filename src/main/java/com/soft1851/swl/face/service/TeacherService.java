@@ -39,4 +39,12 @@ public interface TeacherService {
      * @return
      */
     ResponseResult updateStatus(String teacherId);
+
+    /**
+     * 通过id修改密码
+     *
+     * @param password,teacherId
+     * @return
+     */
+    ResponseResult updatePassword(String password,String teacherId);
 }

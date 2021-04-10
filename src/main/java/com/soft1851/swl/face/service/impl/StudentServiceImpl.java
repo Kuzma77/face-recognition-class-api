@@ -108,4 +108,18 @@ public class StudentServiceImpl implements StudentService {
             return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
         }
     }
+
+    @Override
+    public ResponseResult updatePassword(String password, String studentId) {
+        Student student = this.studentMapper.selectByPrimaryKey(studentId);
+        if(student!=null){
+            String newPass = Md5Util.getMd5(password,true,32);
+            this.studentMapper.updatePassword(newPass,studentId);
+            log.info("学生{}的密码修改成功",studentId);
+            return ResponseResult.success();
+        }else{
+            log.error("该学生账号不存在");
+            return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
+        }
+    }
 }

@@ -13,6 +13,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Size;
 
 /**
  * @author wl_sun
@@ -58,6 +59,13 @@ public class StudentController {
     @ApiOperation(value = "修改学生账号状态",notes = "修改学生账号状态")
     public ResponseResult updateStatus(@RequestParam String studentId){
         return this.studentService.updateStatus(studentId);
+    }
+
+    @PostMapping("/updatePassword")
+    @ControllerWebLog
+    @ApiOperation(value = "修改学生密码",notes = "修改学生密码")
+    public ResponseResult updatePassword (@RequestParam @Size(min = 6,message = "密码不能小于6位") String password, @RequestParam String studentId){
+        return this.studentService.updatePassword(password, studentId);
     }
 
 }

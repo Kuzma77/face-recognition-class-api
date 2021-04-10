@@ -6,6 +6,7 @@ import com.soft1851.swl.face.dto.JwtTokenRespDto;
 import com.soft1851.swl.face.dto.LoginDto;
 import com.soft1851.swl.face.dto.LoginResDto;
 import com.soft1851.swl.face.dto.UserDto;
+import com.soft1851.swl.face.entity.Student;
 import com.soft1851.swl.face.entity.Teacher;
 import com.soft1851.swl.face.mapper.TeacherMapper;
 import com.soft1851.swl.face.service.RedisService;
@@ -94,6 +95,20 @@ public class TeacherServiceImpl implements TeacherService {
             Integer newInteger = deleteFlag == 0 ? 1:0;
             this.teacherMapper.updateStatus(newInteger,teacherId);
             log.info("教师{}的状态修改成功",teacherId);
+            return ResponseResult.success();
+        }else{
+            log.error("该教师账号不存在");
+            return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
+        }
+    }
+
+    @Override
+    public ResponseResult updatePassword(String password, String teacherId) {
+        Teacher teacher = this.teacherMapper.selectByPrimaryKey(teacherId);
+        if(teacher!=null){
+            String newPass = Md5Util.getMd5(password,true,32);
+            this.teacherMapper.updatePassword(newPass,teacherId);
+            log.info("教师{}的密码修改成功",teacherId);
             return ResponseResult.success();
         }else{
             log.error("该教师账号不存在");

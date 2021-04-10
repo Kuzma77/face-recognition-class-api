@@ -27,9 +27,19 @@ public interface StudentMapper extends Mapper<Student> {
     /**
      * 更改账号状态
      *
-     * @param deleteFlag studentId
-     * @return
+     * @param deleteFlag
+     * @param studentId
      */
     @Update("UPDATE student SET delete_flag=#{deleteFlag} WHERE student_id=#{studentId}")
     void updateStatus(Integer deleteFlag, String studentId);
+
+
+    /**
+     * 通过id更改密码
+     *
+     * @param password
+     * @param studentId
+     */
+    @Update("UPDATE student SET password=#{password} WHERE student_id=#{studentId}")
+    void updatePassword(String password, String studentId);
 }
