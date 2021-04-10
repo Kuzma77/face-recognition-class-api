@@ -65,5 +65,5 @@ public class Student {
   private Date createTime;
 
   @Column(name = "delete_flag")
-  private String deleteFlag;
+  private Integer deleteFlag;
 }

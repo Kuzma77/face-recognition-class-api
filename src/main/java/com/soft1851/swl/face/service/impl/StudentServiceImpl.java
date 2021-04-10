@@ -93,4 +93,19 @@ public class StudentServiceImpl implements StudentService {
             return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
         }
     }
+
+    @Override
+    public ResponseResult updateStatus(String studentId) {
+        Student student = this.studentMapper.selectByPrimaryKey(studentId);
+        if(student!=null){
+            Integer deleteFlag = student.getDeleteFlag();
+            Integer newInteger = deleteFlag == 0 ? 1:0;
+            this.studentMapper.updateStatus(newInteger,studentId);
+            log.info("学生{}的状态修改成功",studentId);
+            return ResponseResult.success();
+        }else{
+            log.error("该学生账号不存在");
+            return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
+        }
+    }
 }

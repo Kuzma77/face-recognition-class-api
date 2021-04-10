@@ -1,8 +1,10 @@
 package com.soft1851.swl.face.mapper;
 
 
+import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.entity.Student;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
@@ -21,4 +23,13 @@ public interface StudentMapper extends Mapper<Student> {
      */
     @Select("SELECT * FROM student WHERE student_id = #{studentId}")
     Student getStudentById(String studentId);
+
+    /**
+     * 更改账号状态
+     *
+     * @param deleteFlag studentId
+     * @return
+     */
+    @Update("UPDATE student SET delete_flag=#{deleteFlag} WHERE student_id=#{studentId}")
+    void updateStatus(Integer deleteFlag, String studentId);
 }

@@ -53,4 +53,11 @@ public class StudentController {
         return this.studentService.loginByStudentId(loginDto);
     }
 
+    @PostMapping("/updateStatus")
+    @ControllerWebLog
+    @ApiOperation(value = "修改学生账号状态",notes = "修改学生账号状态")
+    public ResponseResult updateStatus(@RequestParam String studentId){
+        return this.studentService.updateStatus(studentId);
+    }
+
 }

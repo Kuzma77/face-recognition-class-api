@@ -5,6 +5,7 @@ import com.soft1851.swl.face.dto.LoginDto;
 import com.soft1851.swl.face.dto.LoginResDto;
 import com.soft1851.swl.face.entity.Student;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -39,6 +40,15 @@ public interface StudentService {
      * @return
      */
     ResponseResult loginByStudentId(LoginDto loginDto);
+
+
+    /**
+     * 更改账号状态
+     *
+     * @param studentId
+     * @return
+     */
+    ResponseResult updateStatus(String studentId);
 
 
 }

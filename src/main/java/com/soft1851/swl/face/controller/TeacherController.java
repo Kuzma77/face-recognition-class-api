@@ -45,4 +45,11 @@ public class TeacherController {
         return this.teacherService.loginByTeacherId(loginDto);
     }
 
+    @PostMapping("/updateStatus")
+    @ControllerWebLog
+    @ApiOperation(value = "修改教师账号状态",notes = "修改教师账号状态")
+    public ResponseResult updateStatus(@RequestParam String teacherId){
+        return this.teacherService.updateStatus(teacherId);
+    }
+
 }

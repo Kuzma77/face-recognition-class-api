@@ -31,4 +31,12 @@ public interface TeacherService {
      * @return
      */
     ResponseResult loginByTeacherId(LoginDto loginDto);
+
+    /**
+     * 更改账号状态
+     *
+     * @param teacherId
+     * @return
+     */
+    ResponseResult updateStatus(String teacherId);
 }

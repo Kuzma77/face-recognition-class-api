@@ -85,4 +85,19 @@ public class TeacherServiceImpl implements TeacherService {
             return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
         }
     }
+
+    @Override
+    public ResponseResult updateStatus(String teacherId) {
+        Teacher teacher = this.teacherMapper.selectByPrimaryKey(teacherId);
+        if(teacher!=null){
+            Integer deleteFlag = teacher.getDeleteFlag();
+            Integer newInteger = deleteFlag == 0 ? 1:0;
+            this.teacherMapper.updateStatus(newInteger,teacherId);
+            log.info("教师{}的状态修改成功",teacherId);
+            return ResponseResult.success();
+        }else{
+            log.error("该教师账号不存在");
+            return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
+        }
+    }
 }
