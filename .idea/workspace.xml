@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/AliOssUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/face.2021-04-11.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/SubjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/SubjectDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/entity/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/SubjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/SubjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/SubjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/RandomNumUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face.2021-04-10.log" beforeDir="false" afterPath="$PROJECT_DIR$/face.2021-04-10.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/BaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/TeacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/entity/Student$StudentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/entity/Student$StudentBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/entity/Student.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +52,6 @@
         <item name="face_class@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="face_class: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="face_class@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="face_class: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="teacher: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -125,9 +124,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Application.RandomNumUtil">
     <configuration name="Md5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.util.Md5Util" />
+      <module name="face-recognition-class-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.swl.face.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomNumUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.util.RandomNumUtil" />
       <module name="face-recognition-class-api" />
       <extension name="coverage">
         <pattern>
@@ -244,9 +256,11 @@
       <item itemvalue="JUnit.RedisServiceImplTest.set" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Tomcat Server.tomcat" />
+      <item itemvalue="Application.RandomNumUtil" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RandomNumUtil" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.RedisServiceImplTest.set" />
         <item itemvalue="Application.Md5Util" />
@@ -292,7 +306,7 @@
       <workItem from="1617714960283" duration="2597000" />
       <workItem from="1617769652712" duration="29415000" />
       <workItem from="1617958136541" duration="6731000" />
-      <workItem from="1618044352381" duration="10295000" />
+      <workItem from="1618044352381" duration="15215000" />
     </task>
     <servers />
   </component>
@@ -310,50 +324,50 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="91" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1617797606764" />
-    <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618045462916">
+    <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618067483192">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1618045462916" />
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1618055272174">
+    <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1618067483192" />
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1618070768649">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1618055272174" />
-    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1618045116843">
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1618070768649" />
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1618067570070">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618045116843" />
-    <state width="1493" height="318" key="GridCell.Tab.0.bottom" timestamp="1618056726853">
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618067570070" />
+    <state width="1493" height="226" key="GridCell.Tab.0.bottom" timestamp="1618071981376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618056726853" />
-    <state width="1493" height="318" key="GridCell.Tab.0.center" timestamp="1618056726852">
+    <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618071981376" />
+    <state width="1493" height="226" key="GridCell.Tab.0.center" timestamp="1618071981376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618056726852" />
-    <state width="1493" height="318" key="GridCell.Tab.0.left" timestamp="1618056726852">
+    <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618071981376" />
+    <state width="1493" height="226" key="GridCell.Tab.0.left" timestamp="1618071981376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618056726852" />
-    <state width="1493" height="318" key="GridCell.Tab.0.right" timestamp="1618056726852">
+    <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618071981376" />
+    <state width="1493" height="226" key="GridCell.Tab.0.right" timestamp="1618071981376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618056726852" />
-    <state width="1493" height="318" key="GridCell.Tab.1.bottom" timestamp="1618056726853">
+    <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618071981376" />
+    <state width="1493" height="226" key="GridCell.Tab.1.bottom" timestamp="1618071981376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618056726853" />
-    <state width="1493" height="318" key="GridCell.Tab.1.center" timestamp="1618056726853">
+    <state width="1493" height="226" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618071981376" />
+    <state width="1493" height="226" key="GridCell.Tab.1.center" timestamp="1618071981376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1618056726853" />
-    <state width="1493" height="318" key="GridCell.Tab.1.left" timestamp="1618056726853">
+    <state width="1493" height="226" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1618071981376" />
+    <state width="1493" height="226" key="GridCell.Tab.1.left" timestamp="1618071981376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1618056726853" />
-    <state width="1493" height="318" key="GridCell.Tab.1.right" timestamp="1618056726853">
+    <state width="1493" height="226" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1618071981376" />
+    <state width="1493" height="226" key="GridCell.Tab.1.right" timestamp="1618071981376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="318" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1618056726853" />
+    <state width="1493" height="226" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1618071981376" />
     <state x="270" y="15" key="SettingsEditor" timestamp="1617781304564">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

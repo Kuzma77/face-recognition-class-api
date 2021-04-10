@@ -12,12 +12,18 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
+
+
+/**
+ * @author wl_sun
+ * @description TODO
+ * @Data 2021/4/7
+ */
 
 @Data
 @AllArgsConstructor

@@ -1,0 +1,48 @@
+package com.soft1851.swl.face.service.impl;
+
+import cn.hutool.core.date.DateTime;
+import com.soft1851.swl.face.common.ResponseResult;
+import com.soft1851.swl.face.dto.SubjectDto;
+import com.soft1851.swl.face.entity.Subject;
+import com.soft1851.swl.face.mapper.SubjectMapper;
+import com.soft1851.swl.face.service.SubjectService;
+import com.soft1851.swl.face.util.RandomNumUtil;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
+import java.util.Date;
+
+/**
+ * @author wl_sun
+ * @description TODO
+ * @Data 2021/4/11
+ */
+
+@Slf4j
+@Service
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
+public class SubjectServiceImpl implements SubjectService {
+
+    public final SubjectMapper subjectMapper;
+
+    @Override
+    public ResponseResult addSubject(SubjectDto subjectDto) {
+        String id = RandomNumUtil.getVerifyCode(8);
+        Subject subject = Subject.builder()
+                .subjectId(id)
+                .subjectName(subjectDto.getSubjectName())
+                .beginTime(subjectDto.getBeginTime())
+                .endTime(subjectDto.getEndTime())
+                .deleteFlag(0)
+                .signFlag(0)
+                .signTime(0)
+                .createTime(DateTime.now())
+                .updateTime(DateTime.now())
+                .build();
+        this.subjectMapper.addSubject(subject);
+        return ResponseResult.success(subject);
+    }
+}
