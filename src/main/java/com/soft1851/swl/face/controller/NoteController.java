@@ -3,6 +3,7 @@ package com.soft1851.swl.face.controller;
 import com.soft1851.swl.face.annocation.ControllerWebLog;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.NoteDto;
+import com.soft1851.swl.face.dto.SubjectDto;
 import com.soft1851.swl.face.service.NoteService;
 import com.soft1851.swl.face.service.StudentService;
 import io.swagger.annotations.Api;
@@ -37,5 +38,19 @@ public class NoteController {
     @ApiOperation(value = "新增假条",notes = "新增假条")
     public ResponseResult addNote(@Valid @RequestBody NoteDto noteDto, @RequestParam String studentId){
         return this.noteService.addNote(noteDto,studentId);
+    }
+
+    @PostMapping("/update")
+    @ControllerWebLog
+    @ApiOperation(value = "修改假条",notes = "修改假条")
+    public ResponseResult updateNote(@Valid @RequestBody NoteDto noteDto, @RequestParam String noteId){
+        return this.noteService.updateNote(noteDto,noteId);
+    }
+
+    @PostMapping("/updateNoteStatus")
+    @ControllerWebLog
+    @ApiOperation(value = "审核假条",notes = "审核假条")
+    public ResponseResult updateNoteStatus(@Valid @RequestParam Boolean ifPass, @RequestParam String noteId){
+        return this.noteService.updateNoteStatue(ifPass, noteId);
     }
 }

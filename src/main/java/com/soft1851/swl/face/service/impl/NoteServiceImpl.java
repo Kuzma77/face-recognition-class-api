@@ -5,6 +5,7 @@ import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.NoteDto;
 import com.soft1851.swl.face.entity.Note;
 import com.soft1851.swl.face.entity.StudentNote;
+import com.soft1851.swl.face.entity.Subject;
 import com.soft1851.swl.face.mapper.NoteMapper;
 import com.soft1851.swl.face.mapper.StudentNoteMapper;
 import com.soft1851.swl.face.service.NoteService;
@@ -47,5 +48,25 @@ public class NoteServiceImpl implements NoteService {
         this.studentNoteMapper.insertOne(studentNote);
         this.noteMapper.addNote(note);
         return ResponseResult.success(note);
+    }
+
+    @Override
+    public ResponseResult updateNote(NoteDto noteDto, String noteId) {
+        Note note = Note.builder()
+                .noteId(noteId)
+                .subjectId(noteDto.getSubjectId())
+                .subjectName(noteDto.getSubjectName())
+                .reason(noteDto.getReason())
+                .updateTime(DateTime.now())
+                .build();
+        this.noteMapper.updateNote(note);
+        return ResponseResult.success(note);
+    }
+
+    @Override
+    public ResponseResult updateNoteStatue(Boolean ifPass, String noteId) {
+        Integer noteStatue = ifPass ? 1:2;
+        this.noteMapper.updateNoteStatue(noteStatue,noteId);
+        return ResponseResult.success(noteStatue);
     }
 }

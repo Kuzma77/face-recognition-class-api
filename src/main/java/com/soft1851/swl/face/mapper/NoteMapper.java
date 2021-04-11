@@ -1,8 +1,10 @@
 package com.soft1851.swl.face.mapper;
 
+import com.soft1851.swl.face.dto.NoteDto;
 import com.soft1851.swl.face.entity.Note;
 import com.soft1851.swl.face.entity.Subject;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Update;
 import tk.mybatis.mapper.common.Mapper;
 
 /**
@@ -18,4 +20,22 @@ public interface NoteMapper extends Mapper<Note> {
      */
     @Insert("INSERT INTO note VALUES (#{noteId},#{subjectId},#{subjectName},#{updateTime},#{createTime},#{reason},#{noteStatue},#{deleteFlag})")
     void addNote(Note note);
+
+
+    /**
+     * 修改假条基础信息
+     *
+     * @param note
+     */
+    @Update("UPDATE note SET subject_id=#{subjectId},subject_name=#{subjectName},update_time=#{updateTime},reason=#{reason} WHERE note_id=#{noteId}")
+    void updateNote(Note note);
+
+    /**
+     * 修改假条审核状态
+     *
+     * @param noteStatue
+     * @param noteId
+     */
+    @Update("UPDATE note SET note_statue=#{noteStatue} WHERE note_id=#{noteId}")
+    void updateNoteStatue(Integer noteStatue,String noteId);
 }

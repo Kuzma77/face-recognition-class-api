@@ -18,4 +18,22 @@ public interface NoteService {
      * @return
      */
     ResponseResult addNote(NoteDto noteDto,String studentId);
+
+    /**
+     * 修改假条基础信息
+     *
+     * @param noteDto
+     * @param noteId
+     * @return
+     */
+    ResponseResult updateNote(NoteDto noteDto,String noteId);
+
+    /**
+     * 修改假条审核状态
+     *
+     * @param ifPass
+     * @param noteId
+     * @return
+     */
+    ResponseResult updateNoteStatue(Boolean ifPass,String noteId);
 }
