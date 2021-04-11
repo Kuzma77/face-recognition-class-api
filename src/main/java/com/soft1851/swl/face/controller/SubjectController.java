@@ -10,10 +10,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -38,6 +35,13 @@ public class SubjectController {
     @ApiOperation(value = "新增课程",notes = "新增课程")
     public ResponseResult addSubject(@Valid @RequestBody SubjectDto subjectDto){
         return this.subjectService.addSubject(subjectDto);
+    }
+
+    @PostMapping("/update")
+    @ControllerWebLog
+    @ApiOperation(value = "修改课程",notes = "修改课程")
+    public ResponseResult updateSubject(@Valid @RequestBody SubjectDto subjectDto, @RequestParam String subjectId){
+        return this.subjectService.updateSubject(subjectDto,subjectId);
     }
 
 }

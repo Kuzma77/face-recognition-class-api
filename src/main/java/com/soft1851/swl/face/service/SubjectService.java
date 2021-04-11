@@ -18,4 +18,13 @@ public interface SubjectService {
      * @param subjectDto
      */
     ResponseResult addSubject(SubjectDto subjectDto);
+
+
+    /**
+     * 修改课程基础信息
+     *
+     * @param subjectDto subjectId
+     * @return
+     */
+    ResponseResult updateSubject(SubjectDto subjectDto,String subjectId);
 }

@@ -45,4 +45,16 @@ public class SubjectServiceImpl implements SubjectService {
         this.subjectMapper.addSubject(subject);
         return ResponseResult.success(subject);
     }
+
+    @Override
+    public ResponseResult updateSubject(SubjectDto subjectDto, String subjectId) {
+        Subject subject = Subject.builder()
+                .subjectName(subjectDto.getSubjectName())
+                .beginTime(subjectDto.getBeginTime())
+                .endTime(subjectDto.getEndTime())
+                .updateTime(DateTime.now())
+                .build();
+        this.subjectMapper.updateSubject(subject,subjectId);
+        return ResponseResult.success(subject);
+    }
 }
