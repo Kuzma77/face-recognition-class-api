@@ -52,4 +52,11 @@ public class SubjectController {
         return this.subjectService.updateSignStatue(subjectId);
     }
 
+    @PostMapping("/addSignTime")
+    @ControllerWebLog
+    @ApiOperation(value = "延时签到",notes = "延时签到")
+    public ResponseResult addSignTime(@Valid @RequestParam long addTime,@RequestParam String subjectId){
+        return this.subjectService.addSignTime(addTime,subjectId);
+    }
+
 }

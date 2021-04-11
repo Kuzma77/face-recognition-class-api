@@ -38,4 +38,22 @@ public interface SubjectMapper extends Mapper<Subject> {
      */
     @Update("UPDATE subject SET sign_flag=#{signFlag} WHERE subject_id=#{subjectId}")
     void updateSignStatue(Integer signFlag,String subjectId);
+
+    /**
+     * 签到时间延长
+     *
+     * @param newSignTime
+     * @param subjectId
+     */
+    @Update("UPDATE subject SET sign_time=#{newSignTime} WHERE subject_id=#{subjectId}")
+    void addSignTime(long newSignTime,String subjectId);
+
+    /**
+     * 更改课程状态
+     *
+     * @param deleteFlag
+     * @param subjectId
+     */
+    @Update("UPDATE subject SET delete_flag=#{deleteFlag} WHERE subject_id=#{subjectId}")
+    void updateStatus(Integer deleteFlag, String subjectId);
 }

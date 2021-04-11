@@ -83,4 +83,12 @@ public class SubjectServiceImpl implements SubjectService {
         this.subjectMapper.updateSignStatue(newSignFlag,subjectId);
         return ResponseResult.success("课程"+subjectId+message);
     }
+
+    @Override
+    public ResponseResult addSignTime(long addTime, String subjectId) {
+        long sTime = this.subjectMapper.selectByPrimaryKey(subjectId).getSignTime();
+        long newSignTime = sTime + addTime;
+        this.subjectMapper.addSignTime(newSignTime, subjectId);
+        return ResponseResult.success(newSignTime);
+    }
 }

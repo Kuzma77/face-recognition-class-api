@@ -4,6 +4,7 @@ import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.SubjectDto;
 import com.soft1851.swl.face.entity.Subject;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Update;
 
 /**
  * @author wl_sun
@@ -36,4 +37,12 @@ public interface SubjectService {
      * @return
      */
     ResponseResult updateSignStatue(String subjectId);
+
+    /**
+     * 签到时间延长
+     *
+     * @param addTime
+     * @param subjectId
+     */
+    ResponseResult addSignTime(long addTime,String subjectId);
 }
