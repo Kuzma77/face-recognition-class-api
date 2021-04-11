@@ -45,4 +45,12 @@ public interface SubjectService {
      * @param subjectId
      */
     ResponseResult addSignTime(long addTime,String subjectId);
+
+    /**
+     * 更改课程状态
+     *
+     * @param subjectId
+     * @return
+     */
+    ResponseResult updateStatus(String subjectId);
 }

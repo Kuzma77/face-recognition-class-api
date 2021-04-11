@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face.2021-04-11.log" beforeDir="false" afterPath="$PROJECT_DIR$/face.2021-04-11.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/SubjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/SubjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/SubjectMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/SubjectService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/SubjectServiceImpl.java" afterDir="false" />
     </list>
@@ -294,7 +292,7 @@
       <workItem from="1617769652712" duration="29415000" />
       <workItem from="1617958136541" duration="6731000" />
       <workItem from="1618044352381" duration="16032000" />
-      <workItem from="1618122627755" duration="4381000" />
+      <workItem from="1618122627755" duration="4830000" />
     </task>
     <servers />
   </component>
@@ -316,10 +314,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1618067483192" />
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1618126287480">
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1618127382398">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1618126287480" />
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1618127382398" />
     <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1618067570070">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

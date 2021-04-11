@@ -5,6 +5,7 @@ import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.common.ResultCode;
 import com.soft1851.swl.face.dto.SubjectDto;
 import com.soft1851.swl.face.entity.Subject;
+import com.soft1851.swl.face.entity.Teacher;
 import com.soft1851.swl.face.mapper.SubjectMapper;
 import com.soft1851.swl.face.service.SubjectService;
 import com.soft1851.swl.face.util.RandomNumUtil;
@@ -90,5 +91,20 @@ public class SubjectServiceImpl implements SubjectService {
         long newSignTime = sTime + addTime;
         this.subjectMapper.addSignTime(newSignTime, subjectId);
         return ResponseResult.success(newSignTime);
+    }
+
+    @Override
+    public ResponseResult updateStatus(String subjectId) {
+        Subject subject = this.subjectMapper.selectByPrimaryKey(subjectId);
+        if(subject!=null){
+            Integer deleteFlag = subject.getDeleteFlag();
+            Integer newInteger = deleteFlag == 0 ? 1:0;
+            this.subjectMapper.updateStatus(newInteger,subjectId);
+            log.info("课程{}的状态修改成功",subjectId);
+            return ResponseResult.success();
+        }else{
+            log.error("该课程账号不存在");
+            return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
+        }
     }
 }

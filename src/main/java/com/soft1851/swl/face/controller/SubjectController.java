@@ -59,4 +59,11 @@ public class SubjectController {
         return this.subjectService.addSignTime(addTime,subjectId);
     }
 
+    @PostMapping("/updateStatus")
+    @ControllerWebLog
+    @ApiOperation(value = "修改课程删除状态",notes = "修改课程删除状态")
+    public ResponseResult updateStatus(@RequestParam String teacherId){
+        return this.subjectService.updateStatus(teacherId);
+    }
+
 }
