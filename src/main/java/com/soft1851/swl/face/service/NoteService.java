@@ -36,4 +36,12 @@ public interface NoteService {
      * @return
      */
     ResponseResult updateNoteStatue(Boolean ifPass,String noteId);
+
+    /**
+     * 更改假条状态
+     *
+     * @param noteId
+     * @return
+     */
+    ResponseResult updateStatus(String noteId);
 }

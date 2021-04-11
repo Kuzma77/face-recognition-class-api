@@ -69,4 +69,9 @@ public class NoteServiceImpl implements NoteService {
         this.noteMapper.updateNoteStatue(noteStatue,noteId);
         return ResponseResult.success(noteStatue);
     }
+
+    @Override
+    public ResponseResult updateStatus(String noteId) {
+        return null;
+    }
 }

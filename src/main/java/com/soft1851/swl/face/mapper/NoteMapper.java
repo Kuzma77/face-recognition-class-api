@@ -38,4 +38,13 @@ public interface NoteMapper extends Mapper<Note> {
      */
     @Update("UPDATE note SET note_statue=#{noteStatue} WHERE note_id=#{noteId}")
     void updateNoteStatue(Integer noteStatue,String noteId);
+
+    /**
+     * 更改假条状态
+     *
+     * @param deleteFlag
+     * @param noteId
+     */
+    @Update("UPDATE note SET delete_flag=#{deleteFlag} WHERE note_id=#{noteId}")
+    void updateStatus(Integer deleteFlag, String noteId);
 }
