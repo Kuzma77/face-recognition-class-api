@@ -62,8 +62,8 @@ public class SubjectController {
     @PostMapping("/updateStatus")
     @ControllerWebLog
     @ApiOperation(value = "修改课程删除状态",notes = "修改课程删除状态")
-    public ResponseResult updateStatus(@RequestParam String teacherId){
-        return this.subjectService.updateStatus(teacherId);
+    public ResponseResult updateStatus(@RequestParam String subjectId){
+        return this.subjectService.updateStatus(subjectId);
     }
 
 }
