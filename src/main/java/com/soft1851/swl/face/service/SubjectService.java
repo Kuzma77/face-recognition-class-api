@@ -27,4 +27,13 @@ public interface SubjectService {
      * @return
      */
     ResponseResult updateSubject(SubjectDto subjectDto,String subjectId);
+
+
+    /***
+     * 修改课程签到状态
+     *
+     * @param subjectId
+     * @return
+     */
+    ResponseResult updateSignStatue(String subjectId);
 }

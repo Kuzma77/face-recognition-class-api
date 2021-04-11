@@ -44,4 +44,12 @@ public class SubjectController {
         return this.subjectService.updateSubject(subjectDto,subjectId);
     }
 
+
+    @PostMapping("/updateSignFlag")
+    @ControllerWebLog
+    @ApiOperation(value = "开始/结束签到",notes = "开始/结束签到")
+    public ResponseResult updateSignStatue(@RequestParam String subjectId){
+        return this.subjectService.updateSignStatue(subjectId);
+    }
+
 }
