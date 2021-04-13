@@ -2,41 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/HP.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/face/FaceAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/face/FaceDetect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/face/FaceMatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/face/FaceSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/BaiDuYunResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/Base64Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/GsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/HttpUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Code.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/DayCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Id.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/IdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/InvalidSystemClock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/RandomCodeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Sid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/WorkerIdStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/FileLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/HttpReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/IPv4Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Ip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Props.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Serializes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/baiduyun.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/face.2021-04-13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/GirdFsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/FileUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/GridFsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/UploadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/UploadServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/AliyunResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FileResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/aliyun.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/file.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/enums/NoteStatue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/enums/NoteStatue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/NoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/NoteServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Code.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/DayCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Id.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/IdWorker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/InvalidSystemClock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/RandomCodeStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Sid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/WorkerIdStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/FileLock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/HttpReq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/IPv4Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Ip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Props.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Serializes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/DayCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/Id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/IdWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/InvalidSystemClock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/RandomCodeStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/Sid$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/Sid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/WorkerIdStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/strategy/FileLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/HttpReq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/IPv4Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/Ip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/Props$Silent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/Props.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/Serializes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/n3r/idworker/utils/Utils.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +110,8 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -154,7 +176,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FaceAdd">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="FaceAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.face.FaceAdd" />
       <module name="face-recognition-class-api" />
@@ -287,10 +309,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.FaceAdd" />
         <item itemvalue="Application.FaceSearch" />
         <item itemvalue="Application.FaceDetect" />
-        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.RandomNumUtil" />
       </list>
     </recent_temporary>
@@ -331,7 +353,7 @@
       <workItem from="1617958136541" duration="6731000" />
       <workItem from="1618044352381" duration="16032000" />
       <workItem from="1618122627755" duration="13299000" />
-      <workItem from="1618293346686" duration="11404000" />
+      <workItem from="1618293346686" duration="21217000" />
     </task>
     <servers />
   </component>
@@ -369,38 +391,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618131209469" />
-    <state width="1493" height="140" key="GridCell.Tab.0.bottom" timestamp="1618306139961">
+    <state width="1493" height="317" key="GridCell.Tab.0.bottom" timestamp="1618323371472">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="140" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618306139961" />
-    <state width="1493" height="140" key="GridCell.Tab.0.center" timestamp="1618306139961">
+    <state width="1493" height="317" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618323371472" />
+    <state width="1493" height="317" key="GridCell.Tab.0.center" timestamp="1618323371472">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="140" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618306139961" />
-    <state width="1493" height="140" key="GridCell.Tab.0.left" timestamp="1618306139961">
+    <state width="1493" height="317" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618323371472" />
+    <state width="1493" height="317" key="GridCell.Tab.0.left" timestamp="1618323371472">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="140" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618306139961" />
-    <state width="1493" height="140" key="GridCell.Tab.0.right" timestamp="1618306139961">
+    <state width="1493" height="317" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618323371472" />
+    <state width="1493" height="317" key="GridCell.Tab.0.right" timestamp="1618323371472">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="140" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618306139961" />
-    <state width="1493" height="70" key="GridCell.Tab.1.bottom" timestamp="1618148903807">
+    <state width="1493" height="317" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618323371472" />
+    <state width="1493" height="317" key="GridCell.Tab.1.bottom" timestamp="1618323371473">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="70" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618148903807" />
-    <state width="1493" height="70" key="GridCell.Tab.1.center" timestamp="1618148903807">
+    <state width="1493" height="317" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618323371473" />
+    <state width="1493" height="317" key="GridCell.Tab.1.center" timestamp="1618323371473">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="70" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1618148903807" />
-    <state width="1493" height="70" key="GridCell.Tab.1.left" timestamp="1618148903807">
+    <state width="1493" height="317" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1618323371473" />
+    <state width="1493" height="317" key="GridCell.Tab.1.left" timestamp="1618323371473">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="70" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1618148903807" />
-    <state width="1493" height="70" key="GridCell.Tab.1.right" timestamp="1618148903807">
+    <state width="1493" height="317" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1618323371473" />
+    <state width="1493" height="317" key="GridCell.Tab.1.right" timestamp="1618323371473">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="70" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1618148903807" />
+    <state width="1493" height="317" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1618323371473" />
     <state x="270" y="15" key="SettingsEditor" timestamp="1618302572526">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

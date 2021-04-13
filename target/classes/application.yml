@@ -1,5 +1,8 @@
 server:
-  port: 8080
+  port: 9090
+  tomcat:
+    uri-encoding: UTF-8
+    max-swallow-size: -1  # tomcat默认大小2M，超过2M的文件不会被捕获，需要调整此处大小为100MB或者-1即可
 spring:
   # jackson配置
   jackson:
@@ -39,6 +42,10 @@ spring:
         max-active: 8
         max-wait: 1ms
       shutdown-timeout: 100ms
+  data:
+    mongodb:
+      uri: mongodb://root:root@182.61.58.17:27017
+      database: face
 #Mybatis配置
 mybatis:
   # mapper映射文件路径
@@ -47,3 +54,7 @@ mybatis:
   type-aliases-package: com.sofot1851.swl.face.entity
   configuration:
     map-underscore-to-camel-case: true
+fdfs:
+  connect-timeout: 3000
+  so-timeout: 3000
+  tracker-list: 182.61.58.17:22122
