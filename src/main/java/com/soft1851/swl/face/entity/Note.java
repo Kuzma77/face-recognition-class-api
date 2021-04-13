@@ -25,10 +25,10 @@ public class Note {
   @NotNull(message = "id不能为空")
   private String noteId;
 
-  @Column(name = "student_id")
+  @Column(name = "subject_id")
   private String subjectId;
 
-  @Column(name = "student_name")
+  @Column(name = "subject_name")
   @NotNull(message = "姓名不能为空")
   private String subjectName;
 

@@ -6,6 +6,7 @@ import com.soft1851.swl.face.common.ResultCode;
 import com.soft1851.swl.face.dto.SubjectDto;
 import com.soft1851.swl.face.entity.Subject;
 import com.soft1851.swl.face.entity.Teacher;
+import com.soft1851.swl.face.enums.SignFlag;
 import com.soft1851.swl.face.mapper.SubjectMapper;
 import com.soft1851.swl.face.service.SubjectService;
 import com.soft1851.swl.face.util.RandomNumUtil;
@@ -39,7 +40,7 @@ public class SubjectServiceImpl implements SubjectService {
                 .beginTime(subjectDto.getBeginTime())
                 .endTime(subjectDto.getEndTime())
                 .deleteFlag(0)
-                .signFlag(0)
+                .signFlag(SignFlag.UNSIGN.type)
                 .signTime(0)
                 .createTime(DateTime.now())
                 .updateTime(DateTime.now())
@@ -67,15 +68,15 @@ public class SubjectServiceImpl implements SubjectService {
         String message = "";
         switch (sFlag){
             case 0:
-                newSignFlag = 1;
+                newSignFlag = SignFlag.SIGNING.type;
                 message = "开始签到";
                 break;
             case 1:
-                newSignFlag = 2;
+                newSignFlag = SignFlag.HASSIGN.type;
                 message = "结束签到";
                 break;
             case 2:
-                newSignFlag = 1;
+                newSignFlag = SignFlag.SIGNING.type;
                 message = "重新开始签到";
                 break;
             default:

@@ -53,4 +53,11 @@ public class NoteController {
     public ResponseResult updateNoteStatus(@Valid @RequestParam Boolean ifPass, @RequestParam String noteId){
         return this.noteService.updateNoteStatue(ifPass, noteId);
     }
+
+    @PostMapping("/updateStatus")
+    @ControllerWebLog
+    @ApiOperation(value = "修改假条删除状态",notes = "修改假条删除状态")
+    public ResponseResult updateStatus(@RequestParam String noteId){
+        return this.noteService.updateStatus(noteId);
+    }
 }
