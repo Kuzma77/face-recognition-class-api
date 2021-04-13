@@ -2,18 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/enums/NoteStatue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/enums/SignFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/HP.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/face/FaceAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/face/FaceDetect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/face/FaceMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/face/FaceSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/BaiDuYunResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/Base64Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/GsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/HttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/DayCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Id.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/IdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/InvalidSystemClock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/RandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Sid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/WorkerIdStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/strategy/FileLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/HttpReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/IPv4Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Ip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Props.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Serializes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/baiduyun.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face.2021-04-11.log" beforeDir="false" afterPath="$PROJECT_DIR$/face.2021-04-11.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/NoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/entity/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/entity/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/NoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/NoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/SubjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/NoteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/NoteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/entity/Note.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/entity/Note.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/mapper/NoteMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/mapper/NoteMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/NoteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/NoteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/enums/NoteStatue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/enums/NoteStatue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/NoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/NoteServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +89,8 @@
         <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,6 +111,9 @@
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
   </component>
   <component name="ProjectId" id="1qjwSZAxUfgZhyunegIcZg7E4Pc" />
   <component name="ProjectLevelVcsManager">
@@ -118,7 +143,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -129,13 +154,39 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="Md5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.util.Md5Util" />
+  <component name="RunManager" selected="Application.FaceAdd">
+    <configuration name="FaceAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.face.FaceAdd" />
+      <module name="face-recognition-class-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.swl.face.face.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FaceDetect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.util.FaceDetect" />
       <module name="face-recognition-class-api" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.soft1851.swl.face.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FaceSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.face.FaceSearch" />
+      <module name="face-recognition-class-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.swl.face.face.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,35 +203,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.mybatis.utils.StudentGenerator" />
-      <module name="face-recognition-class-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1851.swl.face.mybatis.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisServiceImplTest.set" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="face-recognition-class-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1851.swl.face.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.soft1851.swl.face.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.service.impl.RedisServiceImplTest" />
-      <option name="METHOD_NAME" value="set" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -256,20 +278,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StudentGenerator" />
-      <item itemvalue="Application.Md5Util" />
       <item itemvalue="Application.RandomNumUtil" />
-      <item itemvalue="JUnit.RedisServiceImplTest.set" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Tomcat Server.tomcat" />
+      <item itemvalue="Application.FaceDetect" />
+      <item itemvalue="Application.FaceSearch" />
+      <item itemvalue="Application.FaceAdd" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FaceAdd" />
+        <item itemvalue="Application.FaceSearch" />
+        <item itemvalue="Application.FaceDetect" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.RandomNumUtil" />
-        <item itemvalue="JUnit.RedisServiceImplTest.set" />
-        <item itemvalue="Application.Md5Util" />
-        <item itemvalue="Application.StudentGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -309,7 +331,7 @@
       <workItem from="1617958136541" duration="6731000" />
       <workItem from="1618044352381" duration="16032000" />
       <workItem from="1618122627755" duration="13299000" />
-      <workItem from="1618293346686" duration="1029000" />
+      <workItem from="1618293346686" duration="11404000" />
     </task>
     <servers />
   </component>
@@ -331,30 +353,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1618067483192" />
+    <state x="478" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618296231628">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="478" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1618296231628" />
     <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1618293625407">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1618293625407" />
+    <state x="548" y="291" width="449" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618305246289">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="548" y="291" width="449" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1618305246289" />
     <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1618131209469">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618131209469" />
-    <state width="1493" height="70" key="GridCell.Tab.0.bottom" timestamp="1618148903807">
+    <state width="1493" height="140" key="GridCell.Tab.0.bottom" timestamp="1618306139961">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="70" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618148903807" />
-    <state width="1493" height="70" key="GridCell.Tab.0.center" timestamp="1618148903807">
+    <state width="1493" height="140" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618306139961" />
+    <state width="1493" height="140" key="GridCell.Tab.0.center" timestamp="1618306139961">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="70" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618148903807" />
-    <state width="1493" height="70" key="GridCell.Tab.0.left" timestamp="1618148903807">
+    <state width="1493" height="140" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618306139961" />
+    <state width="1493" height="140" key="GridCell.Tab.0.left" timestamp="1618306139961">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="70" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618148903807" />
-    <state width="1493" height="70" key="GridCell.Tab.0.right" timestamp="1618148903807">
+    <state width="1493" height="140" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618306139961" />
+    <state width="1493" height="140" key="GridCell.Tab.0.right" timestamp="1618306139961">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="70" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618148903807" />
+    <state width="1493" height="140" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618306139961" />
     <state width="1493" height="70" key="GridCell.Tab.1.bottom" timestamp="1618148903807">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -371,10 +401,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="70" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1618148903807" />
-    <state x="270" y="15" key="SettingsEditor" timestamp="1618124045228">
+    <state x="270" y="15" key="SettingsEditor" timestamp="1618302572526">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="270" y="15" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1618124045228" />
+    <state x="270" y="15" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1618302572526" />
     <state x="514" y="151" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1617797646740">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

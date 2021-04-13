@@ -216,6 +216,26 @@
         </dependency>
 
 
+        <!-- https://mvnrepository.com/artifact/com.mopano/hibernate-json-org-contributor -->
+        <dependency>
+            <groupId>com.mopano</groupId>
+            <artifactId>hibernate-json-org-contributor</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.baidu.aip/java-sdk -->
+        <dependency>
+            <groupId>com.baidu.aip</groupId>
+            <artifactId>java-sdk</artifactId>
+            <version>4.15.7</version>
+        </dependency>
+
+
+
+
+
+
+
 
 
     </dependencies>
