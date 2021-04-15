@@ -73,6 +73,7 @@ public enum ResultCode {
     USER_FACE_LOGIN_ERROR(569, "人脸识别失败，请重试！"),
     FACE_VERIFY_TYPE_ERROR(600, "人脸比对验证类型不正确！"),
     FACE_VERIFY_LOGIN_ERROR(601, "人脸登录失败！"),
+    FACE_NOT_SAVE_ERROR(602, "人脸尚未入库！"),
 
     /**
      * 文件相关代码

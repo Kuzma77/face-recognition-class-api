@@ -1,12 +1,16 @@
 package com.soft1851.swl.face.controller;
 
+import com.mongodb.client.gridfs.GridFSBucket;
+import com.mongodb.client.gridfs.GridFSFindIterable;
 import com.mongodb.client.gridfs.model.GridFSFile;
+import com.mongodb.client.model.Filters;
 import com.soft1851.swl.face.annocation.ControllerWebLog;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.common.ResultCode;
 import com.soft1851.swl.face.service.UploadService;
 import com.soft1851.swl.face.util.AliImageReviewUtil;
 import com.soft1851.swl.face.util.FileResource;
+import com.soft1851.swl.face.util.FileUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
@@ -19,17 +23,13 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.gridfs.GridFsResource;
 import org.springframework.data.mongodb.gridfs.GridFsTemplate;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,10 +48,11 @@ import java.util.Map;
 public class FileUploadController {
 
 
-    public final UploadService uploadService;
+    private final UploadService uploadService;
     private final FileResource fileResource;
     private final AliImageReviewUtil aliImageReviewUtil;
     private final GridFsTemplate gridFsTemplate;
+    private final GridFSBucket gridFSBucket;
 
     /**
      * 上传用户头像
@@ -163,6 +164,50 @@ public class FileUploadController {
     }
 
     /**
+     * 从gridfs中读取读取图片内容，并且返回base64
+     *
+     * @param faceId 人脸照片
+     * @param request 请求
+     * @param response 响应
+     * @return 返回
+     * @throws Exception 异常
+     */
+    @ApiOperation(value = "从gridfs中读取读取图片内容，并且返回base64",notes = "从gridfs中读取读取图片内容，并且返回base64",httpMethod = "GET")
+    @GetMapping("/readFace64")
+    @ControllerWebLog
+    public  ResponseResult readFace64(@RequestParam String faceId,HttpServletRequest request,HttpServletResponse response) throws  Exception{
+
+        // 0.获得gridfs中人脸文件
+        File myFace = readFileFromGridFs(faceId);
+        // 1.转换人脸为base64
+        String base64Face = FileUtil.fileToBase64(myFace);
+        return ResponseResult.success(base64Face);
+    }
+
+    private File readFileFromGridFs(String faceId) throws Exception {
+        GridFSFindIterable files = gridFSBucket.find(Filters.eq("_id", new ObjectId(faceId)));
+        GridFSFile gridFsFile = files.first();
+        //GridFSFile gridFsFile = gridFsTemplate.findOne(Query.query(Criteria.where("_id").is(faceId)));
+        if (gridFsFile == null) {
+            ResponseResult.failure(ResultCode.FILE_NOT_EXIST_ERROR);
+        }
+        String fileName = gridFsFile.getFilename();
+        System.out.println(fileName);
+        // 获取文件流，保存文件到本地或者服务器的临时目录
+        File fileTemp = new File("C:/Users/HP/Desktop/毕业设计/项目/faces");
+        if (!fileTemp.exists()) {
+            fileTemp.mkdirs();
+        }
+        File myFile = new File("C:/Users/HP/Desktop/毕业设计/项目/faces" + fileName);
+        // 创建文件输出流
+        OutputStream os = new FileOutputStream(myFile);
+        // 下载到服务器或者本地
+        gridFSBucket.downloadToStream(new ObjectId(faceId),os);
+        return myFile;
+    }
+
+    /**
+     *
      * 检测不通过的默认图片
      */
     public static final String FAILED_IMAGE_URL = "https://swl-kuzma.oss-cn-beijing.aliyuncs.com/markdown/20201120182215.png";

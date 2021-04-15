@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
 
 /**
@@ -16,7 +17,7 @@ import org.springframework.context.annotation.Primary;
  * @description TODO
  * @Data 2021/4/13
  */
-@Configuration
+@Component
 public class GirdFsConfig {
 
     @Value("${spring.data.mongodb.database}")
@@ -24,6 +25,7 @@ public class GirdFsConfig {
 
 
 
+    @Bean
     public GridFSBucket gridFSBucket(MongoClient mongoClient){
         MongoDatabase mongoDatabase = mongoClient.getDatabase(mongodb);
         return GridFSBuckets.create(mongoDatabase);
