@@ -49,7 +49,7 @@ public class GridFsController {
     @PostMapping("/upload")
     @ControllerWebLog
     @ApiOperation(value = "上传文件",notes = "上传文件")
-    public String uploadFile(@RequestParam(value = "file") MultipartFile multipartFile) {
+    public ResponseResult uploadFile(@RequestParam(value = "file") MultipartFile multipartFile) {
         // 设置meta数据值
         Map<String, String> metaData = new HashMap<>(8);
         InputStream inputStream = null;
@@ -68,7 +68,7 @@ public class GridFsController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return objectId.toHexString();
+        return ResponseResult.success(objectId.toHexString());
     }
     /**
      * 获取文件信息

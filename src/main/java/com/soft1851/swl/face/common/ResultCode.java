@@ -63,7 +63,25 @@ public enum ResultCode {
     INTERFACE_EXCEED_LOAD(60006, "接口负载过高"),
 
     /* 权限错误：70001-79999 */
-    PERMISSION_NO_ACCESS(70001,"无访问权限");
+    PERMISSION_NO_ACCESS(70001,"无访问权限"),
+
+
+    /**
+     * 人脸识别相关代码
+     */
+    USER_FACE_NULL_ERROR(568,  "人脸信息不能为空！"),
+    USER_FACE_LOGIN_ERROR(569, "人脸识别失败，请重试！"),
+    FACE_VERIFY_TYPE_ERROR(600, "人脸比对验证类型不正确！"),
+    FACE_VERIFY_LOGIN_ERROR(601, "人脸登录失败！"),
+
+    /**
+     * 文件相关代码
+     */
+    FILE_UPLOAD_NULL_ERROR(510,  "文件不能为空，请选择一个文件再上传！"),
+    FILE_UPLOAD_FAILD(511,  "文件上传失败！"),
+    FILE_FORMATTER_FAILD(512, "文件图片格式不支持！"),
+    FILE_MAX_SIZE_ERROR(513,  "仅支持500kb大小以下的图片上传！"),
+    FILE_NOT_EXIST_ERROR(514, "你所查看的文件不存在！");
 
     private Integer code;
 
