@@ -19,5 +19,5 @@ public interface AdminMapper extends Mapper<Admin> {
      * @return
      */
     @Select("SELECT * FROM admin WHERE admin_id = #{adminId}")
-    Student getAdminById(String adminId);
+    Admin getAdminById(String adminId);
 }
