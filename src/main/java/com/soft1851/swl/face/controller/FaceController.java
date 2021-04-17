@@ -44,9 +44,7 @@ public class FaceController {
 
 
     private final FaceService faceService;
-    private final OwnerFaceMapper ownerFaceMapper;
-    private final  RestTemplate restTemplate;
-    private final FaceVerifyUtil faceVerifyUtil;
+
 
     @PostMapping("/add")
     @ControllerWebLog
@@ -69,36 +67,6 @@ public class FaceController {
     public ResponseResult faceLogin(@RequestBody FaceLoginDto faceLoginDto,
                            HttpServletRequest request,
                            HttpServletResponse response){
-        //0、判断用户名和人脸信息不能为空
-        if(StringUtils.isBlank(faceLoginDto.getId())){
-            return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
-        }
-        String tempFace64 = faceLoginDto.getImg64();
-        if(StringUtils.isBlank(tempFace64)){
-            return ResponseResult.failure(ResultCode.USER_FACE_NULL_ERROR);
-        }
-        //1、从数据库中根据id查询出faceId
-        String faceId = null;
-        OwnerFace ownerFace = this.ownerFaceMapper.queryFaceIdByOwnerId(faceLoginDto.getId());
-        if(ownerFace!=null){
-            faceId = ownerFace.getFaceId();
-            System.out.println(faceId);
-        }else {
-            return ResponseResult.failure(ResultCode.FACE_NOT_SAVE_ERROR);
-        }
-        //2.请求文件服务，根据faceId获得人脸数据的base64数据
-        String fileServerUrl = "http://localhost:8888/fs/readFace64?faceId="+faceId;
-        //得到的是封装的结果
-        ResponseEntity<ResponseResult> resultResponseEntity = restTemplate.getForEntity(fileServerUrl,ResponseResult.class);
-        ResponseResult bodyResult = resultResponseEntity.getBody();
-        System.out.println(bodyResult);
-        assert bodyResult != null;
-        String base64 = (String) bodyResult.getData();
-        //3、调用阿里ai进行人脸对比失败，判断可信度，从而实现人脸登录
-        boolean result = faceVerifyUtil.faceVerify(FaceVerifyType.BASE64.type,tempFace64,base64,60);
-        if(!result){
-            return ResponseResult.failure(ResultCode.USER_FACE_LOGIN_ERROR);
-        }
-        return ResponseResult.success(result);
+        return this.faceService.faceLogin(faceLoginDto);
     }
 }

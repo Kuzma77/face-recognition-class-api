@@ -1,6 +1,7 @@
 package com.soft1851.swl.face.service;
 
 import com.soft1851.swl.face.common.ResponseResult;
+import com.soft1851.swl.face.dto.FaceLoginDto;
 import com.soft1851.swl.face.dto.OwnerFaceDto;
 
 /**
@@ -16,4 +17,11 @@ public interface FaceService {
      * @param ownerFaceDto
      */
     ResponseResult addFace(OwnerFaceDto ownerFaceDto);
+
+    /**
+     * 人脸识别登录
+     * @param faceLoginDto
+     * @return
+     */
+    ResponseResult faceLogin(FaceLoginDto faceLoginDto);
 }

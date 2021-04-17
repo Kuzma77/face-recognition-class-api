@@ -2,6 +2,8 @@ package com.soft1851.swl.face.service;
 
 import com.soft1851.swl.face.common.ResponseResult;
 
+import java.util.Map;
+
 /**
  * @author wl_sun
  * @description TODO
@@ -17,4 +19,11 @@ public interface BaseService {
      * @return
      */
     ResponseResult layout(String userId);
+
+    /***
+     * 通过id得出是学生还是教师还是管理员实体
+     * @param userId
+     * @return
+     */
+    Map<String,Object> getUserById(String userId);
 }
