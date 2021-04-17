@@ -65,6 +65,7 @@ public class FaceController {
      */
     @ApiOperation(value = "人脸识别登录",notes = "人脸识别登录",httpMethod = "POST")
     @PostMapping("/adminLogin")
+    @ControllerWebLog
     public ResponseResult faceLogin(@RequestBody FaceLoginDto faceLoginDto,
                            HttpServletRequest request,
                            HttpServletResponse response){
@@ -86,10 +87,11 @@ public class FaceController {
             return ResponseResult.failure(ResultCode.FACE_NOT_SAVE_ERROR);
         }
         //2.请求文件服务，根据faceId获得人脸数据的base64数据
-        String fileServerUrl = "http://localhost:9090/fs/readFace64?faceId="+faceId;
+        String fileServerUrl = "http://localhost:8888/fs/readFace64?faceId="+faceId;
         //得到的是封装的结果
         ResponseEntity<ResponseResult> resultResponseEntity = restTemplate.getForEntity(fileServerUrl,ResponseResult.class);
         ResponseResult bodyResult = resultResponseEntity.getBody();
+        System.out.println(bodyResult);
         assert bodyResult != null;
         String base64 = (String) bodyResult.getData();
         //3、调用阿里ai进行人脸对比失败，判断可信度，从而实现人脸登录

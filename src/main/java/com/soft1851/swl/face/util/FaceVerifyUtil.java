@@ -31,9 +31,11 @@ public class FaceVerifyUtil {
     final static Logger logger = LoggerFactory.getLogger(FaceVerifyUtil.class);
 
     @Autowired
-    private AliyunResource aliyunResource;
-
-    private static final String gateway = "https://dtplus-cn-shanghai.data.aliyuncs.com/face/verify";
+    private static final String accessKeyId = "LTAI4G3RbEnYyXpd2ez6jbo4";
+    @Autowired
+    private static final String accessKeySecret = "6vVUWNdOhUunRQCLyrjszgKwVZMjkv";
+    @Autowired
+    private static final String gateway = "http://dtplus-cn-shanghai.data.aliyuncs.com/face/verify";
 
     /**
      * 计算MD5+BASE64
@@ -133,9 +135,9 @@ public class FaceVerifyUtil {
             String stringToSign = method + "\n" + accept + "\n" + bodyMd5 + "\n" + content_type + "\n" + date + "\n"
                     + path;
             // 2.计算 HMAC-SHA1
-            String signature = HMACSha1(stringToSign, aliyunResource.getAccessKeySecret());
+            String signature = HMACSha1(stringToSign, accessKeySecret);
             // 3.得到 authorization header
-            String authHeader = "Dataplus " + aliyunResource.getAccessKeyId() + ":" + signature;
+            String authHeader = "Dataplus " + accessKeyId + ":" + signature;
             // 打开和URL之间的连接
             URLConnection conn = realUrl.openConnection();
             // 设置通用的请求属性
@@ -147,6 +149,7 @@ public class FaceVerifyUtil {
             // 发送POST请求必须设置如下两行
             conn.setDoOutput(true);
             conn.setDoInput(true);
+            System.out.println(conn);
             // 获取URLConnection对象对应的输出流
             out = new PrintWriter(conn.getOutputStream());
             // 发送请求参数
@@ -205,6 +208,7 @@ public class FaceVerifyUtil {
 
 
         Map<String, String> map = JsonUtil.jsonToPojo(response, Map.class);
+        System.out.println(map);
         Object confidenceStr = map.get("confidence");
         Double responseConfidence = (Double) confidenceStr;
 

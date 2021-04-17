@@ -27,6 +27,6 @@ public interface OwnerFaceMapper extends Mapper<OwnerFace> {
      * @param ownerId
      * @return
      */
-    @Select("SELECT * FROM owner_face WHERE owner_id = #{}ownerId")
+    @Select("SELECT * FROM owner_face WHERE owner_id = #{ownerId}")
     OwnerFace queryFaceIdByOwnerId(String ownerId);
 }

@@ -198,7 +198,7 @@ public class FileUploadController {
         if (!fileTemp.exists()) {
             fileTemp.mkdirs();
         }
-        File myFile = new File("C:/Users/HP/Desktop/毕业设计/项目/faces" + fileName);
+        File myFile = new File("C:/Users/HP/Desktop/毕业设计/项目/faces/" + fileName);
         // 创建文件输出流
         OutputStream os = new FileOutputStream(myFile);
         // 下载到服务器或者本地

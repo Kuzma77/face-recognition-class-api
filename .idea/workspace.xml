@@ -2,22 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/CloudConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/FaceLoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/enums/FaceVerifyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FaceVerifyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/face.2021-04-16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/face.2021-04-17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/configuration/CloudConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/configuration/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/configuration/GirdFsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/configuration/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/configuration/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face.2021-04-15.log" beforeDir="false" afterPath="$PROJECT_DIR$/face.2021-04-15.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/GirdFsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/GirdFsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/common/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/common/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/CloudConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/CorsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/GirdFsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/cofiguration/SwaggerConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/FaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/FaceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/FileUploadController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/OwnerFaceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/OwnerFaceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/cofiguration/GirdFsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/cofiguration/GirdFsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FaceVerifyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FaceVerifyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/face-recognition-class-api.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/cofiguration/CloudConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/cofiguration/CorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/cofiguration/GirdFsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/cofiguration/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/cofiguration/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/common/ResultCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/common/ResultCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/FaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/FaceController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/FileUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/FileUploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/util/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/util/FileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/dto/FaceLoginDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/dto/FaceLoginDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/mapper/OwnerFaceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/mapper/OwnerFaceMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/util/FaceVerifyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/util/FaceVerifyUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,8 +194,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomNumUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.util.RandomNumUtil" />
+    <configuration name="FaceVerifyUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.util.FaceVerifyUtil" />
       <module name="face-recognition-class-api" />
       <extension name="coverage">
         <pattern>
@@ -259,20 +278,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RandomNumUtil" />
       <item itemvalue="Application.FaceDetect" />
       <item itemvalue="Application.FaceSearch" />
       <item itemvalue="Application.FaceAdd" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Tomcat Server.tomcat" />
+      <item itemvalue="Application.FaceVerifyUtil" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.FaceVerifyUtil" />
         <item itemvalue="Application.FaceAdd" />
         <item itemvalue="Application.FaceSearch" />
         <item itemvalue="Application.FaceDetect" />
-        <item itemvalue="Application.RandomNumUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -313,7 +332,9 @@
       <workItem from="1618044352381" duration="16032000" />
       <workItem from="1618122627755" duration="13299000" />
       <workItem from="1618293346686" duration="22736000" />
-      <workItem from="1618469036854" duration="11965000" />
+      <workItem from="1618469036854" duration="12571000" />
+      <workItem from="1618563829358" duration="3997000" />
+      <workItem from="1618641131768" duration="12412000" />
     </task>
     <servers />
   </component>
@@ -351,38 +372,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618131209469" />
-    <state width="1493" height="372" key="GridCell.Tab.0.bottom" timestamp="1618478219508">
+    <state width="1493" height="376" key="GridCell.Tab.0.bottom" timestamp="1618659127274">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618478219508" />
-    <state width="1493" height="372" key="GridCell.Tab.0.center" timestamp="1618478219508">
+    <state width="1493" height="376" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618659127274" />
+    <state width="1493" height="376" key="GridCell.Tab.0.center" timestamp="1618659127274">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618478219508" />
-    <state width="1493" height="372" key="GridCell.Tab.0.left" timestamp="1618478219508">
+    <state width="1493" height="376" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618659127274" />
+    <state width="1493" height="376" key="GridCell.Tab.0.left" timestamp="1618659127274">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618478219508" />
-    <state width="1493" height="372" key="GridCell.Tab.0.right" timestamp="1618478219508">
+    <state width="1493" height="376" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618659127274" />
+    <state width="1493" height="376" key="GridCell.Tab.0.right" timestamp="1618659127274">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618478219508" />
-    <state width="1493" height="372" key="GridCell.Tab.1.bottom" timestamp="1618478219508">
+    <state width="1493" height="376" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618659127274" />
+    <state width="1493" height="322" key="GridCell.Tab.1.bottom" timestamp="1618659127269">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618478219508" />
-    <state width="1493" height="372" key="GridCell.Tab.1.center" timestamp="1618478219508">
+    <state width="1493" height="322" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618659127269" />
+    <state width="1493" height="322" key="GridCell.Tab.1.center" timestamp="1618659127269">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1618478219508" />
-    <state width="1493" height="372" key="GridCell.Tab.1.left" timestamp="1618478219508">
+    <state width="1493" height="322" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1618659127268" />
+    <state width="1493" height="322" key="GridCell.Tab.1.left" timestamp="1618659127268">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1618478219508" />
-    <state width="1493" height="372" key="GridCell.Tab.1.right" timestamp="1618478219508">
+    <state width="1493" height="322" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1618659127268" />
+    <state width="1493" height="322" key="GridCell.Tab.1.right" timestamp="1618659127269">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="372" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1618478219508" />
+    <state width="1493" height="322" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1618659127269" />
     <state x="270" y="15" key="SettingsEditor" timestamp="1618477764060">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
