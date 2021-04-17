@@ -99,6 +99,6 @@ public class FaceController {
         if(!result){
             return ResponseResult.failure(ResultCode.USER_FACE_LOGIN_ERROR);
         }
-        return ResponseResult.success();
+        return ResponseResult.success(result);
     }
 }
