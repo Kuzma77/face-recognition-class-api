@@ -7,18 +7,23 @@ import com.soft1851.swl.face.dto.LoginDto;
 import com.soft1851.swl.face.dto.LoginResDto;
 import com.soft1851.swl.face.dto.UserDto;
 import com.soft1851.swl.face.entity.Student;
+import com.soft1851.swl.face.enums.LogType;
 import com.soft1851.swl.face.exception.CustomException;
 import com.soft1851.swl.face.mapper.StudentMapper;
+import com.soft1851.swl.face.mo.Log;
+import com.soft1851.swl.face.service.LogService;
 import com.soft1851.swl.face.service.RedisService;
 import com.soft1851.swl.face.service.StudentService;
 import com.soft1851.swl.face.util.JwtTokenUtil;
 import com.soft1851.swl.face.util.Md5Util;
+import com.soft1851.swl.face.util.RandomNumUtil;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,6 +42,7 @@ public class StudentServiceImpl implements StudentService {
     public final StudentMapper studentMapper;
     public final JwtTokenUtil jwtTokenUtil;
     public  final RedisService redisService;
+    public  final LogService logService;
 
 
     @Override
@@ -80,16 +86,44 @@ public class StudentServiceImpl implements StudentService {
                                 .token(token)
                                 .expirationTime(jwtTokenUtil.getExpirationTime().getTime())
                                 .build())
+                        .role("student")
                         .build();
 //                将token添加到redis
                 redisService.set("USER_TOKEN:"+student.getStudentId(),token);
+                Log log = Log.builder()
+                        .id(RandomNumUtil.getVerifyCode(8))
+                        .type(LogType.LOGIN.value)
+                        .operatorId(loginDto.getId())
+                        .objectId(loginDto.getId())
+                        .content("账密登录成功")
+                        .createTime(new Date())
+                        .build();
+                this.logService.saveOneLog(log);
                 return ResponseResult.success(loginResDto);
             }else {
                 log.error("密码错误");
+                Log log = Log.builder()
+                        .id(RandomNumUtil.getVerifyCode(8))
+                        .type(LogType.LOGIN.value)
+                        .operatorId(loginDto.getId())
+                        .objectId(loginDto.getId())
+                        .content("账密登录失败")
+                        .createTime(new Date())
+                        .build();
+                this.logService.saveOneLog(log);
                 return ResponseResult.failure(ResultCode.USER_PASSWORD_ERROR);
             }
         }else {
             log.error("该学生账号不存在");
+            Log log = Log.builder()
+                    .id(RandomNumUtil.getVerifyCode(8))
+                    .type(LogType.LOGIN.value)
+                    .operatorId(loginDto.getId())
+                    .objectId(loginDto.getId())
+                    .content("账密登录失败")
+                    .createTime(new Date())
+                    .build();
+            this.logService.saveOneLog(log);
             return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
         }
     }
@@ -102,6 +136,15 @@ public class StudentServiceImpl implements StudentService {
             Integer newInteger = deleteFlag == 0 ? 1:0;
             this.studentMapper.updateStatus(newInteger,studentId);
             log.info("学生{}的状态修改成功",studentId);
+            Log log = Log.builder()
+                    .id(RandomNumUtil.getVerifyCode(8))
+                    .type(LogType.UPDATE.value)
+                    .operatorId("001")
+                    .objectId(studentId)
+                    .content("学生删除状态修改")
+                    .createTime(new Date())
+                    .build();
+            this.logService.saveOneLog(log);
             return ResponseResult.success();
         }else{
             log.error("该学生账号不存在");
@@ -116,6 +159,15 @@ public class StudentServiceImpl implements StudentService {
             String newPass = Md5Util.getMd5(password,true,32);
             this.studentMapper.updatePassword(newPass,studentId);
             log.info("学生{}的密码修改成功",studentId);
+            Log log = Log.builder()
+                    .id(RandomNumUtil.getVerifyCode(8))
+                    .type(LogType.UPDATE.value)
+                    .operatorId(studentId)
+                    .objectId(studentId)
+                    .content("修改密码成功")
+                    .createTime(new Date())
+                    .build();
+            this.logService.saveOneLog(log);
             return ResponseResult.success();
         }else{
             log.error("该学生账号不存在");

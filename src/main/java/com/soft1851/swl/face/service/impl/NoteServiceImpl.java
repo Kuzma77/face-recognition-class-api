@@ -7,15 +7,20 @@ import com.soft1851.swl.face.dto.NoteDto;
 import com.soft1851.swl.face.entity.Note;
 import com.soft1851.swl.face.entity.StudentNote;
 import com.soft1851.swl.face.entity.Subject;
+import com.soft1851.swl.face.enums.LogType;
 import com.soft1851.swl.face.enums.NoteStatue;
 import com.soft1851.swl.face.mapper.NoteMapper;
 import com.soft1851.swl.face.mapper.StudentNoteMapper;
+import com.soft1851.swl.face.mo.Log;
+import com.soft1851.swl.face.service.LogService;
 import com.soft1851.swl.face.service.NoteService;
 import com.soft1851.swl.face.util.RandomNumUtil;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Date;
 
 /**
  * @author wl_sun
@@ -29,6 +34,7 @@ public class NoteServiceImpl implements NoteService {
 
     public  final NoteMapper noteMapper;
     public  final StudentNoteMapper studentNoteMapper;
+    public final LogService logService;
 
     @Override
     public ResponseResult addNote(NoteDto noteDto,String studentId) {
@@ -49,6 +55,15 @@ public class NoteServiceImpl implements NoteService {
                 .build();
         this.studentNoteMapper.insertOne(studentNote);
         this.noteMapper.addNote(note);
+        Log log = Log.builder()
+                .id(RandomNumUtil.getVerifyCode(8))
+                .type(LogType.ADD.value)
+                .operatorId(studentId)
+                .objectId(id)
+                .content("新增假条")
+                .createTime(new Date())
+                .build();
+        this.logService.saveOneLog(log);
         return ResponseResult.success(note);
     }
 
@@ -62,6 +77,15 @@ public class NoteServiceImpl implements NoteService {
                 .updateTime(DateTime.now())
                 .build();
         this.noteMapper.updateNote(note);
+        Log log = Log.builder()
+                .id(RandomNumUtil.getVerifyCode(8))
+                .type(LogType.UPDATE.value)
+                .operatorId(this.studentNoteMapper.queryStudentIdByNoteId(noteId))
+                .objectId(noteId)
+                .content("编辑假条")
+                .createTime(new Date())
+                .build();
+        this.logService.saveOneLog(log);
         return ResponseResult.success(note);
     }
 
@@ -69,6 +93,15 @@ public class NoteServiceImpl implements NoteService {
     public ResponseResult updateNoteStatue(Boolean ifPass, String noteId) {
         Integer noteStatue = ifPass ? NoteStatue.PASS.type :NoteStatue.NOTPASS.type;
         this.noteMapper.updateNoteStatue(noteStatue,noteId);
+        Log log = Log.builder()
+                .id(RandomNumUtil.getVerifyCode(8))
+                .type(LogType.ADD.value)
+                .operatorId("001")
+                .objectId(noteId)
+                .content("假条审核状态修改")
+                .createTime(new Date())
+                .build();
+        this.logService.saveOneLog(log);
         return ResponseResult.success(noteStatue);
     }
 
@@ -80,6 +113,15 @@ public class NoteServiceImpl implements NoteService {
             Integer newInteger = deleteFlag == 0 ? 1:0;
             this.noteMapper.updateStatus(newInteger,noteId);
             log.info("假条{}的状态修改成功",noteId);
+            Log log = Log.builder()
+                    .id(RandomNumUtil.getVerifyCode(8))
+                    .type(LogType.ADD.value)
+                    .operatorId("001")
+                    .objectId(noteId)
+                    .content("假条删除状态修改")
+                    .createTime(new Date())
+                    .build();
+            this.logService.saveOneLog(log);
             return ResponseResult.success();
         }else{
             log.error("该假条账号不存在");

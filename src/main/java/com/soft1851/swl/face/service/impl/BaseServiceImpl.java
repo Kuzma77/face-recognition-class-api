@@ -2,16 +2,21 @@ package com.soft1851.swl.face.service.impl;
 
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.common.ResultCode;
+import com.soft1851.swl.face.enums.LogType;
 import com.soft1851.swl.face.mapper.AdminMapper;
 import com.soft1851.swl.face.mapper.StudentMapper;
 import com.soft1851.swl.face.mapper.TeacherMapper;
+import com.soft1851.swl.face.mo.Log;
 import com.soft1851.swl.face.service.BaseService;
+import com.soft1851.swl.face.service.LogService;
 import com.soft1851.swl.face.service.RedisService;
+import com.soft1851.swl.face.util.RandomNumUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,11 +36,21 @@ public class BaseServiceImpl implements BaseService {
     public final StudentMapper studentMapper;
     public final TeacherMapper teacherMapper;
     public final AdminMapper adminMapper;
+    public final LogService logService;
 
     @Override
     public ResponseResult layout(String userId) {
         if(redisService.existsKey("USER_TOKEN:"+userId)){
             redisService.removeKey("USER_TOKEN:"+userId);
+            Log log = Log.builder()
+                    .id(RandomNumUtil.getVerifyCode(8))
+                    .type(LogType.LAYOUT.value)
+                    .operatorId(userId)
+                    .objectId(userId)
+                    .content("退出登录")
+                    .createTime(new Date())
+                    .build();
+            this.logService.saveOneLog(log);
             return ResponseResult.success();
         }
         return ResponseResult.failure(ResultCode.PARAM_IS_INVALID);

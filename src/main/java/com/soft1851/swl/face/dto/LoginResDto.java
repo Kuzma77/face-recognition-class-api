@@ -20,4 +20,5 @@ import java.util.Date;
 public class LoginResDto {
     private UserDto userDto;
     private JwtTokenRespDto token;
+    private String role;
 }

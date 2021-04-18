@@ -6,8 +6,11 @@ import com.soft1851.swl.face.common.ResultCode;
 import com.soft1851.swl.face.dto.SubjectDto;
 import com.soft1851.swl.face.entity.Subject;
 import com.soft1851.swl.face.entity.Teacher;
+import com.soft1851.swl.face.enums.LogType;
 import com.soft1851.swl.face.enums.SignFlag;
 import com.soft1851.swl.face.mapper.SubjectMapper;
+import com.soft1851.swl.face.mo.Log;
+import com.soft1851.swl.face.service.LogService;
 import com.soft1851.swl.face.service.SubjectService;
 import com.soft1851.swl.face.util.RandomNumUtil;
 import lombok.RequiredArgsConstructor;
@@ -30,6 +33,7 @@ import java.util.Date;
 public class SubjectServiceImpl implements SubjectService {
 
     public final SubjectMapper subjectMapper;
+    public final LogService logService;
 
     @Override
     public ResponseResult addSubject(SubjectDto subjectDto) {
@@ -46,6 +50,15 @@ public class SubjectServiceImpl implements SubjectService {
                 .updateTime(DateTime.now())
                 .build();
         this.subjectMapper.addSubject(subject);
+        Log log = Log.builder()
+                .id(RandomNumUtil.getVerifyCode(8))
+                .type(LogType.ADD.value)
+                .operatorId("001")
+                .objectId(id)
+                .content("新增课程")
+                .createTime(new Date())
+                .build();
+        this.logService.saveOneLog(log);
         return ResponseResult.success(subject);
     }
 
@@ -58,6 +71,15 @@ public class SubjectServiceImpl implements SubjectService {
                 .updateTime(DateTime.now())
                 .build();
         this.subjectMapper.updateSubject(subject,subjectId);
+        Log log = Log.builder()
+                .id(RandomNumUtil.getVerifyCode(8))
+                .type(LogType.UPDATE.value)
+                .operatorId("001")
+                .objectId(subjectId)
+                .content("修改课程审核状态")
+                .createTime(new Date())
+                .build();
+        this.logService.saveOneLog(log);
         return ResponseResult.success(subject);
     }
 
@@ -83,6 +105,15 @@ public class SubjectServiceImpl implements SubjectService {
                 return ResponseResult.failure(ResultCode.PARAM_IS_INVALID);
         }
         this.subjectMapper.updateSignStatue(newSignFlag,subjectId);
+        Log log = Log.builder()
+                .id(RandomNumUtil.getVerifyCode(8))
+                .type(LogType.UPDATE.value)
+                .operatorId("001")
+                .objectId(subjectId)
+                .content("修改签到状态")
+                .createTime(new Date())
+                .build();
+        this.logService.saveOneLog(log);
         return ResponseResult.success("课程"+subjectId+message);
     }
 
@@ -91,6 +122,15 @@ public class SubjectServiceImpl implements SubjectService {
         long sTime = this.subjectMapper.selectByPrimaryKey(subjectId).getSignTime();
         long newSignTime = sTime + addTime;
         this.subjectMapper.addSignTime(newSignTime, subjectId);
+        Log log = Log.builder()
+                .id(RandomNumUtil.getVerifyCode(8))
+                .type(LogType.UPDATE.value)
+                .operatorId("001")
+                .objectId(subjectId)
+                .content("修改签到时间")
+                .createTime(new Date())
+                .build();
+        this.logService.saveOneLog(log);
         return ResponseResult.success(newSignTime);
     }
 
@@ -102,6 +142,15 @@ public class SubjectServiceImpl implements SubjectService {
             Integer newInteger = deleteFlag == 0 ? 1:0;
             this.subjectMapper.updateStatus(newInteger,subjectId);
             log.info("课程{}的状态修改成功",subjectId);
+            Log log = Log.builder()
+                    .id(RandomNumUtil.getVerifyCode(8))
+                    .type(LogType.UPDATE.value)
+                    .operatorId("001")
+                    .objectId(subjectId)
+                    .content("课程审核状态修改")
+                    .createTime(new Date())
+                    .build();
+            this.logService.saveOneLog(log);
             return ResponseResult.success();
         }else{
             log.error("该课程账号不存在");

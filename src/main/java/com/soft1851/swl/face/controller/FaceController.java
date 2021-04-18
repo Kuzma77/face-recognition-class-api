@@ -62,7 +62,7 @@ public class FaceController {
      * @return GraceResult
      */
     @ApiOperation(value = "人脸识别登录",notes = "人脸识别登录",httpMethod = "POST")
-    @PostMapping("/adminLogin")
+    @PostMapping("/faceLogin")
     @ControllerWebLog
     public ResponseResult faceLogin(@RequestBody FaceLoginDto faceLoginDto,
                            HttpServletRequest request,

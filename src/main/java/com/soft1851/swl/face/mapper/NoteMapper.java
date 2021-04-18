@@ -4,6 +4,7 @@ import com.soft1851.swl.face.dto.NoteDto;
 import com.soft1851.swl.face.entity.Note;
 import com.soft1851.swl.face.entity.Subject;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import tk.mybatis.mapper.common.Mapper;
 
@@ -47,4 +48,7 @@ public interface NoteMapper extends Mapper<Note> {
      */
     @Update("UPDATE note SET delete_flag=#{deleteFlag} WHERE note_id=#{noteId}")
     void updateStatus(Integer deleteFlag, String noteId);
+
+
+
 }

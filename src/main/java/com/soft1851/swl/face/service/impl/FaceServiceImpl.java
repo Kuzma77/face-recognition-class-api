@@ -10,12 +10,15 @@ import com.soft1851.swl.face.entity.OwnerFace;
 import com.soft1851.swl.face.entity.Student;
 import com.soft1851.swl.face.entity.Teacher;
 import com.soft1851.swl.face.enums.FaceVerifyType;
+import com.soft1851.swl.face.enums.LogType;
 import com.soft1851.swl.face.mapper.AdminMapper;
 import com.soft1851.swl.face.mapper.OwnerFaceMapper;
 import com.soft1851.swl.face.mapper.StudentMapper;
 import com.soft1851.swl.face.mapper.TeacherMapper;
+import com.soft1851.swl.face.mo.Log;
 import com.soft1851.swl.face.service.BaseService;
 import com.soft1851.swl.face.service.FaceService;
+import com.soft1851.swl.face.service.LogService;
 import com.soft1851.swl.face.service.RedisService;
 import com.soft1851.swl.face.util.FaceVerifyUtil;
 import com.soft1851.swl.face.util.JwtTokenUtil;
@@ -29,6 +32,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -52,6 +56,7 @@ public class FaceServiceImpl implements FaceService {
     public final StudentMapper studentMapper;
     public final TeacherMapper teacherMapper;
     public final AdminMapper adminMapper;
+    public final LogService logService;
 
     @Override
     public ResponseResult addFace(OwnerFaceDto ownerFaceDto) {
@@ -63,6 +68,15 @@ public class FaceServiceImpl implements FaceService {
                 .ownerId(ownerFaceDto.getOwnerId())
                 .build();
         this.ownerFaceMapper.addOne(ownerFace);
+        Log log = Log.builder()
+                .id(RandomNumUtil.getVerifyCode(8))
+                .type(LogType.ADD.value)
+                .operatorId("001")
+                .objectId(ownerFaceDto.getOwnerId())
+                .content("人脸入库成功")
+                .createTime(new Date())
+                .build();
+        this.logService.saveOneLog(log);
         return ResponseResult.success(ownerFace);
     }
 
@@ -130,6 +144,15 @@ public class FaceServiceImpl implements FaceService {
                         .build();
 //                将token添加到redis
                 redisService.set("USER_TOKEN:"+student.getStudentId(),token);
+                Log log = Log.builder()
+                        .id(RandomNumUtil.getVerifyCode(8))
+                        .type(LogType.LOGIN.value)
+                        .operatorId(student.getStudentId())
+                        .objectId(student.getStudentId())
+                        .content("人脸识别录成功")
+                        .createTime(new Date())
+                        .build();
+                this.logService.saveOneLog(log);
                 return ResponseResult.success(loginResDto);
             }else if(map.get("role")=="teacher") {
                 Object ob = map.get("data");
@@ -163,10 +186,37 @@ public class FaceServiceImpl implements FaceService {
                         .build();
                 //                将token添加到redis
                 redisService.set("USER_TOKEN:" + teacher.getTeacherId(), token);
+                Log log = Log.builder()
+                        .id(RandomNumUtil.getVerifyCode(8))
+                        .type(LogType.LOGIN.value)
+                        .operatorId(teacher.getTeacherId())
+                        .objectId(teacher.getTeacherId())
+                        .content("人脸识别登录成功")
+                        .createTime(new Date())
+                        .build();
+                this.logService.saveOneLog(log);
                 return ResponseResult.success(loginResDto);
             }
+            Log log = Log.builder()
+                    .id(RandomNumUtil.getVerifyCode(8))
+                    .type(LogType.LOGIN.value)
+                    .operatorId(faceLoginDto.getId())
+                    .objectId(faceLoginDto.getId())
+                    .content("人脸识别登录失败")
+                    .createTime(new Date())
+                    .build();
+            this.logService.saveOneLog(log);
             return ResponseResult.failure(ResultCode.FACE_NOT_SAVE_ERROR);
         }
+        Log log = Log.builder()
+                .id(RandomNumUtil.getVerifyCode(8))
+                .type(LogType.LOGIN.value)
+                .operatorId(faceLoginDto.getId())
+                .objectId(faceLoginDto.getId())
+                .content("人脸识别登录失败")
+                .createTime(new Date())
+                .build();
+        this.logService.saveOneLog(log);
         return ResponseResult.failure(ResultCode.USER_FACE_LOGIN_ERROR);
     }
 }
