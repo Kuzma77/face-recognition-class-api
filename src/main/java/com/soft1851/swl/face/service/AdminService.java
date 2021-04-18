@@ -1,6 +1,7 @@
 package com.soft1851.swl.face.service;
 
 import com.soft1851.swl.face.common.ResponseResult;
+import com.soft1851.swl.face.dto.FaceLoginDto;
 import com.soft1851.swl.face.dto.LoginDto;
 
 /**
@@ -26,4 +27,12 @@ public interface AdminService {
      * @return
      */
     ResponseResult loginByAdminId(LoginDto loginDto);
+
+    /**
+     * 管理员人脸识别登录
+     *
+     * @param faceLoginDto
+     * @return
+     */
+    ResponseResult loginByFace(FaceLoginDto faceLoginDto);
 }

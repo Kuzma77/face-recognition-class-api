@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/FaceImg64Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/AddImg64Dto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mo/FaceImg64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/repository/FaceImg64Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/FaceImg64Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/FaceImg64ServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face.2021-04-17.log" beforeDir="false" afterPath="$PROJECT_DIR$/face.2021-04-17.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/mapper/AdminMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/BaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/BaseServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,9 +254,9 @@
       <item itemvalue="Application.FaceDetect" />
       <item itemvalue="Application.FaceSearch" />
       <item itemvalue="Application.FaceAdd" />
+      <item itemvalue="Application.FaceVerifyUtil" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Tomcat Server.tomcat" />
-      <item itemvalue="Application.FaceVerifyUtil" />
     </list>
     <recent_temporary>
       <list>
@@ -307,7 +307,7 @@
       <workItem from="1618293346686" duration="22736000" />
       <workItem from="1618469036854" duration="12571000" />
       <workItem from="1618563829358" duration="3997000" />
-      <workItem from="1618641131768" duration="17935000" />
+      <workItem from="1618641131768" duration="21077000" />
     </task>
     <servers />
   </component>
@@ -333,10 +333,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="478" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1618296231628" />
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1618665615899">
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1618668192277">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1618665615899" />
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1618668192277" />
     <state x="548" y="291" width="449" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618305246289">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -345,38 +345,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618131209469" />
-    <state width="1493" height="220" key="GridCell.Tab.0.bottom" timestamp="1618666127391">
+    <state width="1493" height="376" key="GridCell.Tab.0.bottom" timestamp="1618669544497">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618666127391" />
-    <state width="1493" height="220" key="GridCell.Tab.0.center" timestamp="1618666127390">
+    <state width="1493" height="376" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618669544497" />
+    <state width="1493" height="376" key="GridCell.Tab.0.center" timestamp="1618669544497">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618666127390" />
-    <state width="1493" height="220" key="GridCell.Tab.0.left" timestamp="1618666127390">
+    <state width="1493" height="376" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1618669544497" />
+    <state width="1493" height="376" key="GridCell.Tab.0.left" timestamp="1618669544497">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618666127390" />
-    <state width="1493" height="220" key="GridCell.Tab.0.right" timestamp="1618666127390">
+    <state width="1493" height="376" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1618669544497" />
+    <state width="1493" height="376" key="GridCell.Tab.0.right" timestamp="1618669544497">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618666127390" />
-    <state width="1493" height="220" key="GridCell.Tab.1.bottom" timestamp="1618666127393">
+    <state width="1493" height="376" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1618669544497" />
+    <state width="1493" height="231" key="GridCell.Tab.1.bottom" timestamp="1618669544479">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618666127393" />
-    <state width="1493" height="220" key="GridCell.Tab.1.center" timestamp="1618666127391">
+    <state width="1493" height="231" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1618669544479" />
+    <state width="1493" height="231" key="GridCell.Tab.1.center" timestamp="1618669544479">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1618666127391" />
-    <state width="1493" height="220" key="GridCell.Tab.1.left" timestamp="1618666127391">
+    <state width="1493" height="231" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1618669544479" />
+    <state width="1493" height="231" key="GridCell.Tab.1.left" timestamp="1618669544479">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1618666127391" />
-    <state width="1493" height="220" key="GridCell.Tab.1.right" timestamp="1618666127392">
+    <state width="1493" height="231" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1618669544479" />
+    <state width="1493" height="231" key="GridCell.Tab.1.right" timestamp="1618669544479">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1618666127392" />
+    <state width="1493" height="231" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1618669544479" />
     <state x="270" y="15" key="SettingsEditor" timestamp="1618477764060">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -389,10 +389,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="178" y="0" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1617606927176" />
-    <state x="425" y="197" key="run.anything.popup" timestamp="1617606770538">
+    <state x="425" y="197" key="run.anything.popup" timestamp="1618668623832">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1617606770538" />
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1618668623832" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1618663845355">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

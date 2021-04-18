@@ -126,19 +126,20 @@ public class FaceServiceImpl implements FaceService {
                                 .token(token)
                                 .expirationTime(jwtTokenUtil.getExpirationTime().getTime())
                                 .build())
+                        .role("student")
                         .build();
 //                将token添加到redis
                 redisService.set("USER_TOKEN:"+student.getStudentId(),token);
                 return ResponseResult.success(loginResDto);
-            }else if(map.get("role")=="teacher"){
+            }else if(map.get("role")=="teacher") {
                 Object ob = map.get("data");
                 ObjectMapper objectMapper = new ObjectMapper();
-                Teacher tea = objectMapper.convertValue(ob,Teacher.class);
+                Teacher tea = objectMapper.convertValue(ob, Teacher.class);
                 Teacher teacher = this.teacherMapper.selectByPrimaryKey(tea.getTeacherId());
-                Map<String,Object> teacherInfo = new HashMap<>(3);
-                teacherInfo.put("id",teacher.getTeacherId());
-                teacherInfo.put("name",teacher.getTeacherName());
-                teacherInfo.put("password",teacher.getPassword());
+                Map<String, Object> teacherInfo = new HashMap<>(3);
+                teacherInfo.put("id", teacher.getTeacherId());
+                teacherInfo.put("name", teacher.getTeacherName());
+                teacherInfo.put("password", teacher.getPassword());
                 String token = jwtTokenUtil.generateToken(teacherInfo);
                 log.info(
                         "{}登录成功，生成的token = {},有效期到:{}",
@@ -146,7 +147,7 @@ public class FaceServiceImpl implements FaceService {
                         token,
                         jwtTokenUtil.getExpirationTime()
                 );
-                LoginResDto loginResDto =  LoginResDto.builder().userDto(UserDto.builder()
+                LoginResDto loginResDto = LoginResDto.builder().userDto(UserDto.builder()
                         .id(teacher.getTeacherId())
                         .name(teacher.getTeacherName())
                         .avatar(teacher.getAvatar())
@@ -158,43 +159,14 @@ public class FaceServiceImpl implements FaceService {
                                 .token(token)
                                 .expirationTime(jwtTokenUtil.getExpirationTime().getTime())
                                 .build())
+                        .role("teacher")
                         .build();
                 //                将token添加到redis
-                redisService.set("USER_TOKEN:"+teacher.getTeacherId(),token);
+                redisService.set("USER_TOKEN:" + teacher.getTeacherId(), token);
                 return ResponseResult.success(loginResDto);
             }
-            Object ob = map.get("data");
-            ObjectMapper objectMapper = new ObjectMapper();
-            Admin adm = objectMapper.convertValue(ob,Admin.class);
-            Admin admin = this.adminMapper.selectByPrimaryKey(adm.getAdminId());
-            Map<String,Object> adminInfo = new HashMap<>(3);
-            adminInfo.put("id",admin.getAdminId());
-            adminInfo.put("name",admin.getAdminName());
-            adminInfo.put("password",admin.getAdminName());
-            String token = jwtTokenUtil.generateToken(adminInfo);
-            log.info(
-                    "{}登录成功，生成的token = {},有效期到:{}",
-                    admin.getAdminName(),
-                    token,
-                    jwtTokenUtil.getExpirationTime()
-            );
-            LoginResDto loginResDto =  LoginResDto.builder().userDto(UserDto.builder()
-                    .id(admin.getAdminId())
-                    .name(admin.getAdminName())
-                    .avatar(admin.getAvatar())
-                    .gender(admin.getGender())
-                    .build())
-                    .token(JwtTokenRespDto
-                            .builder()
-                            .token(token)
-                            .expirationTime(jwtTokenUtil.getExpirationTime().getTime())
-                            .build())
-                    .build();
-            //                将token添加到redis
-            redisService.set("USER_TOKEN:"+admin.getAdminId(),token);
-            return ResponseResult.success(loginResDto);
-        }else {
-            return ResponseResult.failure(ResultCode.USER_FACE_LOGIN_ERROR);
+            return ResponseResult.failure(ResultCode.FACE_NOT_SAVE_ERROR);
         }
+        return ResponseResult.failure(ResultCode.USER_FACE_LOGIN_ERROR);
     }
 }
