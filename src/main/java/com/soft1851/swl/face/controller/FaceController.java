@@ -3,12 +3,14 @@ package com.soft1851.swl.face.controller;
 import com.soft1851.swl.face.annocation.ControllerWebLog;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.common.ResultCode;
+import com.soft1851.swl.face.dto.AddFaceDto;
 import com.soft1851.swl.face.dto.FaceLoginDto;
 import com.soft1851.swl.face.dto.OwnerFaceDto;
 import com.soft1851.swl.face.entity.OwnerFace;
 import com.soft1851.swl.face.enums.FaceVerifyType;
 import com.soft1851.swl.face.mapper.OwnerFaceMapper;
 import com.soft1851.swl.face.service.FaceService;
+import com.soft1851.swl.face.util.AliOssUtil;
 import com.soft1851.swl.face.util.FaceVerifyUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -18,11 +20,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -68,5 +68,26 @@ public class FaceController {
                            HttpServletRequest request,
                            HttpServletResponse response){
         return this.faceService.faceLogin(faceLoginDto);
+    }
+
+    /**
+     * 人脸数据添加到阿里云平台
+     * @param userId
+     * @param userName
+     * @param sourceFile
+     * @return
+     */
+    @ApiOperation(value = "人脸数据添加到阿里云平台",notes = "人脸数据添加到阿里云平台",httpMethod = "POST")
+    @PostMapping("/addFaceData")
+    @ControllerWebLog
+    public ResponseResult addFaceData(@RequestParam String userId,@RequestParam String userName,@RequestParam(value = "file") MultipartFile sourceFile) throws Exception {
+        String url = AliOssUtil.upload(sourceFile);
+        System.out.println(url);
+        AddFaceDto addFaceDto = AddFaceDto.builder()
+                .userId(userId)
+                .userName(userName)
+                .imgUrl(url)
+                .build();
+        return this.faceService.addFaceData(addFaceDto);
     }
 }

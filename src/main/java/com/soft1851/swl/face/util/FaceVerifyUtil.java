@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 /**
  * @author wl_sun
- * @description 人脸比对工具类
+ * @description 人脸比对工具类（1:1）
  * @Data 2021/4/15
  */
 @Component

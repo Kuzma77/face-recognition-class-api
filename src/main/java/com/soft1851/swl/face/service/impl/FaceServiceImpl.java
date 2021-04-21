@@ -20,6 +20,7 @@ import com.soft1851.swl.face.service.BaseService;
 import com.soft1851.swl.face.service.FaceService;
 import com.soft1851.swl.face.service.LogService;
 import com.soft1851.swl.face.service.RedisService;
+import com.soft1851.swl.face.util.FaceManageUtil;
 import com.soft1851.swl.face.util.FaceVerifyUtil;
 import com.soft1851.swl.face.util.JwtTokenUtil;
 import com.soft1851.swl.face.util.RandomNumUtil;
@@ -57,6 +58,7 @@ public class FaceServiceImpl implements FaceService {
     public final TeacherMapper teacherMapper;
     public final AdminMapper adminMapper;
     public final LogService logService;
+    public final FaceManageUtil faceManageUtil;
 
     @Override
     public ResponseResult addFace(OwnerFaceDto ownerFaceDto) {
@@ -218,5 +220,15 @@ public class FaceServiceImpl implements FaceService {
                 .build();
         this.logService.saveOneLog(log);
         return ResponseResult.failure(ResultCode.USER_FACE_LOGIN_ERROR);
+    }
+
+    @Override
+    public ResponseResult addFaceData(AddFaceDto addFaceDto) throws Exception {
+        if(!this.faceManageUtil.getFaceEntity(addFaceDto.getUserId())){
+            this.faceManageUtil.addFaceEntity(addFaceDto.getUserId(),addFaceDto.getUserName());
+            log.info("创建样本{}成功",addFaceDto.getUserId());
+            return ResponseResult.success(this.faceManageUtil.addFaceData(addFaceDto));
+        }
+        return ResponseResult.success(this.faceManageUtil.addFaceData(addFaceDto));
     }
 }
