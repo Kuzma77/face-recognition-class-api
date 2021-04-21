@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/face.2021-04-21.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/AddFaceDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FaceManageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/soft1851/swl/face/service/impl/FaceServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face.2021-04-18.log" beforeDir="false" afterPath="$PROJECT_DIR$/face.2021-04-18.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face.2021-04-21.log" beforeDir="false" afterPath="$PROJECT_DIR$/face.2021-04-21.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/common/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/common/ResultCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/FaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/FaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/SearchFaceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/SearchFaceDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/FaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/FaceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/FaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/FaceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/AliOssUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/AliOssUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FaceVerifyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FaceVerifyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FaceManageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/util/FaceManageUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/FaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/FaceController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/FaceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/FaceService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/FaceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/FaceServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/util/AliOssUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/util/AliOssUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +63,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -148,19 +145,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AliyunFaceUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.util.AliyunFaceUtil" />
-      <module name="face-recognition-class-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.soft1851.swl.face.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FaceManageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.util.FaceManageUtil" />
       <module name="face-recognition-class-api" />
@@ -183,6 +167,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FaceServiceImplTest.searchFace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="face-recognition-class-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.swl.face.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.soft1851.swl.face.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.soft1851.swl.face.service.impl.FaceServiceImplTest" />
+      <option name="METHOD_NAME" value="searchFace" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,20 +258,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AliyunFaceUtil" />
       <item itemvalue="Application.Sample" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Tomcat Server.tomcat" />
       <item itemvalue="Application.FaceManageUtil" />
       <item itemvalue="Application.AliOssUtil" />
+      <item itemvalue="JUnit.FaceServiceImplTest.searchFace" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="JUnit.FaceServiceImplTest.searchFace" />
         <item itemvalue="Application.FaceManageUtil" />
         <item itemvalue="Application.AliOssUtil" />
         <item itemvalue="Application.Sample" />
-        <item itemvalue="Application.AliyunFaceUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +318,7 @@
       <workItem from="1618727990915" duration="2064000" />
       <workItem from="1618730109496" duration="2388000" />
       <workItem from="1618732596951" duration="12652000" />
-      <workItem from="1618986061076" duration="12821000" />
+      <workItem from="1618986061076" duration="20292000" />
     </task>
     <servers />
   </component>
@@ -344,62 +344,62 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="478" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1618296231628" />
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1618994485091">
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1619001535955">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1618994485091" />
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1619001535955" />
     <state x="548" y="291" width="449" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618740208778">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="291" width="449" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1618740208778" />
-    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618736436036">
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619006565176">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1618736436036" />
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1619006565176" />
     <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1618131209469">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618131209469" />
-    <state width="1493" height="251" key="GridCell.Tab.0.bottom" timestamp="1619000331138">
+    <state width="1493" height="251" key="GridCell.Tab.0.bottom" timestamp="1619008385817">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1619000331138" />
-    <state width="1493" height="251" key="GridCell.Tab.0.center" timestamp="1619000331138">
+    <state width="1493" height="251" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1619008385817" />
+    <state width="1493" height="251" key="GridCell.Tab.0.center" timestamp="1619008385817">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1619000331138" />
-    <state width="1493" height="251" key="GridCell.Tab.0.left" timestamp="1619000331138">
+    <state width="1493" height="251" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1619008385817" />
+    <state width="1493" height="251" key="GridCell.Tab.0.left" timestamp="1619008385816">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1619000331138" />
-    <state width="1493" height="251" key="GridCell.Tab.0.right" timestamp="1619000331138">
+    <state width="1493" height="251" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1619008385816" />
+    <state width="1493" height="251" key="GridCell.Tab.0.right" timestamp="1619008385817">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1619000331138" />
-    <state width="1493" height="251" key="GridCell.Tab.1.bottom" timestamp="1619000331139">
+    <state width="1493" height="251" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1619008385817" />
+    <state width="1493" height="251" key="GridCell.Tab.1.bottom" timestamp="1619008385817">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1619000331139" />
-    <state width="1493" height="251" key="GridCell.Tab.1.center" timestamp="1619000331138">
+    <state width="1493" height="251" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1619008385817" />
+    <state width="1493" height="251" key="GridCell.Tab.1.center" timestamp="1619008385817">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1619000331138" />
-    <state width="1493" height="251" key="GridCell.Tab.1.left" timestamp="1619000331138">
+    <state width="1493" height="251" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1619008385817" />
+    <state width="1493" height="251" key="GridCell.Tab.1.left" timestamp="1619008385817">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1619000331138" />
-    <state width="1493" height="251" key="GridCell.Tab.1.right" timestamp="1619000331139">
+    <state width="1493" height="251" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1619008385817" />
+    <state width="1493" height="251" key="GridCell.Tab.1.right" timestamp="1619008385817">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="251" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1619000331139" />
+    <state width="1493" height="251" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1619008385817" />
     <state x="270" y="15" key="SettingsEditor" timestamp="1618477764060">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="270" y="15" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1618477764060" />
-    <state x="514" y="151" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1617797646740">
+    <state x="514" y="151" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1619002455739">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="514" y="151" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.864@0.0.1536.864" timestamp="1617797646740" />
+    <state x="514" y="151" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.864@0.0.1536.864" timestamp="1619002455739" />
     <state x="178" y="0" key="new project wizard" timestamp="1617606927176">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

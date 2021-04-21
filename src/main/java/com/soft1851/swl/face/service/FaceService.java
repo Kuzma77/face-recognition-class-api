@@ -4,6 +4,7 @@ import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.AddFaceDto;
 import com.soft1851.swl.face.dto.FaceLoginDto;
 import com.soft1851.swl.face.dto.OwnerFaceDto;
+import com.soft1851.swl.face.dto.SearchFaceDto;
 
 /**
  * @author wl_sun
@@ -33,4 +34,14 @@ public interface FaceService {
      * @return
      */
     ResponseResult addFaceData(AddFaceDto addFaceDto) throws Exception;
+
+
+    /**
+     * 搜索人脸返回用户Id
+     *
+     * @param searchFaceDto
+     * @return
+     * @throws Exception
+     */
+    ResponseResult searchFace(SearchFaceDto searchFaceDto) throws Exception;
 }

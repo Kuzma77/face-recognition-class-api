@@ -6,6 +6,7 @@ import com.soft1851.swl.face.common.ResultCode;
 import com.soft1851.swl.face.dto.AddFaceDto;
 import com.soft1851.swl.face.dto.FaceLoginDto;
 import com.soft1851.swl.face.dto.OwnerFaceDto;
+import com.soft1851.swl.face.dto.SearchFaceDto;
 import com.soft1851.swl.face.entity.OwnerFace;
 import com.soft1851.swl.face.enums.FaceVerifyType;
 import com.soft1851.swl.face.mapper.OwnerFaceMapper;
@@ -89,5 +90,19 @@ public class FaceController {
                 .imgUrl(url)
                 .build();
         return this.faceService.addFaceData(addFaceDto);
+    }
+
+    /**
+     * 人脸搜索(1:n)
+     *
+     * @param searchFaceDto
+     * @return
+     * @throws Exception
+     */
+    @ApiOperation(value = "人脸搜索(1:n)",notes = "人脸搜索(1:n)",httpMethod = "POST")
+    @PostMapping("/searchFace")
+    @ControllerWebLog
+    public  ResponseResult searchFace(@RequestBody SearchFaceDto searchFaceDto) throws Exception {
+        return this.faceService.searchFace(searchFaceDto);
     }
 }

@@ -2,13 +2,11 @@ package com.soft1851.swl.face.service.impl;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.common.ResultCode;
 import com.soft1851.swl.face.dto.*;
-import com.soft1851.swl.face.entity.Admin;
-import com.soft1851.swl.face.entity.OwnerFace;
-import com.soft1851.swl.face.entity.Student;
-import com.soft1851.swl.face.entity.Teacher;
+import com.soft1851.swl.face.entity.*;
 import com.soft1851.swl.face.enums.FaceVerifyType;
 import com.soft1851.swl.face.enums.LogType;
 import com.soft1851.swl.face.mapper.AdminMapper;
@@ -20,22 +18,16 @@ import com.soft1851.swl.face.service.BaseService;
 import com.soft1851.swl.face.service.FaceService;
 import com.soft1851.swl.face.service.LogService;
 import com.soft1851.swl.face.service.RedisService;
-import com.soft1851.swl.face.util.FaceManageUtil;
-import com.soft1851.swl.face.util.FaceVerifyUtil;
-import com.soft1851.swl.face.util.JwtTokenUtil;
-import com.soft1851.swl.face.util.RandomNumUtil;
+import com.soft1851.swl.face.util.*;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.poi.ss.formula.functions.T;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author wl_sun
@@ -230,5 +222,21 @@ public class FaceServiceImpl implements FaceService {
             return ResponseResult.success(this.faceManageUtil.addFaceData(addFaceDto));
         }
         return ResponseResult.success(this.faceManageUtil.addFaceData(addFaceDto));
+    }
+
+    @Override
+    public ResponseResult searchFace(SearchFaceDto searchFaceDto) throws Exception {
+        List list = Arrays.asList(JsonUtil.jsonToPojo(new Gson().toJson(this.faceManageUtil.SearchFace(searchFaceDto).get("data")), Map.class));
+        List matchList = Arrays.asList(JsonUtil.jsonToPojo(new Gson().toJson(list.get(0)), Map.class).get("matchList"));
+        List ob = JsonUtil.jsonToList(new Gson().toJson(matchList.get(0)), Map.class);
+        Map<String,Object> map = JsonUtil.jsonToPojo(new Gson().toJson(ob.get(0)), Map.class);
+        List faceItems = Arrays.asList(map.get("faceItems"));
+        List rt = JsonUtil.jsonToList(new Gson().toJson(faceItems.get(0)), Map.class);
+        Map<String, Object> map1 = JsonUtil.jsonToPojo(new Gson().toJson(rt.get(0)), Map.class);
+        System.out.println(map1.get("score"));
+        if(Double.valueOf((Double) map1.get("score"))>0.7){
+            return ResponseResult.success(map1.get("entityId"));
+        }
+        return ResponseResult.failure(ResultCode.FACE_SEARCH_FAIL);
     }
 }

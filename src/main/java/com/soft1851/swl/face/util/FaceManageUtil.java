@@ -10,6 +10,8 @@ import com.aliyun.teaopenapi.*;
 import com.aliyun.teaopenapi.models.*;
 import com.google.gson.Gson;
 import com.soft1851.swl.face.dto.AddFaceDto;
+import com.soft1851.swl.face.dto.SearchFaceDto;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
@@ -21,6 +23,7 @@ import java.util.Map;
  */
 
 @Component
+@Slf4j
 public class FaceManageUtil {
 
     public final com.aliyun.facebody20191230.Client client = FaceManageUtil.createClient("LTAI4G3RbEnYyXpd2ez6jbo4", "6vVUWNdOhUunRQCLyrjszgKwVZMjkv");
@@ -54,7 +57,6 @@ public class FaceManageUtil {
      * @throws Exception
      */
     public boolean getFaceEntity(String userId) throws Exception{
-        //com.aliyun.facebody20191230.Client client = FaceManageUtil.createClient("LTAI4G3RbEnYyXpd2ez6jbo4", "6vVUWNdOhUunRQCLyrjszgKwVZMjkv");
         GetFaceEntityRequest getFaceEntityRequest = new GetFaceEntityRequest()
                 .setDbName("face")
                 .setEntityId(userId);
@@ -76,7 +78,6 @@ public class FaceManageUtil {
      * @throws Exception
      */
     public void addFaceEntity(String userId,String userName) throws Exception{
-        //com.aliyun.facebody20191230.Client client = FaceManageUtil.createClient("LTAI4G3RbEnYyXpd2ez6jbo4", "6vVUWNdOhUunRQCLyrjszgKwVZMjkv");
         //添加人脸样本
         AddFaceEntityRequest addFaceEntityRequest = new AddFaceEntityRequest()
                 .setDbName("face")
@@ -93,7 +94,6 @@ public class FaceManageUtil {
      * @throws Exception
      */
     public Map<String,Object> addFaceData(AddFaceDto addFaceDto) throws Exception{
-        //com.aliyun.facebody20191230.Client client = FaceManageUtil.createClient("LTAI4G3RbEnYyXpd2ez6jbo4", "6vVUWNdOhUunRQCLyrjszgKwVZMjkv");
         //添加人脸数据
         AddFaceRequest addFaceRequest = new AddFaceRequest()
                 .setImageUrl(addFaceDto.getImgUrl())
@@ -107,7 +107,24 @@ public class FaceManageUtil {
     }
 
 
-    public void SearchFace()
+    /**
+     *
+     * 搜索人脸(1:n)
+     * @param searchFaceDto
+     * @return
+     * @throws Exception
+     */
+    public Map<String,Object> SearchFace(SearchFaceDto searchFaceDto) throws Exception {
+        SearchFaceRequest searchFaceRequest = new SearchFaceRequest()
+                .setDbName(searchFaceDto.getDbName())
+                .setDbNames(searchFaceDto.getDbNames())
+                .setImageUrl(searchFaceDto.getImgUrl())
+                .setLimit(searchFaceDto.getLimit());
+        SearchFaceResponse response =  client.searchFace(searchFaceRequest);
+        Map<String,Object> map = JsonUtil.jsonToPojo(new Gson().toJson(response), Map.class);
+        assert map != null;
+        return JsonUtil.jsonToPojo(new Gson().toJson(map.get("body")), Map.class);
+    }
 
     public static void main(String[] args_) throws Exception {
         com.aliyun.facebody20191230.Client client = FaceManageUtil.createClient("LTAI4G3RbEnYyXpd2ez6jbo4", "6vVUWNdOhUunRQCLyrjszgKwVZMjkv");
