@@ -28,6 +28,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import java.util.Map;
 
 /**
  * @author wl_sun
@@ -103,6 +104,10 @@ public class FaceController {
     @PostMapping("/searchFace")
     @ControllerWebLog
     public  ResponseResult searchFace(@RequestBody SearchFaceDto searchFaceDto) throws Exception {
-        return this.faceService.searchFace(searchFaceDto);
+        Map<String, Object> map = this.faceService.searchFace(searchFaceDto);
+        if(Double.valueOf((Double) map.get("score"))>0.7){
+            return ResponseResult.success(map.get("entityId"));
+        }
+        return ResponseResult.failure(ResultCode.FACE_SEARCH_FAIL);
     }
 }

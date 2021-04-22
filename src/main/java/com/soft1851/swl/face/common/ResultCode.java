@@ -36,6 +36,7 @@ public enum ResultCode {
     USER_NO_AUTH(20019, "用户权限不足"),
     USER_TOKEN_EXPIRES(200010, "Token已过期"),
     USER_AUTH_ERROR(200011, "用户认证失败"),
+    USER_HAS_SIGNED(200012, "您已签过到"),
 
 
     /* 业务错误：30001-39999 */
@@ -75,6 +76,7 @@ public enum ResultCode {
     FACE_VERIFY_LOGIN_ERROR(601, "人脸登录失败！"),
     FACE_NOT_SAVE_ERROR(602, "人脸尚未入库！"),
     FACE_SEARCH_FAIL(603,"人脸搜索失败"),
+
 
     /**
      * 文件相关代码

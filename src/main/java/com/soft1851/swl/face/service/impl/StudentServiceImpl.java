@@ -2,15 +2,16 @@ package com.soft1851.swl.face.service.impl;
 
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.common.ResultCode;
-import com.soft1851.swl.face.dto.JwtTokenRespDto;
-import com.soft1851.swl.face.dto.LoginDto;
-import com.soft1851.swl.face.dto.LoginResDto;
-import com.soft1851.swl.face.dto.UserDto;
+import com.soft1851.swl.face.dto.*;
 import com.soft1851.swl.face.entity.Student;
+import com.soft1851.swl.face.entity.StudentSubject;
+import com.soft1851.swl.face.enums.AttendStatue;
 import com.soft1851.swl.face.enums.LogType;
 import com.soft1851.swl.face.exception.CustomException;
 import com.soft1851.swl.face.mapper.StudentMapper;
+import com.soft1851.swl.face.mapper.StudentSubjectMapper;
 import com.soft1851.swl.face.mo.Log;
+import com.soft1851.swl.face.service.FaceService;
 import com.soft1851.swl.face.service.LogService;
 import com.soft1851.swl.face.service.RedisService;
 import com.soft1851.swl.face.service.StudentService;
@@ -43,6 +44,8 @@ public class StudentServiceImpl implements StudentService {
     public final JwtTokenUtil jwtTokenUtil;
     public  final RedisService redisService;
     public  final LogService logService;
+    public final FaceService faceService;
+    public final StudentSubjectMapper studentSubjectMapper;
 
 
     @Override
@@ -173,5 +176,42 @@ public class StudentServiceImpl implements StudentService {
             log.error("该学生账号不存在");
             return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
         }
+    }
+
+    @Override
+    public ResponseResult sign(SignDto signDto) throws Exception {
+        SearchFaceDto searchFaceDto = SearchFaceDto.builder()
+                .DbName(signDto.getSearchFaceDto().getDbName())
+                .DbNames(signDto.getSearchFaceDto().getDbNames())
+                .imgUrl(signDto.getSearchFaceDto().getImgUrl())
+                .limit(signDto.getSearchFaceDto().getLimit())
+                .build();
+        //1.通过人脸url去库中搜索,返回用户id
+        Map<String, Object> map = this.faceService.searchFace(searchFaceDto);
+        log.info("对比结果为"+map.get("score"));
+        if(Double.valueOf((Double) map.get("score"))>0.7){
+            String userId = map.get("entityId").toString();
+            //2.根据用户id判断是否为该课学生
+            StudentSubject studentSubject = this.studentSubjectMapper.queryByStudentIdAndSubjectId(userId,signDto.getSubjectId());
+            if(studentSubject!=null){
+                //3.看是否已经签过到
+                if(studentSubject.getAttendFlag()==0){
+                    //已经签过到直接返回
+                    return ResponseResult.failure(ResultCode.USER_HAS_SIGNED);
+                }
+                //4.签到成功,更改状态
+                StudentSubject studentSubject1 = StudentSubject.builder()
+                        .studentId(userId)
+                        .subjectId(signDto.getSubjectId())
+                        .attendFlag(AttendStatue.HASATTENDED.type)
+                        .build();
+                this.studentSubjectMapper.updateAttendStatue(studentSubject1);
+                log.info(userId+"签到成功");
+                return ResponseResult.success(userId+"签到成功");
+            }else {
+                return ResponseResult.failure(ResultCode.FACE_SEARCH_FAIL);
+            }
+        }
+        return ResponseResult.failure(ResultCode.FACE_SEARCH_FAIL);
     }
 }

@@ -15,7 +15,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SearchFaceDto {
-
     private String DbName;
     private String DbNames;
     private String imgUrl;

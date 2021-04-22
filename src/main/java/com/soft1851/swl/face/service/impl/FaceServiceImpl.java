@@ -218,25 +218,20 @@ public class FaceServiceImpl implements FaceService {
     public ResponseResult addFaceData(AddFaceDto addFaceDto) throws Exception {
         if(!this.faceManageUtil.getFaceEntity(addFaceDto.getUserId())){
             this.faceManageUtil.addFaceEntity(addFaceDto.getUserId(),addFaceDto.getUserName());
-            log.info("创建样本{}成功",addFaceDto.getUserId());
+            log.info(addFaceDto.getUserId()+"创建样本成功");
             return ResponseResult.success(this.faceManageUtil.addFaceData(addFaceDto));
         }
         return ResponseResult.success(this.faceManageUtil.addFaceData(addFaceDto));
     }
 
     @Override
-    public ResponseResult searchFace(SearchFaceDto searchFaceDto) throws Exception {
+    public Map<String, Object> searchFace(SearchFaceDto searchFaceDto) throws Exception {
         List list = Arrays.asList(JsonUtil.jsonToPojo(new Gson().toJson(this.faceManageUtil.SearchFace(searchFaceDto).get("data")), Map.class));
         List matchList = Arrays.asList(JsonUtil.jsonToPojo(new Gson().toJson(list.get(0)), Map.class).get("matchList"));
         List ob = JsonUtil.jsonToList(new Gson().toJson(matchList.get(0)), Map.class);
         Map<String,Object> map = JsonUtil.jsonToPojo(new Gson().toJson(ob.get(0)), Map.class);
         List faceItems = Arrays.asList(map.get("faceItems"));
         List rt = JsonUtil.jsonToList(new Gson().toJson(faceItems.get(0)), Map.class);
-        Map<String, Object> map1 = JsonUtil.jsonToPojo(new Gson().toJson(rt.get(0)), Map.class);
-        System.out.println(map1.get("score"));
-        if(Double.valueOf((Double) map1.get("score"))>0.7){
-            return ResponseResult.success(map1.get("entityId"));
-        }
-        return ResponseResult.failure(ResultCode.FACE_SEARCH_FAIL);
+        return JsonUtil.jsonToPojo(new Gson().toJson(rt.get(0)), Map.class);
     }
 }

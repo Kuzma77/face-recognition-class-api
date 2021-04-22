@@ -3,6 +3,8 @@ package com.soft1851.swl.face.controller;
 import com.soft1851.swl.face.annocation.ControllerWebLog;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.LoginDto;
+import com.soft1851.swl.face.dto.SignDto;
+import com.soft1851.swl.face.entity.StudentSubject;
 import com.soft1851.swl.face.service.StudentService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -66,6 +68,14 @@ public class StudentController {
     @ApiOperation(value = "修改学生密码",notes = "修改学生密码")
     public ResponseResult updatePassword (@Valid @RequestParam @Size(min = 6,message = "密码不能小于6位") String password, @RequestParam String studentId){
         return this.studentService.updatePassword(password, studentId);
+    }
+
+
+    @PostMapping("/sign")
+    @ControllerWebLog
+    @ApiOperation(value = "签到",notes = "签到")
+    public  ResponseResult sign(@Valid @RequestBody SignDto signDto) throws Exception {
+        return this.studentService.sign(signDto);
     }
 
 }

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author wl_sun
- * @description TODO
+ * @description 人脸失败登录
  * @Data 2021/4/15
  */
 
@@ -16,7 +16,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class FaceLoginDto {
-
     private String id;
     private String img64;
 }

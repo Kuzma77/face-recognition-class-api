@@ -3,6 +3,7 @@ package com.soft1851.swl.face.service;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.LoginDto;
 import com.soft1851.swl.face.dto.LoginResDto;
+import com.soft1851.swl.face.dto.SignDto;
 import com.soft1851.swl.face.entity.Student;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
@@ -58,5 +59,12 @@ public interface StudentService {
      */
     ResponseResult updatePassword(String password,String studentId);
 
+    /**
+     * 签到
+     *
+     * @param signDto
+     * @return
+     */
+    ResponseResult sign(SignDto signDto) throws Exception;
 
 }

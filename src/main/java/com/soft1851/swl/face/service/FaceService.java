@@ -6,6 +6,8 @@ import com.soft1851.swl.face.dto.FaceLoginDto;
 import com.soft1851.swl.face.dto.OwnerFaceDto;
 import com.soft1851.swl.face.dto.SearchFaceDto;
 
+import java.util.Map;
+
 /**
  * @author wl_sun
  * @description TODO
@@ -43,5 +45,5 @@ public interface FaceService {
      * @return
      * @throws Exception
      */
-    ResponseResult searchFace(SearchFaceDto searchFaceDto) throws Exception;
+    Map<String, Object> searchFace(SearchFaceDto searchFaceDto) throws Exception;
 }
