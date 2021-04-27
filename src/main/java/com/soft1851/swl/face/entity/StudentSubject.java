@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 /**
  * @author wl_sun
@@ -32,4 +33,7 @@ public class StudentSubject {
 
     @Column(name = "attend_flag")
     private Integer attendFlag;
+
+    @Column(name = "attend_time")
+    private Date attendTime;
 }

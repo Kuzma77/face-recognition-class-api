@@ -13,6 +13,8 @@ import tk.mybatis.mapper.common.Mapper;
  */
 public interface SubjectMapper extends Mapper<Subject> {
 
+
+
     /**
      * 新增课程
      *
@@ -36,7 +38,7 @@ public interface SubjectMapper extends Mapper<Subject> {
      * @param signFlag
      * @param subjectId
      */
-    @Update("UPDATE subject SET sign_flag=#{signFlag} WHERE subject_id=#{subjectId}")
+    @Update("UPDATE subject SET sign_flag=#{signFlag}  WHERE subject_id=#{subjectId}")
     void updateSignStatue(Integer signFlag,String subjectId);
 
     /**

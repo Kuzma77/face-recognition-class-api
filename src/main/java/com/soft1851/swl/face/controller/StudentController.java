@@ -83,9 +83,17 @@ public class StudentController {
     @PostMapping("/updateAvatar")
     @ControllerWebLog
     @ApiOperation(value = "修改学生头像",notes = "修改学生头像")
-    public  ResponseResult updateAvatar(@Valid @RequestParam String studentId,@RequestParam String imgUrl) throws Exception {
+    public  ResponseResult updateAvatar(@Valid @RequestParam String studentId,@RequestParam String imgUrl) {
         this.studentMapper.updateAvatar(studentId,imgUrl);
         return ResponseResult.success();
+    }
+
+
+    @PostMapping("/querySubjects")
+    @ControllerWebLog
+    @ApiOperation(value = "通过学生id查询所选课程到勤详情",notes = "通过学生id查询所选课程到勤详情")
+    public ResponseResult querySubjectsByStudentId(String studentId) {
+        return this.studentService.querySubjectsByStudentId(studentId);
     }
 
 }

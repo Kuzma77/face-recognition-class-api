@@ -6,6 +6,8 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import tk.mybatis.mapper.common.Mapper;
 
+import java.util.List;
+
 /**
  * @author wl_sun
  * @description TODO
@@ -19,7 +21,7 @@ public interface StudentSubjectMapper extends Mapper<StudentSubject> {
      *
      * @param studentSubject
      */
-    @Update("UPDATE student_subject SET attend_flag=#{attendFlag} WHERE student_id=#{studentId} AND subject_id=#{subjectId}")
+    @Update("UPDATE student_subject SET attend_flag=#{attendFlag}, attend_time=#{attendTime} WHERE student_id=#{studentId} AND subject_id=#{subjectId}")
     void updateAttendStatue(StudentSubject studentSubject);
 
 
@@ -31,4 +33,8 @@ public interface StudentSubjectMapper extends Mapper<StudentSubject> {
      */
     @Select("SELECT * FROM student_subject WHERE student_id=#{studentId} AND subject_id=#{subjectId}")
     StudentSubject queryByStudentIdAndSubjectId(String studentId,String subjectId);
+
+
+    @Select("SELECT * FROM student_subject WHERE student_id=#{studentId}")
+    List<StudentSubject> querySubjectsByStudentId(String studentId);
 }

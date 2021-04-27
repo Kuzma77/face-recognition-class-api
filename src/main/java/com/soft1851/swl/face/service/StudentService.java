@@ -69,4 +69,12 @@ public interface StudentService {
      */
     ResponseResult sign(SignDto signDto) throws Exception;
 
+
+    /**
+     * 通过用户id查询所选课程及签到状态
+     * @param studentId
+     * @return
+     */
+    ResponseResult querySubjectsByStudentId(String studentId);
+
 }

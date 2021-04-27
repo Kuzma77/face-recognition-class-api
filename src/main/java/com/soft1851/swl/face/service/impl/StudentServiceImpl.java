@@ -5,11 +5,13 @@ import com.soft1851.swl.face.common.ResultCode;
 import com.soft1851.swl.face.dto.*;
 import com.soft1851.swl.face.entity.Student;
 import com.soft1851.swl.face.entity.StudentSubject;
+import com.soft1851.swl.face.entity.Subject;
 import com.soft1851.swl.face.enums.AttendStatue;
 import com.soft1851.swl.face.enums.LogType;
 import com.soft1851.swl.face.exception.CustomException;
 import com.soft1851.swl.face.mapper.StudentMapper;
 import com.soft1851.swl.face.mapper.StudentSubjectMapper;
+import com.soft1851.swl.face.mapper.SubjectMapper;
 import com.soft1851.swl.face.mo.Log;
 import com.soft1851.swl.face.service.FaceService;
 import com.soft1851.swl.face.service.LogService;
@@ -24,10 +26,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author wl_sun
@@ -41,6 +40,7 @@ import java.util.Map;
 public class StudentServiceImpl implements StudentService {
 
     public final StudentMapper studentMapper;
+    public final SubjectMapper subjectMapper;
     public final JwtTokenUtil jwtTokenUtil;
     public  final RedisService redisService;
     public  final LogService logService;
@@ -217,14 +217,39 @@ public class StudentServiceImpl implements StudentService {
                         .studentId(userId)
                         .subjectId(signDto.getSubjectId())
                         .attendFlag(AttendStatue.HASATTENDED.type)
+                        .attendTime(new Date())
                         .build();
                 this.studentSubjectMapper.updateAttendStatue(studentSubject1);
                 log.info(userId+"签到成功");
-                return ResponseResult.success(userId+"签到成功");
+                return ResponseResult.success(userId);
             }else {
                 return ResponseResult.failure(ResultCode.FACE_SEARCH_FAIL);
             }
         }
         return ResponseResult.failure(ResultCode.USER_FACE_LOGIN_ERROR);
+    }
+
+    @Override
+    public ResponseResult querySubjectsByStudentId(String studentId) {
+        List<StudentSubject> subjects = this.studentSubjectMapper.querySubjectsByStudentId(studentId);
+        Map<String,Object> map = new HashMap<>(8);
+        map.put("studentId",studentId);
+        List<Map<String,Object>> list = new ArrayList<>();
+        if(subjects!=null){
+            subjects.forEach(subject -> {
+                Map<String,Object> map1 = new HashMap<>(8);
+                map1.put("subject",this.subjectMapper.selectByPrimaryKey(subject.getSubjectId()));
+                map1.put("signStatue",subject.getAttendFlag());
+                if(subject.getAttendFlag()==0){
+                    map1.put("signTime",subject.getAttendTime());
+                }
+                list.add(map1);
+            });
+            map.put("subjects",list);
+            return ResponseResult.success(map);
+        }else {
+            map.put("subjects",list);
+            return ResponseResult.success(map);
+        }
     }
 }

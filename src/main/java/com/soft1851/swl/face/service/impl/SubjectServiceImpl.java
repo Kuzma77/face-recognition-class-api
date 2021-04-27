@@ -92,14 +92,17 @@ public class SubjectServiceImpl implements SubjectService {
             case 0:
                 newSignFlag = SignFlag.SIGNING.type;
                 message = "开始签到";
+                this.subjectMapper.addSignTime(60000,subjectId);
                 break;
             case 1:
                 newSignFlag = SignFlag.HASSIGN.type;
                 message = "结束签到";
+                this.subjectMapper.addSignTime(0,subjectId);
                 break;
             case 2:
                 newSignFlag = SignFlag.SIGNING.type;
                 message = "重新开始签到";
+                this.subjectMapper.addSignTime(60000,subjectId);
                 break;
             default:
                 return ResponseResult.failure(ResultCode.PARAM_IS_INVALID);
