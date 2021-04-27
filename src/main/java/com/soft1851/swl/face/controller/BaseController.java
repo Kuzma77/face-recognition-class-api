@@ -44,8 +44,8 @@ public class BaseController {
     @PostMapping("/uploadFile")
     @ControllerWebLog
     @ApiOperation(value = "上传文件到OSS",notes = "上传文件到OSS")
-    public ResponseResult uploadSingle(@RequestParam("file") MultipartFile sourceFile) {
-        String url = AliOssUtil.upload(sourceFile);
+    public ResponseResult uploadSingle(@RequestParam MultipartFile file) {
+        String url = AliOssUtil.upload(file);
         return ResponseResult.success(url);
     }
 }

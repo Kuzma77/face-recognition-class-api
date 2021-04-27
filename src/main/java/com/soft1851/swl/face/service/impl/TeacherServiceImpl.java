@@ -46,7 +46,18 @@ public class TeacherServiceImpl implements TeacherService {
     @Override
     public ResponseResult getTeacherById(String teacherId) {
         Teacher teacher = this.teacherMapper.getTeacherById(teacherId);
-        return  teacher == null ? ResponseResult.failure(ResultCode.USER_NOT_FOUND):ResponseResult.success(teacher);
+        if(teacher!=null){
+            UserDto userDto = UserDto.builder()
+                    .id(teacherId)
+                    .name(teacher.getTeacherName())
+                    .avatar(teacher.getAvatar())
+                    .gender(teacher.getGender())
+                    .phoneNumber(teacher.getPhoneNumber())
+                    .build();
+            return ResponseResult.success(userDto);
+        }else {
+            return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
+        }
     }
 
     @Override

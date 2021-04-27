@@ -3,6 +3,7 @@ package com.soft1851.swl.face.controller;
 import com.soft1851.swl.face.annocation.ControllerWebLog;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.LoginDto;
+import com.soft1851.swl.face.mapper.TeacherMapper;
 import com.soft1851.swl.face.service.TeacherService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -30,13 +31,14 @@ import javax.validation.constraints.Size;
 public class TeacherController {
 
     public final TeacherService teacherService;
+    public final TeacherMapper teacherMapper;
 
 
     @GetMapping("/one")
     @ControllerWebLog
     @ApiOperation(value = "通过id查询教师信息",notes = "通过id所有教师信息")
     public ResponseResult getTeacherById (@RequestParam String teacherId){
-        return ResponseResult.success(this.teacherService.getTeacherById(teacherId));
+        return this.teacherService.getTeacherById(teacherId);
     }
 
     @PostMapping("/login")
@@ -58,6 +60,14 @@ public class TeacherController {
     @ApiOperation(value = "修改教师密码",notes = "修改教师密码")
     public ResponseResult updatePassword (@Valid @RequestParam @Size(min = 6,message = "密码不能小于6位") String password, @RequestParam String teacherId){
         return this.teacherService.updatePassword(password, teacherId);
+    }
+
+    @PostMapping("/updateAvatar")
+    @ControllerWebLog
+    @ApiOperation(value = "修改教师头像",notes = "修改学生头像")
+    public  ResponseResult updateAvatar(@Valid @RequestParam String teacherId,@RequestParam String imgUrl) throws Exception {
+        this.teacherMapper.updateAvatar(teacherId,imgUrl);
+        return ResponseResult.success();
     }
 
 }

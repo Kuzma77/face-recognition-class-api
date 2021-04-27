@@ -42,4 +42,13 @@ public interface StudentMapper extends Mapper<Student> {
      */
     @Update("UPDATE student SET password=#{password} WHERE student_id=#{studentId}")
     void updatePassword(String password, String studentId);
+
+
+    /**
+     * 修改学生头像
+     * @param studentId
+     * @param imgUrl
+     */
+    @Update("UPDATE student SET avatar=#{imgUrl} WHERE student_id=#{studentId}")
+    void updateAvatar(String studentId,String imgUrl);
 }

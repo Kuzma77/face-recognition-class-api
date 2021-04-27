@@ -5,6 +5,7 @@ import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.dto.LoginDto;
 import com.soft1851.swl.face.dto.SignDto;
 import com.soft1851.swl.face.entity.StudentSubject;
+import com.soft1851.swl.face.mapper.StudentMapper;
 import com.soft1851.swl.face.service.StudentService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -33,6 +34,7 @@ public class StudentController {
 
 
     public final StudentService studentService;
+    public final StudentMapper studentMapper;
 
     @GetMapping("/all")
     @ControllerWebLog
@@ -46,7 +48,7 @@ public class StudentController {
     @ControllerWebLog
     @ApiOperation(value = "通过id查询学生信息",notes = "通过id所有学生信息")
     public ResponseResult getStudentById (@RequestParam String studentId){
-        return ResponseResult.success(this.studentService.getStudentById(studentId));
+        return this.studentService.getStudentById(studentId);
     }
 
     @PostMapping("/login")
@@ -76,6 +78,14 @@ public class StudentController {
     @ApiOperation(value = "签到",notes = "签到")
     public  ResponseResult sign(@Valid @RequestBody SignDto signDto) throws Exception {
         return this.studentService.sign(signDto);
+    }
+
+    @PostMapping("/updateAvatar")
+    @ControllerWebLog
+    @ApiOperation(value = "修改学生头像",notes = "修改学生头像")
+    public  ResponseResult updateAvatar(@Valid @RequestParam String studentId,@RequestParam String imgUrl) throws Exception {
+        this.studentMapper.updateAvatar(studentId,imgUrl);
+        return ResponseResult.success();
     }
 
 }

@@ -42,4 +42,12 @@ public interface TeacherMapper extends Mapper<Teacher> {
      */
     @Update("UPDATE teacher SET password=#{password} WHERE teacher_id=#{teacherId}")
     void updatePassword(String password, String teacherId);
+
+    /**
+     * 修改教师头像
+     * @param teacherId
+     * @param imgUrl
+     */
+    @Update("UPDATE teacher SET avatar=#{imgUrl} WHERE teacher_id=#{teacherId}")
+    void updateAvatar(String teacherId,String imgUrl);
 }

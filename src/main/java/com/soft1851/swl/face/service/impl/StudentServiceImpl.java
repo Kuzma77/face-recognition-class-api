@@ -56,7 +56,18 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public ResponseResult getStudentById(String studentId) {
         Student student = this.studentMapper.getStudentById(studentId);
-        return  student == null ? ResponseResult.failure(ResultCode.USER_NOT_FOUND):ResponseResult.success(student);
+        if(student!=null){
+            UserDto userDto = UserDto.builder()
+                    .id(studentId)
+                    .name(student.getStudentName())
+                    .avatar(student.getAvatar())
+                    .gender(student.getGender())
+                    .phoneNumber(student.getPhoneNumber())
+                    .build();
+            return ResponseResult.success(userDto);
+        }else {
+            return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
+        }
     }
 
     @Override
@@ -178,6 +189,8 @@ public class StudentServiceImpl implements StudentService {
         }
     }
 
+
+
     @Override
     public ResponseResult sign(SignDto signDto) throws Exception {
         SearchFaceDto searchFaceDto = SearchFaceDto.builder()
@@ -212,6 +225,6 @@ public class StudentServiceImpl implements StudentService {
                 return ResponseResult.failure(ResultCode.FACE_SEARCH_FAIL);
             }
         }
-        return ResponseResult.failure(ResultCode.FACE_SEARCH_FAIL);
+        return ResponseResult.failure(ResultCode.USER_FACE_LOGIN_ERROR);
     }
 }
