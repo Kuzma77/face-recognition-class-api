@@ -176,7 +176,7 @@ public class SubjectServiceImpl implements SubjectService {
             subjects.add(this.subjectMapper.selectByPrimaryKey(studentSubject.getSubjectId()));
         });
         subjects.forEach(subject -> {
-            if(subject.getBeginTime().after(betTimeDto.getBeginTime())&&subject.getBeginTime().before(betTimeDto.getEndTime())||subject.getEndTime().after(betTimeDto.getBeginTime())&&subject.getEndTime().before(betTimeDto.getEndTime())){
+            if(((subject.getBeginTime().after(betTimeDto.getBeginTime())&&subject.getBeginTime().before(betTimeDto.getEndTime()))||(subject.getEndTime().after(betTimeDto.getBeginTime())&&subject.getEndTime().before(betTimeDto.getEndTime())))&&(subject.getDeleteFlag()==0)){
                 aSubjects.add(subject);
             }
         });

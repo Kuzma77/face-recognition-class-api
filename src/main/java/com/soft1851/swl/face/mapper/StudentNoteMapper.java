@@ -5,6 +5,8 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import tk.mybatis.mapper.common.Mapper;
 
+import java.util.List;
+
 /**
  * @author wl_sun
  * @description TODO
@@ -17,4 +19,7 @@ public interface StudentNoteMapper extends Mapper<StudentNote> {
 
     @Select("SELECT student_id FROM student_note WHERE note_id=#{noteId}")
     String queryStudentIdByNoteId(String noteId);
+
+    @Select("SELECT * FROM student_note WHERE student_id=#{studentId}")
+    List<StudentNote> queryByStudentId(String studentId);
 }

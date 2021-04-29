@@ -20,7 +20,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author wl_sun
@@ -127,5 +129,20 @@ public class NoteServiceImpl implements NoteService {
             log.error("该假条账号不存在");
             return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
         }
+    }
+
+    @Override
+    public ResponseResult queryAllNotesByStudentId(String studentId) {
+        List<StudentNote> studentNotes = this.studentNoteMapper.queryByStudentId(studentId);
+        List<Note> notes = new ArrayList<>();
+        if(studentNotes!=null){
+            studentNotes.forEach(studentNote -> {
+                if(this.noteMapper.selectByPrimaryKey(studentNote.getNoteId()).getDeleteFlag()==0) {
+                    notes.add(this.noteMapper.selectByPrimaryKey(studentNote.getNoteId()));
+                }
+            });
+            return ResponseResult.success(notes);
+        }
+        return ResponseResult.success();
     }
 }

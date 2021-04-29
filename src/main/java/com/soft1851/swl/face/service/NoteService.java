@@ -44,4 +44,12 @@ public interface NoteService {
      * @return
      */
     ResponseResult updateStatus(String noteId);
+
+    /**
+     *通过用户id查询所有假条
+     *
+     * @param studentId
+     * @return
+     */
+    ResponseResult queryAllNotesByStudentId(String studentId);
 }

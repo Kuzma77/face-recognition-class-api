@@ -50,5 +50,4 @@ public interface NoteMapper extends Mapper<Note> {
     void updateStatus(Integer deleteFlag, String noteId);
 
 
-
 }

@@ -60,4 +60,11 @@ public class NoteController {
     public ResponseResult updateStatus(@RequestParam String noteId){
         return this.noteService.updateStatus(noteId);
     }
+
+    @PostMapping("/queryAllNotesByStudentId")
+    @ControllerWebLog
+    @ApiOperation(value = "通过用户id查询所有假条",notes = "通过用户id查询所有假条")
+    public ResponseResult queryAllNotesByStudentId(@RequestParam String studentId){
+        return this.noteService.queryAllNotesByStudentId(studentId);
+    }
 }
