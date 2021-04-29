@@ -2,6 +2,7 @@ package com.soft1851.swl.face.controller;
 
 import com.soft1851.swl.face.annocation.ControllerWebLog;
 import com.soft1851.swl.face.common.ResponseResult;
+import com.soft1851.swl.face.dto.BetTimeDto;
 import com.soft1851.swl.face.dto.SubjectDto;
 import com.soft1851.swl.face.service.SubjectService;
 import io.swagger.annotations.Api;
@@ -13,6 +14,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.Date;
 
 /**
  * @author wl_sun
@@ -64,6 +66,13 @@ public class SubjectController {
     @ApiOperation(value = "修改课程删除状态",notes = "修改课程删除状态")
     public ResponseResult updateStatus(@RequestParam String subjectId){
         return this.subjectService.updateStatus(subjectId);
+    }
+
+    @PostMapping("/querySubjectsBetweenTime")
+    @ControllerWebLog
+    @ApiOperation(value = "通过时间段和学生id获取到这段时间内的课程",notes = "通过时间段和学生id获取到这段时间内的课程")
+    public ResponseResult querySubjectsBetweenTime(@RequestBody BetTimeDto betTimeDto){
+        return this.subjectService.querySubjectsBetweenTime(betTimeDto);
     }
 
 }

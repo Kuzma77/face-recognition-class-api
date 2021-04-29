@@ -3,8 +3,11 @@ package com.soft1851.swl.face.mapper;
 import com.soft1851.swl.face.dto.SubjectDto;
 import com.soft1851.swl.face.entity.Subject;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import tk.mybatis.mapper.common.Mapper;
+
+import java.util.List;
 
 /**
  * @author wl_sun
@@ -58,4 +61,5 @@ public interface SubjectMapper extends Mapper<Subject> {
      */
     @Update("UPDATE subject SET delete_flag=#{deleteFlag} WHERE subject_id=#{subjectId}")
     void updateStatus(Integer deleteFlag, String subjectId);
+
 }

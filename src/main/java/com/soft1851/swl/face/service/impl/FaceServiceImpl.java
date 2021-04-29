@@ -143,7 +143,7 @@ public class FaceServiceImpl implements FaceService {
                         .type(LogType.LOGIN.value)
                         .operatorId(student.getStudentId())
                         .objectId(student.getStudentId())
-                        .content("人脸识别录成功")
+                        .content("人脸识别登录成功")
                         .createTime(new Date())
                         .build();
                 this.logService.saveOneLog(log);

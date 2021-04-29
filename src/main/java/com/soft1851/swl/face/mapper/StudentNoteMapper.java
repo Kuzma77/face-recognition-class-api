@@ -12,7 +12,7 @@ import tk.mybatis.mapper.common.Mapper;
  */
 public interface StudentNoteMapper extends Mapper<StudentNote> {
 
-    @Insert("INSERT INTO student_note VALUES (#{studentId},#{noteIdx})")
+    @Insert("INSERT INTO student_note VALUES (#{studentId},#{noteId})")
     void insertOne(StudentNote studentNote);
 
     @Select("SELECT student_id FROM student_note WHERE note_id=#{noteId}")

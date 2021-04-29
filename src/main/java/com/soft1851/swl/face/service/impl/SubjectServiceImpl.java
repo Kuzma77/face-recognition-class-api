@@ -3,11 +3,14 @@ package com.soft1851.swl.face.service.impl;
 import cn.hutool.core.date.DateTime;
 import com.soft1851.swl.face.common.ResponseResult;
 import com.soft1851.swl.face.common.ResultCode;
+import com.soft1851.swl.face.dto.BetTimeDto;
 import com.soft1851.swl.face.dto.SubjectDto;
+import com.soft1851.swl.face.entity.StudentSubject;
 import com.soft1851.swl.face.entity.Subject;
 import com.soft1851.swl.face.entity.Teacher;
 import com.soft1851.swl.face.enums.LogType;
 import com.soft1851.swl.face.enums.SignFlag;
+import com.soft1851.swl.face.mapper.StudentSubjectMapper;
 import com.soft1851.swl.face.mapper.SubjectMapper;
 import com.soft1851.swl.face.mo.Log;
 import com.soft1851.swl.face.service.LogService;
@@ -19,7 +22,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author wl_sun
@@ -34,6 +39,7 @@ public class SubjectServiceImpl implements SubjectService {
 
     public final SubjectMapper subjectMapper;
     public final LogService logService;
+    public final StudentSubjectMapper studentSubjectMapper;
 
     @Override
     public ResponseResult addSubject(SubjectDto subjectDto) {
@@ -159,5 +165,21 @@ public class SubjectServiceImpl implements SubjectService {
             log.error("该课程账号不存在");
             return ResponseResult.failure(ResultCode.USER_NOT_FOUND);
         }
+    }
+
+    @Override
+    public ResponseResult querySubjectsBetweenTime(BetTimeDto betTimeDto) {
+        List<StudentSubject> studentSubjects = this.studentSubjectMapper.querySubjectsByStudentId(betTimeDto.getStudentId());
+        List<Subject> subjects = new ArrayList<>();
+        List<Subject> aSubjects = new ArrayList<>();
+        studentSubjects.forEach(studentSubject -> {
+            subjects.add(this.subjectMapper.selectByPrimaryKey(studentSubject.getSubjectId()));
+        });
+        subjects.forEach(subject -> {
+            if(subject.getBeginTime().after(betTimeDto.getBeginTime())&&subject.getBeginTime().before(betTimeDto.getEndTime())||subject.getEndTime().after(betTimeDto.getBeginTime())&&subject.getEndTime().before(betTimeDto.getEndTime())){
+                aSubjects.add(subject);
+            }
+        });
+        return ResponseResult.success(aSubjects);
     }
 }

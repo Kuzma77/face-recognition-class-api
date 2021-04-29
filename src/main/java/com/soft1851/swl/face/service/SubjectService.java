@@ -1,10 +1,13 @@
 package com.soft1851.swl.face.service;
 
 import com.soft1851.swl.face.common.ResponseResult;
+import com.soft1851.swl.face.dto.BetTimeDto;
 import com.soft1851.swl.face.dto.SubjectDto;
 import com.soft1851.swl.face.entity.Subject;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Update;
+
+import java.util.Date;
 
 /**
  * @author wl_sun
@@ -53,4 +56,13 @@ public interface SubjectService {
      * @return
      */
     ResponseResult updateStatus(String subjectId);
+
+
+    /**
+     * 通过时间段和学生id获取到这段时间内的课程
+     *
+     * @param betTimeDto
+     * @return
+     */
+    ResponseResult querySubjectsBetweenTime(BetTimeDto betTimeDto);
 }
