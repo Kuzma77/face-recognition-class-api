@@ -44,7 +44,7 @@ spring:
       shutdown-timeout: 100ms
   data:
     mongodb:
-      uri: mongodb://root:root@182.61.58.17:27017
+      uri: mongodb://root:root@121.196.104.253:27017
       database: face
 #Mybatis配置
 mybatis:

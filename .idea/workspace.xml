@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b32f7e-46d1-4c23-8e42-9a9d1d61da94" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/face.2021-05-05.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/face.2021-05-07.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/face.2021-05-08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/dto/SeriesDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/entity/TeacherSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/TeacherSubjectMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face.2021-04-30.log" beforeDir="false" afterPath="$PROJECT_DIR$/face.2021-04-30.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/NoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/NoteMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/NoteMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/StudentNoteMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/mapper/StudentNoteMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/NoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/NoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/NoteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/controller/SubjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/SubjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/SubjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/StudentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/SubjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soft1851/swl/face/service/impl/SubjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/NoteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/NoteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/mapper/StudentNoteMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/mapper/StudentNoteMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/NoteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/NoteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/NoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/NoteServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/SubjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/controller/SubjectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/SubjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/SubjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/StudentServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/SubjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/soft1851/swl/face/service/impl/SubjectServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,9 +75,9 @@
       <list>
         <option value="AnnotationType" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -326,7 +335,10 @@
       <workItem from="1619338349777" duration="6305000" />
       <workItem from="1619422574483" duration="8700000" />
       <workItem from="1619513552738" duration="17960000" />
-      <workItem from="1619686856925" duration="14678000" />
+      <workItem from="1619686856925" duration="16686000" />
+      <workItem from="1620197052588" duration="5165000" />
+      <workItem from="1620286840999" duration="4958000" />
+      <workItem from="1620370721961" duration="7406000" />
     </task>
     <servers />
   </component>
@@ -352,10 +364,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="478" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1618296231628" />
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1619718567706">
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1620371427883">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1619718567706" />
+    <state x="574" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1620371427883" />
     <state x="548" y="291" width="449" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618740208778">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -368,38 +380,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1618131209469" />
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom" timestamp="1619721325250">
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1620409051923">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1619721325250" />
-    <state width="1493" height="202" key="GridCell.Tab.0.center" timestamp="1619721325250">
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1620409051923" />
+    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1620409051923">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1619721325250" />
-    <state width="1493" height="202" key="GridCell.Tab.0.left" timestamp="1619721325250">
+    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1620409051923" />
+    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1620409051922">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1619721325250" />
-    <state width="1493" height="202" key="GridCell.Tab.0.right" timestamp="1619721325250">
+    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1620409051922" />
+    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1620409051923">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1619721325250" />
-    <state width="1493" height="202" key="GridCell.Tab.1.bottom" timestamp="1619721325250">
+    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1620409051923" />
+    <state width="1493" height="178" key="GridCell.Tab.1.bottom" timestamp="1620409051923">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1619721325250" />
-    <state width="1493" height="202" key="GridCell.Tab.1.center" timestamp="1619721325250">
+    <state width="1493" height="178" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1620409051923" />
+    <state width="1493" height="178" key="GridCell.Tab.1.center" timestamp="1620409051923">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1619721325250" />
-    <state width="1493" height="202" key="GridCell.Tab.1.left" timestamp="1619721325250">
+    <state width="1493" height="178" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1620409051923" />
+    <state width="1493" height="178" key="GridCell.Tab.1.left" timestamp="1620409051923">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1619721325250" />
-    <state width="1493" height="202" key="GridCell.Tab.1.right" timestamp="1619721325250">
+    <state width="1493" height="178" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1620409051923" />
+    <state width="1493" height="178" key="GridCell.Tab.1.right" timestamp="1620409051923">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="202" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1619721325250" />
+    <state width="1493" height="178" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1620409051923" />
     <state x="270" y="15" key="SettingsEditor" timestamp="1618477764060">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -416,9 +428,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1619360335118" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1618999501842">
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1620372079291">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1618999501842" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1620372079291" />
   </component>
 </project>

@@ -77,4 +77,11 @@ public interface StudentService {
      */
     ResponseResult querySubjectsByStudentId(String studentId);
 
+    /**
+     * 通过用户id查询总出勤率
+     * @param studentId
+     * @return
+     */
+    ResponseResult queryAttendanceByStudentId(String studentId);
+
 }

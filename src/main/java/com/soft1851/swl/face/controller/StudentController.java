@@ -92,8 +92,15 @@ public class StudentController {
     @PostMapping("/querySubjects")
     @ControllerWebLog
     @ApiOperation(value = "通过学生id查询所选课程到勤详情",notes = "通过学生id查询所选课程到勤详情")
-    public ResponseResult querySubjectsByStudentId(String studentId) {
+    public ResponseResult querySubjectsByStudentId(@Valid @RequestParam String studentId) {
         return this.studentService.querySubjectsByStudentId(studentId);
+    }
+
+    @PostMapping("/queryAttendance")
+    @ControllerWebLog
+    @ApiOperation(value = "通过学生id查询出勤率",notes = "通过学生id查询出勤率")
+    public ResponseResult queryAttendanceByStudentId(@Valid @RequestParam String studentId) {
+        return this.studentService.queryAttendanceByStudentId(studentId);
     }
 
 }

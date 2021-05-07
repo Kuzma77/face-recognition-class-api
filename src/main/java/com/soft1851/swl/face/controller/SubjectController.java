@@ -35,30 +35,30 @@ public class SubjectController {
     @PostMapping("/add")
     @ControllerWebLog
     @ApiOperation(value = "新增课程",notes = "新增课程")
-    public ResponseResult addSubject(@Valid @RequestBody SubjectDto subjectDto){
-        return this.subjectService.addSubject(subjectDto);
+    public ResponseResult addSubject(@Valid @RequestBody SubjectDto subjectDto, @RequestParam String teacherId){
+        return this.subjectService.addSubject(subjectDto,teacherId);
     }
 
     @PostMapping("/update")
     @ControllerWebLog
     @ApiOperation(value = "修改课程",notes = "修改课程")
-    public ResponseResult updateSubject(@Valid @RequestBody SubjectDto subjectDto, @RequestParam String subjectId){
-        return this.subjectService.updateSubject(subjectDto,subjectId);
+    public ResponseResult updateSubject(@Valid @RequestBody SubjectDto subjectDto, @RequestParam String subjectId,@RequestParam String teacherId){
+        return this.subjectService.updateSubject(subjectDto,subjectId,teacherId);
     }
 
 
     @PostMapping("/updateSignFlag")
     @ControllerWebLog
     @ApiOperation(value = "开始/结束签到",notes = "开始/结束签到")
-    public ResponseResult updateSignStatue(@RequestParam String subjectId){
-        return this.subjectService.updateSignStatue(subjectId);
+    public ResponseResult updateSignStatue(@RequestParam String subjectId,@RequestParam String teacherId){
+        return this.subjectService.updateSignStatue(subjectId,teacherId);
     }
 
     @PostMapping("/addSignTime")
     @ControllerWebLog
     @ApiOperation(value = "延时签到",notes = "延时签到")
-    public ResponseResult addSignTime(@Valid @RequestParam long addTime,@RequestParam String subjectId){
-        return this.subjectService.addSignTime(addTime,subjectId);
+    public ResponseResult addSignTime(@Valid @RequestParam long addTime,@RequestParam String subjectId,@RequestParam String teacherId){
+        return this.subjectService.addSignTime(addTime,subjectId,teacherId);
     }
 
     @PostMapping("/updateStatus")

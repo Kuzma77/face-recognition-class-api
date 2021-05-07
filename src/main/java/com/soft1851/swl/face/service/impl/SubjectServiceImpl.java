@@ -8,10 +8,12 @@ import com.soft1851.swl.face.dto.SubjectDto;
 import com.soft1851.swl.face.entity.StudentSubject;
 import com.soft1851.swl.face.entity.Subject;
 import com.soft1851.swl.face.entity.Teacher;
+import com.soft1851.swl.face.entity.TeacherSubject;
 import com.soft1851.swl.face.enums.LogType;
 import com.soft1851.swl.face.enums.SignFlag;
 import com.soft1851.swl.face.mapper.StudentSubjectMapper;
 import com.soft1851.swl.face.mapper.SubjectMapper;
+import com.soft1851.swl.face.mapper.TeacherSubjectMapper;
 import com.soft1851.swl.face.mo.Log;
 import com.soft1851.swl.face.service.LogService;
 import com.soft1851.swl.face.service.SubjectService;
@@ -40,9 +42,10 @@ public class SubjectServiceImpl implements SubjectService {
     public final SubjectMapper subjectMapper;
     public final LogService logService;
     public final StudentSubjectMapper studentSubjectMapper;
+    public final TeacherSubjectMapper teacherSubjectMapper;
 
     @Override
-    public ResponseResult addSubject(SubjectDto subjectDto) {
+    public ResponseResult addSubject(SubjectDto subjectDto,String teacherId) {
         String id = RandomNumUtil.getVerifyCode(8);
         Subject subject = Subject.builder()
                 .subjectId(id)
@@ -56,10 +59,15 @@ public class SubjectServiceImpl implements SubjectService {
                 .updateTime(DateTime.now())
                 .build();
         this.subjectMapper.addSubject(subject);
+        TeacherSubject teacherSubject = TeacherSubject.builder()
+                .subjectId(id)
+                .teacherId(teacherId)
+                .build();
+        this.teacherSubjectMapper.insert(teacherSubject);
         Log log = Log.builder()
                 .id(RandomNumUtil.getVerifyCode(8))
                 .type(LogType.ADD.value)
-                .operatorId("001")
+                .operatorId(teacherId)
                 .objectId(id)
                 .content("新增课程")
                 .createTime(new Date())
@@ -69,7 +77,7 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     @Override
-    public ResponseResult updateSubject(SubjectDto subjectDto, String subjectId) {
+    public ResponseResult updateSubject(SubjectDto subjectDto, String subjectId,String teacherId) {
         Subject subject = Subject.builder()
                 .subjectName(subjectDto.getSubjectName())
                 .beginTime(subjectDto.getBeginTime())
@@ -80,9 +88,9 @@ public class SubjectServiceImpl implements SubjectService {
         Log log = Log.builder()
                 .id(RandomNumUtil.getVerifyCode(8))
                 .type(LogType.UPDATE.value)
-                .operatorId("001")
+                .operatorId(teacherId)
                 .objectId(subjectId)
-                .content("修改课程审核状态")
+                .content("编辑课程")
                 .createTime(new Date())
                 .build();
         this.logService.saveOneLog(log);
@@ -90,7 +98,7 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     @Override
-    public ResponseResult updateSignStatue(String subjectId) {
+    public ResponseResult updateSignStatue(String subjectId,String teacherId) {
         Integer sFlag = this.subjectMapper.selectByPrimaryKey(subjectId).getSignFlag();
         int newSignFlag = 0;
         String message = "";
@@ -117,7 +125,7 @@ public class SubjectServiceImpl implements SubjectService {
         Log log = Log.builder()
                 .id(RandomNumUtil.getVerifyCode(8))
                 .type(LogType.UPDATE.value)
-                .operatorId("001")
+                .operatorId(teacherId)
                 .objectId(subjectId)
                 .content("修改签到状态")
                 .createTime(new Date())
@@ -127,14 +135,14 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     @Override
-    public ResponseResult addSignTime(long addTime, String subjectId) {
+    public ResponseResult addSignTime(long addTime, String subjectId,String teacherId) {
         long sTime = this.subjectMapper.selectByPrimaryKey(subjectId).getSignTime();
         long newSignTime = sTime + addTime;
         this.subjectMapper.addSignTime(newSignTime, subjectId);
         Log log = Log.builder()
                 .id(RandomNumUtil.getVerifyCode(8))
                 .type(LogType.UPDATE.value)
-                .operatorId("001")
+                .operatorId(teacherId)
                 .objectId(subjectId)
                 .content("修改签到时间")
                 .createTime(new Date())
@@ -156,7 +164,7 @@ public class SubjectServiceImpl implements SubjectService {
                     .type(LogType.UPDATE.value)
                     .operatorId("001")
                     .objectId(subjectId)
-                    .content("课程审核状态修改")
+                    .content("课程删除状态修改")
                     .createTime(new Date())
                     .build();
             this.logService.saveOneLog(log);
@@ -181,5 +189,10 @@ public class SubjectServiceImpl implements SubjectService {
             }
         });
         return ResponseResult.success(aSubjects);
+    }
+
+    @Override
+    public ResponseResult querySubjectsByTeacherId(String teacherId) {
+        return null;
     }
 }

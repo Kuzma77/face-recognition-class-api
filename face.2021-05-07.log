@@ -1,0 +1,1055 @@
+2021-05-07 00:03:19.016 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:03:19.052 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:03:19.052 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+2021-05-07 00:03:19.052 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:03:19.052 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:03:19.053 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:03:19.053 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:03:19.128 [http-nio-8888-exec-7] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxNjk5OSwiZXhwIjoxNjIxNTI2NTk5fQ.ZwiVyOG1I9Il2q79UnlBOXjkc8A_qWwwHvvVLUKMosU,有效期到:Fri May 21 00:03:19 GMT+08:00 2021
+2021-05-07 00:03:19.156 [http-nio-8888-exec-7] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:33}] to 121.196.104.253:27017 because there was a socket exception raised on another connection from this pool.
+2021-05-07 00:03:19.571 [http-nio-8888-exec-7] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:42}] to 121.196.104.253:27017
+2021-05-07 00:03:19.626 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/ccccaa23-4f4e-44c4-8e40-a54bbe414440.jpeg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxNjk5OSwiZXhwIjoxNjIxNTI2NTk5fQ.ZwiVyOG1I9Il2q79UnlBOXjkc8A_qWwwHvvVLUKMosU, expirationTime=1621526599129), role=student))
+2021-05-07 00:03:19.626 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：610
+2021-05-07 00:15:02.137 [cluster-ClusterId{value='6093a9b7a482c116461c4ea5', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:46}] to 121.196.104.253:27017
+2021-05-07 00:32:54.548 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:32:54.548 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:32:54.548 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+2021-05-07 00:32:54.548 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:32:54.548 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:32:54.549 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:32:54.549 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:32:54.571 [http-nio-8888-exec-9] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxODc3NCwiZXhwIjoxNjIxNTI4Mzc0fQ.3UYujI8g46tkgAdd4eJ8OrgrTKkRAOMjeRQlm3cp-SI,有效期到:Fri May 21 00:32:54 GMT+08:00 2021
+2021-05-07 00:32:54.574 [http-nio-8888-exec-9] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:18, serverValue:42}] to 121.196.104.253:27017 because there was a socket exception raised on another connection from this pool.
+2021-05-07 00:32:54.928 [http-nio-8888-exec-9] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:47}] to 121.196.104.253:27017
+2021-05-07 00:32:55.000 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/ccccaa23-4f4e-44c4-8e40-a54bbe414440.jpeg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxODc3NCwiZXhwIjoxNjIxNTI4Mzc0fQ.3UYujI8g46tkgAdd4eJ8OrgrTKkRAOMjeRQlm3cp-SI, expirationTime=1621528374572), role=student))
+2021-05-07 00:32:55.001 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：454
+2021-05-07 00:33:16.224 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/base/uploadFile
+2021-05-07 00:33:16.224 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/base/uploadFile
+2021-05-07 00:33:16.224 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+2021-05-07 00:33:16.224 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:33:16.224 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.BaseController.uploadSingle
+2021-05-07 00:33:16.224 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@12e3c5c]
+2021-05-07 00:33:16.224 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:33:22.512 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/70743309-c28f-4015-8a9d-114c112f56d3.jpeg)
+2021-05-07 00:33:22.512 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：6288
+2021-05-07 00:33:22.556 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/updateAvatar
+2021-05-07 00:33:22.556 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/updateAvatar
+2021-05-07 00:33:22.556 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+2021-05-07 00:33:22.556 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:33:22.557 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.updateAvatar
+2021-05-07 00:33:22.557 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116, https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/70743309-c28f-4015-8a9d-114c112f56d3.jpeg]
+2021-05-07 00:33:22.557 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:33:22.854 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=null)
+2021-05-07 00:33:22.854 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：298
+2021-05-07 00:34:08.567 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:34:08.567 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:34:08.567 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+2021-05-07 00:34:08.567 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:34:08.568 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:34:08.568 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:34:08.568 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:34:08.607 [http-nio-8888-exec-6] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxODg0OCwiZXhwIjoxNjIxNTI4NDQ4fQ.rxB6LarUXeDxCe1uDY2qZkpv7l2LEyb2sweOiRnFOqE,有效期到:Fri May 21 00:34:08 GMT+08:00 2021
+2021-05-07 00:34:08.658 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/70743309-c28f-4015-8a9d-114c112f56d3.jpeg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxODg0OCwiZXhwIjoxNjIxNTI4NDQ4fQ.rxB6LarUXeDxCe1uDY2qZkpv7l2LEyb2sweOiRnFOqE, expirationTime=1621528448608), role=student))
+2021-05-07 00:34:08.658 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：91
+2021-05-07 00:34:17.022 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/base/uploadFile
+2021-05-07 00:34:17.022 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/base/uploadFile
+2021-05-07 00:34:17.022 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+2021-05-07 00:34:17.022 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:34:17.023 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.BaseController.uploadSingle
+2021-05-07 00:34:17.023 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@9cbfa2]
+2021-05-07 00:34:17.023 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:34:17.372 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg)
+2021-05-07 00:34:17.372 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：350
+2021-05-07 00:34:17.454 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/updateAvatar
+2021-05-07 00:34:17.455 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/updateAvatar
+2021-05-07 00:34:17.455 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+2021-05-07 00:34:17.455 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:34:17.455 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.updateAvatar
+2021-05-07 00:34:17.455 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116, https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg]
+2021-05-07 00:34:17.455 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:34:17.526 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=null)
+2021-05-07 00:34:17.527 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：73
+2021-05-07 00:34:52.479 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:34:52.480 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:34:52.480 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:34:52.480 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:34:52.480 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:34:52.480 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:34:52.480 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:34:52.486 [http-nio-8888-exec-5] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxODg5MiwiZXhwIjoxNjIxNTI4NDkyfQ.5HmWwUFgdBq4hy2t06yerqOQkcZGhX4YPTeqQaB-Lm4,有效期到:Fri May 21 00:34:52 GMT+08:00 2021
+2021-05-07 00:34:52.542 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxODg5MiwiZXhwIjoxNjIxNTI4NDkyfQ.5HmWwUFgdBq4hy2t06yerqOQkcZGhX4YPTeqQaB-Lm4, expirationTime=1621528492486), role=student))
+2021-05-07 00:34:52.543 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：64
+2021-05-07 00:40:23.674 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:40:23.674 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:40:23.674 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:40:23.674 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:40:23.675 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:40:23.675 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:40:23.675 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:40:23.714 [http-nio-8888-exec-7] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTIyMywiZXhwIjoxNjIxNTI4ODIzfQ.3NLtPD4Ibsi3_rydQOWkegM5X0-tNrNVHF72UNIopz8,有效期到:Fri May 21 00:40:23 GMT+08:00 2021
+2021-05-07 00:40:25.332 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTIyMywiZXhwIjoxNjIxNTI4ODIzfQ.3NLtPD4Ibsi3_rydQOWkegM5X0-tNrNVHF72UNIopz8, expirationTime=1621528823714), role=student))
+2021-05-07 00:40:25.332 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：1659
+2021-05-07 00:40:38.631 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:40:38.631 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:40:38.631 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:40:38.631 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:40:38.631 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:40:38.632 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Fri May 07 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:40:38.655 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:40:38.739 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[])
+2021-05-07 00:40:38.739 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：108
+2021-05-07 00:40:45.169 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:40:45.169 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:40:45.169 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:40:45.169 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:40:45.170 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:40:45.170 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Fri May 07 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:40:45.170 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:40:45.200 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[])
+2021-05-07 00:40:45.200 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：31
+2021-05-07 00:40:47.704 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:40:47.704 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:40:47.704 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:40:47.704 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:40:47.704 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:40:47.704 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Sat May 08 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:40:47.704 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:40:47.713 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=22691860, subjectName=高等数学, signFlag=1, signTime=60000, updateTime=Sun Apr 11 00:25:49 GMT+08:00 2021, beginTime=Fri May 07 10:30:00 GMT+08:00 2021, endTime=Fri May 07 12:30:00 GMT+08:00 2021, createTime=Sun Apr 11 00:25:49 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:40:47.713 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：9
+2021-05-07 00:41:12.469 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:41:12.469 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:41:12.469 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:41:12.469 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:41:12.469 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:41:12.469 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Sat May 08 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:41:12.469 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:41:12.476 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=22691860, subjectName=高等数学, signFlag=1, signTime=60000, updateTime=Sun Apr 11 00:25:49 GMT+08:00 2021, beginTime=Fri May 07 10:30:00 GMT+08:00 2021, endTime=Fri May 07 12:30:00 GMT+08:00 2021, createTime=Sun Apr 11 00:25:49 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:41:12.477 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：8
+2021-05-07 00:41:13.922 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:41:13.922 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:41:13.922 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:41:13.922 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:41:13.923 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:41:13.923 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Sun May 09 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:41:13.923 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:41:13.931 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=22691860, subjectName=高等数学, signFlag=1, signTime=60000, updateTime=Sun Apr 11 00:25:49 GMT+08:00 2021, beginTime=Fri May 07 10:30:00 GMT+08:00 2021, endTime=Fri May 07 12:30:00 GMT+08:00 2021, createTime=Sun Apr 11 00:25:49 GMT+08:00 2021, deleteFlag=0), Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:41:13.932 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：10
+2021-05-07 00:42:39.806 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:42:39.806 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:42:39.807 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:42:39.807 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:42:39.807 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:42:39.807 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:42:39.807 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:42:39.810 [http-nio-8888-exec-2] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTM1OSwiZXhwIjoxNjIxNTI4OTU5fQ.-4Pc09O_AEbS1asJ28Uwp3wFZqlfm6XVcGfbcl8FImA,有效期到:Fri May 21 00:42:39 GMT+08:00 2021
+2021-05-07 00:42:39.872 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTM1OSwiZXhwIjoxNjIxNTI4OTU5fQ.-4Pc09O_AEbS1asJ28Uwp3wFZqlfm6XVcGfbcl8FImA, expirationTime=1621528959811), role=student))
+2021-05-07 00:42:39.872 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：66
+2021-05-07 00:42:45.979 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:42:45.979 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:42:45.979 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:42:45.979 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:42:45.979 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:42:45.980 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Thu May 06 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:42:45.980 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:42:46.003 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[])
+2021-05-07 00:42:46.003 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：24
+2021-05-07 00:42:49.604 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:42:49.604 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:42:49.604 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:42:49.604 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:42:49.604 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:42:49.604 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Fri May 07 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:42:49.605 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:42:49.610 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[])
+2021-05-07 00:42:49.611 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：8
+2021-05-07 00:42:52.431 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:42:52.431 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:42:52.431 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:42:52.431 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:42:52.432 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:42:52.432 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Sat May 08 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:42:52.432 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:42:52.440 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=22691860, subjectName=高等数学, signFlag=1, signTime=60000, updateTime=Sun Apr 11 00:25:49 GMT+08:00 2021, beginTime=Fri May 07 10:30:00 GMT+08:00 2021, endTime=Fri May 07 12:30:00 GMT+08:00 2021, createTime=Sun Apr 11 00:25:49 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:42:52.440 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：9
+2021-05-07 00:43:29.224 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:43:29.224 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:43:29.224 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:43:29.224 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:43:29.224 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:43:29.224 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Sun May 09 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:43:29.224 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:43:29.233 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=22691860, subjectName=高等数学, signFlag=1, signTime=60000, updateTime=Sun Apr 11 00:25:49 GMT+08:00 2021, beginTime=Fri May 07 10:30:00 GMT+08:00 2021, endTime=Fri May 07 12:30:00 GMT+08:00 2021, createTime=Sun Apr 11 00:25:49 GMT+08:00 2021, deleteFlag=0), Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:43:29.233 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：9
+2021-05-07 00:44:28.537 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:44:28.537 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:44:28.538 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:44:28.538 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:44:28.538 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:44:28.538 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:44:28.538 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:44:28.543 [http-nio-8888-exec-10] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTQ2OCwiZXhwIjoxNjIxNTI5MDY4fQ.RBAva8uwE34fkLVXa6ag0-qQgV__-JjVo_r46TT50Dw,有效期到:Fri May 21 00:44:28 GMT+08:00 2021
+2021-05-07 00:44:28.605 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTQ2OCwiZXhwIjoxNjIxNTI5MDY4fQ.RBAva8uwE34fkLVXa6ag0-qQgV__-JjVo_r46TT50Dw, expirationTime=1621529068543), role=student))
+2021-05-07 00:44:28.605 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：68
+2021-05-07 00:45:00.609 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:45:00.609 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:45:00.609 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:45:00.609 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:45:00.610 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:45:00.610 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Thu May 06 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:45:00.610 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:45:00.621 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[])
+2021-05-07 00:45:00.621 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：12
+2021-05-07 00:45:38.624 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:45:38.624 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:45:38.625 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:45:38.625 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:45:38.625 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:45:38.625 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:45:38.625 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:45:38.630 [http-nio-8888-exec-8] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTUzOCwiZXhwIjoxNjIxNTI5MTM4fQ.lm7DaFEWtK6-MbaSVT3BzjyqLzD-29ZKFf2F4Et26eU,有效期到:Fri May 21 00:45:38 GMT+08:00 2021
+2021-05-07 00:45:39.185 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTUzOCwiZXhwIjoxNjIxNTI5MTM4fQ.lm7DaFEWtK6-MbaSVT3BzjyqLzD-29ZKFf2F4Et26eU, expirationTime=1621529138630), role=student))
+2021-05-07 00:45:39.185 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：561
+2021-05-07 00:45:45.982 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:45:45.983 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:45:45.983 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:45:45.983 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:45:45.983 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:45:45.983 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Fri May 07 00:00:00 GMT+08:00 2021, endTime=Thu May 06 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:45:45.983 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:45:45.991 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[])
+2021-05-07 00:45:45.991 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：9
+2021-05-07 00:46:18.408 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:46:18.408 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:46:18.409 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:46:18.409 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:46:18.409 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:46:18.409 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:46:18.409 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:46:18.414 [http-nio-8888-exec-3] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTU3OCwiZXhwIjoxNjIxNTI5MTc4fQ.5aXvSl4u8ekIDItS0zkpDXZ1KmXXWCnEAGesWae5i84,有效期到:Fri May 21 00:46:18 GMT+08:00 2021
+2021-05-07 00:46:18.498 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTU3OCwiZXhwIjoxNjIxNTI5MTc4fQ.5aXvSl4u8ekIDItS0zkpDXZ1KmXXWCnEAGesWae5i84, expirationTime=1621529178415), role=student))
+2021-05-07 00:46:18.499 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：91
+2021-05-07 00:46:24.302 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:46:24.302 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:46:24.303 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:46:24.303 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:46:24.303 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:46:24.303 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Sat May 08 00:00:00 GMT+08:00 2021, endTime=Thu May 06 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:46:24.303 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:46:24.358 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[])
+2021-05-07 00:46:24.359 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：57
+2021-05-07 00:46:36.734 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:46:36.734 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:46:36.735 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:46:36.735 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:46:36.735 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:46:36.735 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Sat May 08 00:00:00 GMT+08:00 2021, endTime=Sat May 08 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:46:36.735 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:46:36.745 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[])
+2021-05-07 00:46:36.745 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：11
+2021-05-07 00:46:38.736 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:46:38.736 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:46:38.736 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:46:38.736 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:46:38.736 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:46:38.737 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Sat May 08 00:00:00 GMT+08:00 2021, endTime=Sun May 09 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:46:38.737 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:46:38.746 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:46:38.746 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：10
+2021-05-07 00:46:50.293 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:46:50.293 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:46:50.293 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:46:50.293 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:46:50.293 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:46:50.294 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Thu May 06 00:00:00 GMT+08:00 2021, endTime=Sun May 09 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:46:50.294 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:46:50.302 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=22691860, subjectName=高等数学, signFlag=1, signTime=60000, updateTime=Sun Apr 11 00:25:49 GMT+08:00 2021, beginTime=Fri May 07 10:30:00 GMT+08:00 2021, endTime=Fri May 07 12:30:00 GMT+08:00 2021, createTime=Sun Apr 11 00:25:49 GMT+08:00 2021, deleteFlag=0), Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:46:50.302 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：10
+2021-05-07 00:46:51.973 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:46:51.973 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:46:51.973 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:46:51.973 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:46:51.973 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:46:51.973 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Fri May 07 00:00:00 GMT+08:00 2021, endTime=Sun May 09 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:46:51.973 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:46:51.980 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=22691860, subjectName=高等数学, signFlag=1, signTime=60000, updateTime=Sun Apr 11 00:25:49 GMT+08:00 2021, beginTime=Fri May 07 10:30:00 GMT+08:00 2021, endTime=Fri May 07 12:30:00 GMT+08:00 2021, createTime=Sun Apr 11 00:25:49 GMT+08:00 2021, deleteFlag=0), Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:46:51.981 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：8
+2021-05-07 00:46:53.503 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:46:53.503 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:46:53.503 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:46:53.503 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:46:53.504 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:46:53.504 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Sat May 08 00:00:00 GMT+08:00 2021, endTime=Sun May 09 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:46:53.504 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:46:53.511 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:46:53.512 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：9
+2021-05-07 00:46:54.902 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:46:54.903 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:46:54.903 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:46:54.903 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:46:54.903 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:46:54.903 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Sun May 09 00:00:00 GMT+08:00 2021, endTime=Sun May 09 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:46:54.903 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:46:54.911 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[])
+2021-05-07 00:46:54.912 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：10
+2021-05-07 00:46:56.397 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:46:56.397 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:46:56.397 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:46:56.397 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:46:56.397 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:46:56.398 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Sat May 08 00:00:00 GMT+08:00 2021, endTime=Sun May 09 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:46:56.398 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:46:56.406 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:46:56.406 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：9
+2021-05-07 00:47:01.468 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:47:01.468 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:47:01.468 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:47:01.468 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:47:01.468 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:47:01.468 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Sat May 08 00:00:00 GMT+08:00 2021, endTime=Mon May 10 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:47:01.468 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:47:01.476 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:47:01.476 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：8
+2021-05-07 00:47:02.629 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:47:02.629 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:47:02.629 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:47:02.629 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:47:02.629 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:47:02.630 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Sat May 08 00:00:00 GMT+08:00 2021, endTime=Tue May 11 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:47:02.630 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:47:02.636 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:47:02.636 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：7
+2021-05-07 00:47:04.942 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/querySubjectsBetweenTime
+2021-05-07 00:47:04.942 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/querySubjectsBetweenTime
+2021-05-07 00:47:04.942 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:47:04.942 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:47:04.942 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.querySubjectsBetweenTime
+2021-05-07 00:47:04.942 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[BetTimeDto(beginTime=Sat May 08 00:00:00 GMT+08:00 2021, endTime=Wed May 12 00:00:00 GMT+08:00 2021, studentId=1802343116)]
+2021-05-07 00:47:04.942 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:47:04.950 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=[Subject(subjectId=26641060, subjectName=数据结构, signFlag=1, signTime=60000, updateTime=Tue Apr 27 23:16:36 GMT+08:00 2021, beginTime=Tue May 11 08:00:00 GMT+08:00 2021, endTime=Tue May 11 12:00:00 GMT+08:00 2021, createTime=Tue Apr 27 23:16:36 GMT+08:00 2021, deleteFlag=0), Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)])
+2021-05-07 00:47:04.950 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：9
+2021-05-07 00:47:30.252 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI://note/add
+2021-05-07 00:47:30.253 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888//note/add
+2021-05-07 00:47:30.253 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:47:30.253 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:47:30.253 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.NoteController.addNote
+2021-05-07 00:47:30.253 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[NoteDto(subjectId=26641060, subjectName=数据结构, reason=出去吃饭！！！), 1802343116]
+2021-05-07 00:47:30.253 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:47:30.288 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI://note/add
+2021-05-07 00:47:30.288 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888//note/add
+2021-05-07 00:47:30.288 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:47:30.289 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:47:30.289 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.NoteController.addNote
+2021-05-07 00:47:30.289 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[NoteDto(subjectId=26412379, subjectName=C++语言基础, reason=出去吃饭！！！), 1802343116]
+2021-05-07 00:47:30.289 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:47:30.751 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Note(noteId=12132620, subjectId=26641060, subjectName=数据结构, updateTime=2021-05-07 00:47:30, createTime=2021-05-07 00:47:30, reason=出去吃饭！！！, noteStatue=0, deleteFlag=0))
+2021-05-07 00:47:30.751 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：499
+2021-05-07 00:47:30.912 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Note(noteId=65361235, subjectId=26412379, subjectName=C++语言基础, updateTime=2021-05-07 00:47:30, createTime=2021-05-07 00:47:30, reason=出去吃饭！！！, noteStatue=0, deleteFlag=0))
+2021-05-07 00:47:30.912 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：624
+2021-05-07 00:50:37.063 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:50:37.063 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:50:37.063 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:50:37.063 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:50:37.063 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:50:37.063 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:50:37.063 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:50:37.066 [http-nio-8888-exec-6] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTgzNywiZXhwIjoxNjIxNTI5NDM3fQ.MZlvU8wO2aqCezViPHrzhsnaPvnq0_Xsx5KX2qSd0iM,有效期到:Fri May 21 00:50:37 GMT+08:00 2021
+2021-05-07 00:50:37.123 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMxOTgzNywiZXhwIjoxNjIxNTI5NDM3fQ.MZlvU8wO2aqCezViPHrzhsnaPvnq0_Xsx5KX2qSd0iM, expirationTime=1621529437067), role=student))
+2021-05-07 00:50:37.124 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：61
+2021-05-07 00:54:16.059 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 00:54:16.060 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 00:54:16.060 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 00:54:16.060 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 00:54:16.060 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 00:54:16.060 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 00:54:16.060 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 00:54:16.065 [http-nio-8888-exec-7] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMyMDA1NiwiZXhwIjoxNjIxNTI5NjU2fQ.lNieFxdF204mqTk7ZeUNpQBerB4irPXLhslUjNh5wiY,有效期到:Fri May 21 00:54:16 GMT+08:00 2021
+2021-05-07 00:54:16.200 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMyMDA1NiwiZXhwIjoxNjIxNTI5NjU2fQ.lNieFxdF204mqTk7ZeUNpQBerB4irPXLhslUjNh5wiY, expirationTime=1621529656065), role=student))
+2021-05-07 00:54:16.201 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：142
+2021-05-07 01:05:05.875 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:05:05.875 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:05:05.875 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:05:05.875 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:05:05.876 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:05:05.876 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=数据库基础, beginTime=Sun May 09 08:00:00 GMT+08:00 2021, endTime=Sun May 09 10:00:00 GMT+08:00 2021)]
+2021-05-07 01:05:05.876 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:05:06.080 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=90027686, subjectName=数据库基础, signFlag=0, signTime=0, updateTime=2021-05-07 01:05:05, beginTime=Sun May 09 08:00:00 GMT+08:00 2021, endTime=Sun May 09 10:00:00 GMT+08:00 2021, createTime=2021-05-07 01:05:05, deleteFlag=0))
+2021-05-07 01:05:06.080 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：205
+2021-05-07 01:05:16.176 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:05:16.176 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:05:16.176 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:05:16.176 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:05:16.176 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:05:16.176 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=数据库基础, beginTime=Sun May 09 10:00:00 GMT+08:00 2021, endTime=Sun May 09 12:00:00 GMT+08:00 2021)]
+2021-05-07 01:05:16.176 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:05:16.310 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=29954928, subjectName=数据库基础, signFlag=0, signTime=0, updateTime=2021-05-07 01:05:16, beginTime=Sun May 09 10:00:00 GMT+08:00 2021, endTime=Sun May 09 12:00:00 GMT+08:00 2021, createTime=2021-05-07 01:05:16, deleteFlag=0))
+2021-05-07 01:05:16.310 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：135
+2021-05-07 01:05:33.959 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:05:33.959 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:05:33.959 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:05:33.959 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:05:33.959 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:05:33.959 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=高等数学, beginTime=Sun May 09 10:00:00 GMT+08:00 2021, endTime=Sun May 09 12:00:00 GMT+08:00 2021)]
+2021-05-07 01:05:33.960 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:05:34.290 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=86260802, subjectName=高等数学, signFlag=0, signTime=0, updateTime=2021-05-07 01:05:33, beginTime=Sun May 09 10:00:00 GMT+08:00 2021, endTime=Sun May 09 12:00:00 GMT+08:00 2021, createTime=2021-05-07 01:05:33, deleteFlag=0))
+2021-05-07 01:05:34.290 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：331
+2021-05-07 01:05:49.870 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:05:49.870 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:05:49.870 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:05:49.870 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:05:49.870 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:05:49.871 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=高等数学, beginTime=Mon May 10 10:00:00 GMT+08:00 2021, endTime=Mon May 10 12:00:00 GMT+08:00 2021)]
+2021-05-07 01:05:49.871 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:05:49.976 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=38475504, subjectName=高等数学, signFlag=0, signTime=0, updateTime=2021-05-07 01:05:49, beginTime=Mon May 10 10:00:00 GMT+08:00 2021, endTime=Mon May 10 12:00:00 GMT+08:00 2021, createTime=2021-05-07 01:05:49, deleteFlag=0))
+2021-05-07 01:05:49.976 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：106
+2021-05-07 01:06:05.176 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:06:05.176 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:06:05.176 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:06:05.176 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:06:05.176 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:06:05.176 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=高等数学, beginTime=Tue May 11 08:00:00 GMT+08:00 2021, endTime=Tue May 11 10:00:00 GMT+08:00 2021)]
+2021-05-07 01:06:05.176 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:06:05.361 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=95375512, subjectName=高等数学, signFlag=0, signTime=0, updateTime=2021-05-07 01:06:05, beginTime=Tue May 11 08:00:00 GMT+08:00 2021, endTime=Tue May 11 10:00:00 GMT+08:00 2021, createTime=2021-05-07 01:06:05, deleteFlag=0))
+2021-05-07 01:06:05.361 [http-nio-8888-exec-8] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：185
+2021-05-07 01:06:22.974 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:06:22.974 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:06:22.974 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:06:22.974 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:06:22.974 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:06:22.975 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=C++语言基础, beginTime=Tue May 11 08:00:00 GMT+08:00 2021, endTime=Tue May 11 10:00:00 GMT+08:00 2021)]
+2021-05-07 01:06:22.975 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:06:23.100 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=39118158, subjectName=C++语言基础, signFlag=0, signTime=0, updateTime=2021-05-07 01:06:22, beginTime=Tue May 11 08:00:00 GMT+08:00 2021, endTime=Tue May 11 10:00:00 GMT+08:00 2021, createTime=2021-05-07 01:06:22, deleteFlag=0))
+2021-05-07 01:06:23.100 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：126
+2021-05-07 01:06:31.310 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:06:31.310 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:06:31.310 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:06:31.310 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:06:31.310 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:06:31.311 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=C++语言基础, beginTime=Wed May 12 08:00:00 GMT+08:00 2021, endTime=Wed May 12 10:00:00 GMT+08:00 2021)]
+2021-05-07 01:06:31.311 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:06:31.564 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=77485979, subjectName=C++语言基础, signFlag=0, signTime=0, updateTime=2021-05-07 01:06:31, beginTime=Wed May 12 08:00:00 GMT+08:00 2021, endTime=Wed May 12 10:00:00 GMT+08:00 2021, createTime=2021-05-07 01:06:31, deleteFlag=0))
+2021-05-07 01:06:31.564 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：254
+2021-05-07 01:07:49.824 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:07:49.824 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:07:49.825 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:07:49.825 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:07:49.825 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:07:49.825 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=C++语言基础, beginTime=Mon May 10 08:00:00 GMT+08:00 2021, endTime=Mon May 10 10:00:00 GMT+08:00 2021)]
+2021-05-07 01:07:49.825 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:07:49.966 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=76705390, subjectName=C++语言基础, signFlag=0, signTime=0, updateTime=2021-05-07 01:07:49, beginTime=Mon May 10 08:00:00 GMT+08:00 2021, endTime=Mon May 10 10:00:00 GMT+08:00 2021, createTime=2021-05-07 01:07:49, deleteFlag=0))
+2021-05-07 01:07:49.966 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：142
+2021-05-07 01:08:01.695 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:08:01.695 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:08:01.695 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:08:01.695 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:08:01.695 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:08:01.695 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=数据结构, beginTime=Mon May 10 08:00:00 GMT+08:00 2021, endTime=Mon May 10 10:00:00 GMT+08:00 2021)]
+2021-05-07 01:08:01.695 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:08:01.908 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=02668009, subjectName=数据结构, signFlag=0, signTime=0, updateTime=2021-05-07 01:08:01, beginTime=Mon May 10 08:00:00 GMT+08:00 2021, endTime=Mon May 10 10:00:00 GMT+08:00 2021, createTime=2021-05-07 01:08:01, deleteFlag=0))
+2021-05-07 01:08:01.908 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：214
+2021-05-07 01:08:08.182 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:08:08.182 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:08:08.182 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:08:08.182 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:08:08.182 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:08:08.183 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=数据结构, beginTime=Mon May 10 13:00:00 GMT+08:00 2021, endTime=Mon May 10 15:00:00 GMT+08:00 2021)]
+2021-05-07 01:08:08.183 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:08:08.419 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=10229599, subjectName=数据结构, signFlag=0, signTime=0, updateTime=2021-05-07 01:08:08, beginTime=Mon May 10 13:00:00 GMT+08:00 2021, endTime=Mon May 10 15:00:00 GMT+08:00 2021, createTime=2021-05-07 01:08:08, deleteFlag=0))
+2021-05-07 01:08:08.419 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：237
+2021-05-07 01:08:24.221 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/subject/add
+2021-05-07 01:08:24.222 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/subject/add
+2021-05-07 01:08:24.222 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 01:08:24.222 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:08:24.222 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.SubjectController.addSubject
+2021-05-07 01:08:24.222 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[SubjectDto(subjectName=数据结构, beginTime=Sun May 09 13:00:00 GMT+08:00 2021, endTime=Sun May 09 15:00:00 GMT+08:00 2021)]
+2021-05-07 01:08:24.222 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:08:24.444 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=Subject(subjectId=55202592, subjectName=数据结构, signFlag=0, signTime=0, updateTime=2021-05-07 01:08:24, beginTime=Sun May 09 13:00:00 GMT+08:00 2021, endTime=Sun May 09 15:00:00 GMT+08:00 2021, createTime=2021-05-07 01:08:24, deleteFlag=0))
+2021-05-07 01:08:24.444 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：223
+2021-05-07 01:19:32.809 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-05-07 01:19:32.809 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-05-07 01:19:32.810 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-05-07 01:19:32.810 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 01:19:32.810 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-05-07 01:19:32.810 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-05-07 01:19:32.810 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 01:19:32.849 [http-nio-8888-exec-6] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMyMTU3MiwiZXhwIjoxNjIxNTMxMTcyfQ.nJPr6gUFpx7dYE3Bi4Ir8JQz-9Bxc03cQ0QEvL0ApaM,有效期到:Fri May 21 01:19:32 GMT+08:00 2021
+2021-05-07 01:19:32.923 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e1f54ed-3b2b-4854-aa24-d55d6edcfaa2.jpg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYyMDMyMTU3MiwiZXhwIjoxNjIxNTMxMTcyfQ.nJPr6gUFpx7dYE3Bi4Ir8JQz-9Bxc03cQ0QEvL0ApaM, expirationTime=1621531172849), role=student))
+2021-05-07 01:19:32.923 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：114
+2021-05-07 15:06:38.223 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-07 15:06:38.416 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:06:38.417 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:06:38.982 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-05-07 15:06:38.983 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-07 15:06:38.983 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-07 15:06:46.297 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:06:46.298 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 15:06:46.535 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 229ms. Found 2 MongoDB repository interfaces.
+2021-05-07 15:06:46.602 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:06:46.606 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-07 15:06:46.664 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:06:46.665 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:06:46.665 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 0 Redis repository interfaces.
+2021-05-07 15:06:47.184 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-05-07 15:06:47.920 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:193)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:102)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$141/24231368.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:212)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:177)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.swl.face.Application.main(Application.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-05-07 15:06:49.564 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-05-07 15:06:49.620 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:06:49.621 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-07 15:06:49.621 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-07 15:06:50.018 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:06:50.018 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11035 ms
+2021-05-07 15:06:51.477 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-05-07 15:06:51.477 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-05-07 15:06:51.477 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-05-07 15:06:53.053 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-07 15:06:53.239 [cluster-ClusterId{value='6094e70dfc5a873e60ec9857', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:59}] to 121.196.104.253:27017
+2021-05-07 15:06:53.285 [cluster-ClusterId{value='6094e70dfc5a873e60ec9857', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22869600}
+2021-05-07 15:06:53.684 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-07 15:06:55.007 [restartedMain] WARN  t.m.m.m.resolve.DefaultEntityResolve - 通用 Mapper 警告信息: <[EntityColumn{table=subject, property='signTime', column='sign_time', javaType=long, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2021-05-07 15:06:56.617 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-07 15:06:57.020 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:06:57.327 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-05-07 15:06:57.328 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-05-07 15:06:57.329 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-05-07 15:06:57.330 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-05-07 15:06:58.070 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-05-07 15:06:58.468 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:06:58.521 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-05-07 15:06:58.523 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-07 15:06:58.591 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-07 15:06:58.639 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-07 15:06:58.919 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-05-07 15:06:58.934 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: faceLoginUsingPOST_1
+2021-05-07 15:06:58.944 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addFaceUsingPOST_1
+2021-05-07 15:06:58.980 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-05-07 15:06:58.993 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_1
+2021-05-07 15:06:59.017 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_2
+2021-05-07 15:06:59.024 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_3
+2021-05-07 15:06:59.025 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateAvatarUsingPOST_1
+2021-05-07 15:06:59.027 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updatePasswordUsingPOST_1
+2021-05-07 15:06:59.029 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_3
+2021-05-07 15:06:59.119 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 22.979 seconds (JVM running for 27.218)
+2021-05-07 15:07:25.392 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 15:07:25.392 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-07 15:07:25.411 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2021-05-07 15:07:34.757 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/querySubjects
+2021-05-07 15:07:34.757 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/querySubjects
+2021-05-07 15:07:34.758 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-05-07 15:07:34.758 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-05-07 15:07:34.761 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.querySubjectsByStudentId
+2021-05-07 15:07:34.761 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116]
+2021-05-07 15:07:34.761 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-05-07 15:07:34.941 [http-nio-8888-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-07 15:07:35.362 [http-nio-8888-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-07 15:07:35.495 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data={studentId=1802343116, subjects=[{signStatue=0, signTime=Tue Apr 27 23:40:16 GMT+08:00 2021, subject=Subject(subjectId=22691860, subjectName=高等数学, signFlag=1, signTime=60000, updateTime=Sun Apr 11 00:25:49 GMT+08:00 2021, beginTime=Fri May 07 10:30:00 GMT+08:00 2021, endTime=Fri May 07 12:30:00 GMT+08:00 2021, createTime=Sun Apr 11 00:25:49 GMT+08:00 2021, deleteFlag=0)}, {signStatue=1, subject=Subject(subjectId=26641060, subjectName=数据结构, signFlag=1, signTime=60000, updateTime=Tue Apr 27 23:16:36 GMT+08:00 2021, beginTime=Tue May 11 08:00:00 GMT+08:00 2021, endTime=Tue May 11 12:00:00 GMT+08:00 2021, createTime=Tue Apr 27 23:16:36 GMT+08:00 2021, deleteFlag=0)}, {signStatue=0, signTime=Tue Apr 27 23:39:27 GMT+08:00 2021, subject=Subject(subjectId=80572089, subjectName=数据库基础, signFlag=1, signTime=60000, updateTime=Tue Apr 27 23:17:14 GMT+08:00 2021, beginTime=Wed May 12 08:00:00 GMT+08:00 2021, endTime=Wed May 12 10:00:00 GMT+08:00 2021, createTime=Tue Apr 27 23:17:14 GMT+08:00 2021, deleteFlag=0)}, {signStatue=1, subject=Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sat May 08 08:00:00 GMT+08:00 2021, endTime=Sat May 08 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)}]})
+2021-05-07 15:07:35.496 [http-nio-8888-exec-10] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：743
+2021-05-07 15:09:35.834 [Thread-5] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:09:35.840 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2021-05-07 15:09:35.953 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-05-07 15:09:35.955 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-05-07 15:09:36.233 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:09:36.234 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:09:36.715 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.soft1851.swl.face.Application]; nested exception is java.io.FileNotFoundException: class path resource [com/soft1851/swl/face/service/StudentService.class] cannot be opened because it does not exist
+2021-05-07 15:09:36.717 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-07 15:09:36.745 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.soft1851.swl.face.Application]; nested exception is java.io.FileNotFoundException: class path resource [com/soft1851/swl/face/service/StudentService.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.swl.face.Application.main(Application.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [com/soft1851/swl/face/service/StudentService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:55)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:696)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:1024)
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:386)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:332)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	... 19 common frames omitted
+2021-05-07 15:09:39.521 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:09:39.522 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:09:40.435 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:09:40.436 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 15:09:40.569 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133ms. Found 2 MongoDB repository interfaces.
+2021-05-07 15:09:40.577 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:09:40.577 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-07 15:09:40.631 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:09:40.632 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:09:40.632 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55ms. Found 0 Redis repository interfaces.
+2021-05-07 15:09:40.799 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-05-07 15:09:41.297 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-05-07 15:09:41.299 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:09:41.299 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-07 15:09:41.299 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-07 15:09:41.349 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:09:41.350 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1821 ms
+2021-05-07 15:09:41.758 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-05-07 15:09:41.758 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-05-07 15:09:41.759 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-05-07 15:09:42.480 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-07 15:09:42.542 [cluster-ClusterId{value='6094e7b6fc5a873e60ec9858', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:60}] to 121.196.104.253:27017
+2021-05-07 15:09:42.562 [cluster-ClusterId{value='6094e7b6fc5a873e60ec9858', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18100000}
+2021-05-07 15:09:42.603 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-07 15:09:43.430 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\StudentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.swl.face.service.StudentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-07 15:09:43.437 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-07 15:09:43.443 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-07 15:09:43.808 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.swl.face.controller.StudentController required a bean of type 'com.soft1851.swl.face.service.StudentService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.swl.face.service.StudentService' in your configuration.
+
+2021-05-07 15:10:43.421 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:10:43.421 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:10:44.291 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:10:44.292 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 15:10:44.387 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95ms. Found 2 MongoDB repository interfaces.
+2021-05-07 15:10:44.396 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:10:44.397 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-07 15:10:44.443 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:10:44.444 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:10:44.444 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47ms. Found 0 Redis repository interfaces.
+2021-05-07 15:10:44.582 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-05-07 15:10:45.176 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-05-07 15:10:45.177 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:10:45.178 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-07 15:10:45.178 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-07 15:10:45.214 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:10:45.215 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1788 ms
+2021-05-07 15:10:45.567 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-05-07 15:10:45.567 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-05-07 15:10:45.567 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-05-07 15:10:46.105 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-07 15:10:46.207 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-07 15:10:46.993 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\StudentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.swl.face.service.StudentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-07 15:10:47.000 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-07 15:10:47.010 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-07 15:10:47.184 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.swl.face.controller.StudentController required a bean of type 'com.soft1851.swl.face.service.StudentService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.swl.face.service.StudentService' in your configuration.
+
+2021-05-07 15:10:50.011 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:10:50.012 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:10:50.880 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:10:50.881 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 15:10:50.975 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93ms. Found 2 MongoDB repository interfaces.
+2021-05-07 15:10:50.979 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:10:50.979 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-07 15:10:51.023 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:10:51.024 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:10:51.024 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44ms. Found 0 Redis repository interfaces.
+2021-05-07 15:10:51.146 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-05-07 15:10:51.514 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-05-07 15:10:51.515 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:10:51.516 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-07 15:10:51.516 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-07 15:10:51.552 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:10:51.552 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1535 ms
+2021-05-07 15:10:51.849 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-05-07 15:10:51.849 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-05-07 15:10:51.849 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-05-07 15:10:52.266 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-07 15:10:52.342 [cluster-ClusterId{value='6094e7fcfc5a873e60ec985a', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:62}] to 121.196.104.253:27017
+2021-05-07 15:10:52.365 [cluster-ClusterId{value='6094e7fcfc5a873e60ec985a', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21126500}
+2021-05-07 15:10:52.370 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-07 15:10:52.956 [restartedMain] WARN  t.m.m.m.resolve.DefaultEntityResolve - 通用 Mapper 警告信息: <[EntityColumn{table=subject, property='signTime', column='sign_time', javaType=long, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2021-05-07 15:10:53.718 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-07 15:10:53.975 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:10:54.101 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-05-07 15:10:54.102 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-05-07 15:10:54.102 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-05-07 15:10:54.102 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-05-07 15:10:54.393 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-05-07 15:10:54.697 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:10:54.716 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-05-07 15:10:54.717 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-07 15:10:54.718 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-07 15:10:54.727 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-07 15:10:54.770 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-05-07 15:10:54.788 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: faceLoginUsingPOST_1
+2021-05-07 15:10:54.802 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addFaceUsingPOST_1
+2021-05-07 15:10:54.858 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-05-07 15:10:54.876 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_1
+2021-05-07 15:10:54.895 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_2
+2021-05-07 15:10:54.904 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_3
+2021-05-07 15:10:54.908 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateAvatarUsingPOST_1
+2021-05-07 15:10:54.912 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updatePasswordUsingPOST_1
+2021-05-07 15:10:54.914 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_3
+2021-05-07 15:10:54.924 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 4.986 seconds (JVM running for 263.023)
+2021-05-07 15:10:54.931 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-07 15:11:14.224 [Thread-9] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:11:14.227 [Thread-9] INFO  o.s.j.e.a.AnnotationMBeanExporter - Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2021-05-07 15:11:14.491 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:11:14.491 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:11:15.271 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:11:15.272 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 15:11:15.358 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86ms. Found 2 MongoDB repository interfaces.
+2021-05-07 15:11:15.364 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:11:15.364 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-07 15:11:15.405 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:11:15.405 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:11:15.406 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41ms. Found 0 Redis repository interfaces.
+2021-05-07 15:11:15.495 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-05-07 15:11:15.861 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-05-07 15:11:15.862 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:11:15.862 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-07 15:11:15.862 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-07 15:11:15.898 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:11:15.898 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1401 ms
+2021-05-07 15:11:16.200 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-05-07 15:11:16.200 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-05-07 15:11:16.200 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-05-07 15:11:16.768 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-07 15:11:16.850 [cluster-ClusterId{value='6094e814fc5a873e60ec985b', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:63}] to 121.196.104.253:27017
+2021-05-07 15:11:16.865 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-07 15:11:16.872 [cluster-ClusterId{value='6094e814fc5a873e60ec985b', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19961000}
+2021-05-07 15:11:17.888 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\StudentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.swl.face.service.StudentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-07 15:11:17.893 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-07 15:11:17.916 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-07 15:11:18.300 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.swl.face.controller.StudentController required a bean of type 'com.soft1851.swl.face.service.StudentService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.swl.face.service.StudentService' in your configuration.
+
+2021-05-07 15:12:52.935 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:12:52.935 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:12:53.769 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:12:53.769 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 15:12:53.851 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82ms. Found 2 MongoDB repository interfaces.
+2021-05-07 15:12:53.858 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:12:53.858 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-07 15:12:53.900 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:12:53.901 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:12:53.902 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43ms. Found 0 Redis repository interfaces.
+2021-05-07 15:12:54.024 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-05-07 15:12:54.351 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-05-07 15:12:54.352 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:12:54.352 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-07 15:12:54.353 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-07 15:12:54.385 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:12:54.386 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1447 ms
+2021-05-07 15:12:54.632 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-05-07 15:12:54.632 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-05-07 15:12:54.632 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-05-07 15:12:55.054 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-07 15:12:55.119 [cluster-ClusterId{value='6094e877fc5a873e60ec985c', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:64}] to 121.196.104.253:27017
+2021-05-07 15:12:55.140 [cluster-ClusterId{value='6094e877fc5a873e60ec985c', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19207000}
+2021-05-07 15:12:55.141 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-07 15:12:55.726 [restartedMain] WARN  t.m.m.m.resolve.DefaultEntityResolve - 通用 Mapper 警告信息: <[EntityColumn{table=subject, property='signTime', column='sign_time', javaType=long, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2021-05-07 15:12:56.300 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-07 15:12:56.471 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:12:56.573 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-05-07 15:12:56.573 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-05-07 15:12:56.573 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-05-07 15:12:56.573 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-05-07 15:12:56.789 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-05-07 15:12:57.012 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:12:57.024 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-05-07 15:12:57.024 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-07 15:12:57.025 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-07 15:12:57.031 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-07 15:12:57.051 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-05-07 15:12:57.064 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: faceLoginUsingPOST_1
+2021-05-07 15:12:57.074 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addFaceUsingPOST_1
+2021-05-07 15:12:57.113 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-05-07 15:12:57.124 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_1
+2021-05-07 15:12:57.136 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_2
+2021-05-07 15:12:57.143 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_3
+2021-05-07 15:12:57.146 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateAvatarUsingPOST_1
+2021-05-07 15:12:57.148 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updatePasswordUsingPOST_1
+2021-05-07 15:12:57.150 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_3
+2021-05-07 15:12:57.156 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 4.307 seconds (JVM running for 385.255)
+2021-05-07 15:12:57.158 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-07 15:16:10.313 [Thread-22] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:16:10.316 [Thread-22] INFO  o.s.j.e.a.AnnotationMBeanExporter - Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2021-05-07 15:16:10.714 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:16:10.715 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:16:11.699 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:16:11.699 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 15:16:11.797 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 97ms. Found 2 MongoDB repository interfaces.
+2021-05-07 15:16:11.803 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:16:11.803 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-07 15:16:11.849 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:16:11.849 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:16:11.850 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45ms. Found 0 Redis repository interfaces.
+2021-05-07 15:16:12.011 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-05-07 15:16:12.424 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-05-07 15:16:12.425 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:16:12.426 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-07 15:16:12.426 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-07 15:16:12.491 [restartedMain] INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:16:12.492 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1768 ms
+2021-05-07 15:16:12.918 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-05-07 15:16:12.918 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-05-07 15:16:12.918 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-05-07 15:16:14.016 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-07 15:16:14.098 [cluster-ClusterId{value='6094e93efc5a873e60ec985d', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:65}] to 121.196.104.253:27017
+2021-05-07 15:16:14.121 [cluster-ClusterId{value='6094e93efc5a873e60ec985d', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21266600}
+2021-05-07 15:16:14.146 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-07 15:16:15.100 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\StudentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.swl.face.service.StudentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-07 15:16:15.106 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-07 15:16:15.112 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-07 15:16:15.268 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.swl.face.controller.StudentController required a bean of type 'com.soft1851.swl.face.service.StudentService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.swl.face.service.StudentService' in your configuration.
+
+2021-05-07 15:17:04.093 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:17:04.093 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:17:04.956 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:17:04.956 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 15:17:05.040 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83ms. Found 2 MongoDB repository interfaces.
+2021-05-07 15:17:05.045 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:17:05.045 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-07 15:17:05.094 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:17:05.094 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:17:05.094 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48ms. Found 0 Redis repository interfaces.
+2021-05-07 15:17:05.212 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-05-07 15:17:05.586 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-05-07 15:17:05.586 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:17:05.587 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-07 15:17:05.587 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-07 15:17:05.619 [restartedMain] INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:17:05.619 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1520 ms
+2021-05-07 15:17:05.975 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-05-07 15:17:05.976 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-05-07 15:17:05.976 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-05-07 15:17:06.469 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-07 15:17:06.529 [cluster-ClusterId{value='6094e972fc5a873e60ec985e', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:66}] to 121.196.104.253:27017
+2021-05-07 15:17:06.547 [cluster-ClusterId{value='6094e972fc5a873e60ec985e', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16950800}
+2021-05-07 15:17:06.560 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-07 15:17:07.246 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\StudentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.swl.face.service.StudentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-07 15:17:07.253 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-07 15:17:07.259 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-07 15:17:07.435 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.swl.face.controller.StudentController required a bean of type 'com.soft1851.swl.face.service.StudentService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.swl.face.service.StudentService' in your configuration.
+
+2021-05-07 15:24:58.528 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:24:58.528 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:24:59.899 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:24:59.900 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 15:25:00.010 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109ms. Found 2 MongoDB repository interfaces.
+2021-05-07 15:25:00.020 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:25:00.020 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-07 15:25:00.085 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:25:00.086 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:25:00.086 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65ms. Found 0 Redis repository interfaces.
+2021-05-07 15:25:00.247 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-05-07 15:25:00.731 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-05-07 15:25:00.732 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:25:00.732 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-07 15:25:00.732 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-07 15:25:00.773 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:25:00.773 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2233 ms
+2021-05-07 15:25:01.321 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-05-07 15:25:01.321 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-05-07 15:25:01.322 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-05-07 15:25:02.447 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-07 15:25:02.564 [cluster-ClusterId{value='6094eb4efc5a873e60ec985f', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:67}] to 121.196.104.253:27017
+2021-05-07 15:25:02.586 [cluster-ClusterId{value='6094eb4efc5a873e60ec985f', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18720600}
+2021-05-07 15:25:02.712 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-07 15:25:03.861 [restartedMain] WARN  t.m.m.m.resolve.DefaultEntityResolve - 通用 Mapper 警告信息: <[EntityColumn{table=subject, property='signTime', column='sign_time', javaType=long, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2021-05-07 15:25:04.907 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-07 15:25:05.193 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:25:05.383 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-05-07 15:25:05.383 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-05-07 15:25:05.383 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-05-07 15:25:05.383 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-05-07 15:25:05.791 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-05-07 15:25:06.182 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:25:06.203 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-05-07 15:25:06.204 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-07 15:25:06.205 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-07 15:25:06.222 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-07 15:25:06.289 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-05-07 15:25:06.321 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: faceLoginUsingPOST_1
+2021-05-07 15:25:06.342 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addFaceUsingPOST_1
+2021-05-07 15:25:06.410 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-05-07 15:25:06.434 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_1
+2021-05-07 15:25:06.456 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_2
+2021-05-07 15:25:06.468 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_3
+2021-05-07 15:25:06.471 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateAvatarUsingPOST_1
+2021-05-07 15:25:06.475 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updatePasswordUsingPOST_1
+2021-05-07 15:25:06.478 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_3
+2021-05-07 15:25:06.490 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 8.08 seconds (JVM running for 1114.59)
+2021-05-07 15:25:06.494 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-07 15:25:10.213 [Thread-30] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:25:10.229 [Thread-30] INFO  o.s.j.e.a.AnnotationMBeanExporter - Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2021-05-07 15:25:10.563 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 25748 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-05-07 15:25:10.564 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-05-07 15:25:11.969 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:25:11.969 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-07 15:25:12.104 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 134ms. Found 2 MongoDB repository interfaces.
+2021-05-07 15:25:12.115 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-07 15:25:12.115 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-07 15:25:12.159 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:25:12.159 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-07 15:25:12.159 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43ms. Found 0 Redis repository interfaces.
+2021-05-07 15:25:12.326 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-05-07 15:25:12.789 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-05-07 15:25:12.790 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-05-07 15:25:12.791 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-07 15:25:12.791 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-05-07 15:25:12.842 [restartedMain] INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:25:12.843 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2273 ms
+2021-05-07 15:25:13.337 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-05-07 15:25:13.337 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-05-07 15:25:13.337 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-05-07 15:25:14.051 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[121.196.104.253:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-07 15:25:14.123 [cluster-ClusterId{value='6094eb5afc5a873e60ec9860', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:68}] to 121.196.104.253:27017
+2021-05-07 15:25:14.145 [cluster-ClusterId{value='6094eb5afc5a873e60ec9860', description='null'}-121.196.104.253:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=121.196.104.253:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19790300}
+2021-05-07 15:25:14.240 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-07 15:25:15.280 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\StudentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.swl.face.service.StudentService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-05-07 15:25:15.291 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-07 15:25:15.302 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-07 15:25:15.509 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.swl.face.controller.StudentController required a bean of type 'com.soft1851.swl.face.service.StudentService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.swl.face.service.StudentService' in your configuration.
+

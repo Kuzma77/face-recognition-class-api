@@ -5206,3 +5206,1134 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
 	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
 	... 3 common frames omitted
+2021-04-30 02:35:27.621 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-04-30 02:35:27.647 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 14184 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-30 02:35:27.647 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-30 02:35:27.703 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-30 02:35:27.703 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-30 02:35:27.703 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-30 02:35:29.032 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-30 02:35:29.033 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-30 02:35:29.157 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120ms. Found 2 MongoDB repository interfaces.
+2021-04-30 02:35:29.169 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-30 02:35:29.170 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-30 02:35:29.211 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-04-30 02:35:29.212 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-04-30 02:35:29.212 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2021-04-30 02:35:29.386 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-30 02:35:29.767 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:193)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:102)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$145/8788941.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:212)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:177)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.swl.face.Application.main(Application.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-30 02:35:30.384 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-04-30 02:35:30.392 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-04-30 02:35:30.393 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-30 02:35:30.393 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-04-30 02:35:30.545 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-30 02:35:30.546 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2843 ms
+2021-04-30 02:35:31.328 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-04-30 02:35:31.328 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-04-30 02:35:31.329 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-04-30 02:35:32.246 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[182.61.58.17:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-04-30 02:35:32.576 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-30 02:35:33.238 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:888}] to 182.61.58.17:27017
+2021-04-30 02:35:33.370 [restartedMain] WARN  t.m.m.m.resolve.DefaultEntityResolve - 通用 Mapper 警告信息: <[EntityColumn{table=subject, property='signTime', column='sign_time', javaType=long, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2021-04-30 02:35:33.459 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=182.61.58.17:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 4]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=218231000}
+2021-04-30 02:35:34.205 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-30 02:35:34.455 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 02:35:34.685 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-30 02:35:34.686 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-30 02:35:34.686 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-30 02:35:34.686 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-04-30 02:35:35.085 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-04-30 02:35:35.272 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-04-30 02:35:35.304 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-04-30 02:35:35.305 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-04-30 02:35:35.322 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-04-30 02:35:35.352 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-04-30 02:35:35.491 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-04-30 02:35:35.501 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: faceLoginUsingPOST_1
+2021-04-30 02:35:35.509 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addFaceUsingPOST_1
+2021-04-30 02:35:35.537 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-04-30 02:35:35.547 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_1
+2021-04-30 02:35:35.560 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_2
+2021-04-30 02:35:35.564 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_3
+2021-04-30 02:35:35.565 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateAvatarUsingPOST_1
+2021-04-30 02:35:35.567 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updatePasswordUsingPOST_1
+2021-04-30 02:35:35.569 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_3
+2021-04-30 02:35:35.587 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 8.728 seconds (JVM running for 10.299)
+2021-04-30 02:38:22.497 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 182.61.58.17:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2021-04-30 02:38:32.776 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:889}] to 182.61.58.17:27017
+2021-04-30 02:38:32.856 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=182.61.58.17:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 4]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=78702000}
+2021-04-30 02:39:53.367 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 182.61.58.17:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2021-04-30 02:40:23.676 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:890}] to 182.61.58.17:27017
+2021-04-30 02:40:23.784 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=182.61.58.17:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 4]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=106698000}
+2021-04-30 02:44:00.661 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 182.61.58.17:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2021-04-30 02:48:31.387 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-30 02:48:31.388 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-04-30 02:48:31.406 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2021-04-30 02:48:31.549 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-04-30 02:48:31.549 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-04-30 02:48:31.549 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-04-30 02:48:31.549 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-30 02:48:31.551 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-04-30 02:48:31.551 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-04-30 02:48:31.551 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:48:31.598 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-04-30 02:48:31.863 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-04-30 02:48:31.963 [http-nio-8888-exec-1] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYxOTcyMjExMSwiZXhwIjoxNjIwOTMxNzExfQ.0xV-xapDaBOeteNcMMLUz0xuzByQvSZFY-n_gDPqLjw,有效期到:Fri May 14 02:48:31 GMT+08:00 2021
+2021-04-30 02:48:33.509 [http-nio-8888-exec-1] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-04-30 02:49:03.534 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - /student/login接口调用异常,异常信息{}
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=182.61.58.17:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=182.61.58.17:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:88)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2874)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:568)
+	at org.springframework.data.mongodb.core.MongoTemplate.saveDocument(MongoTemplate.java:1485)
+	at org.springframework.data.mongodb.core.MongoTemplate.doSave(MongoTemplate.java:1421)
+	at org.springframework.data.mongodb.core.MongoTemplate.save(MongoTemplate.java:1363)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.data.repository.core.support.ImplementationInvocationMetadata.invoke(ImplementationInvocationMetadata.java:72)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:382)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:205)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:549)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:155)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy136.save(Unknown Source)
+	at com.soft1851.swl.face.service.impl.LogServiceImpl.saveOneLog(LogServiceImpl.java:26)
+	at com.soft1851.swl.face.service.impl.StudentServiceImpl.loginByStudentId(StudentServiceImpl.java:115)
+	at com.soft1851.swl.face.controller.StudentController.login(StudentController.java:58)
+	at com.soft1851.swl.face.controller.StudentController$$FastClassBySpringCGLIB$$60f10f5c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.swl.face.aspect.WebLogAspect.doAround(WebLogAspect.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.swl.face.controller.StudentController$$EnhancerBySpringCGLIB$$80e30113.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:80)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=182.61.58.17:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:182)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:150)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:102)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:282)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:206)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1053)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeReplaceOne(MongoCollectionImpl.java:611)
+	at com.mongodb.client.internal.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:587)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$saveDocument$17(MongoTemplate.java:1517)
+	at org.springframework.data.mongodb.core.MongoTemplate$$Lambda$989/2566581.doInCollection(Unknown Source)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:566)
+	... 118 common frames omitted
+2021-04-30 02:49:03.572 [http-nio-8888-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=182.61.58.17:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=182.61.58.17:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]] with root cause
+com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=182.61.58.17:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:182)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:150)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:102)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:282)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:206)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1053)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeReplaceOne(MongoCollectionImpl.java:611)
+	at com.mongodb.client.internal.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:587)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$saveDocument$17(MongoTemplate.java:1517)
+	at org.springframework.data.mongodb.core.MongoTemplate$$Lambda$989/2566581.doInCollection(Unknown Source)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:566)
+	at org.springframework.data.mongodb.core.MongoTemplate.saveDocument(MongoTemplate.java:1485)
+	at org.springframework.data.mongodb.core.MongoTemplate.doSave(MongoTemplate.java:1421)
+	at org.springframework.data.mongodb.core.MongoTemplate.save(MongoTemplate.java:1363)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.data.repository.core.support.ImplementationInvocationMetadata.invoke(ImplementationInvocationMetadata.java:72)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:382)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:205)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:549)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:155)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy136.save(Unknown Source)
+	at com.soft1851.swl.face.service.impl.LogServiceImpl.saveOneLog(LogServiceImpl.java:26)
+	at com.soft1851.swl.face.service.impl.StudentServiceImpl.loginByStudentId(StudentServiceImpl.java:115)
+	at com.soft1851.swl.face.controller.StudentController.login(StudentController.java:58)
+	at com.soft1851.swl.face.controller.StudentController$$FastClassBySpringCGLIB$$60f10f5c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.swl.face.aspect.WebLogAspect.doAround(WebLogAspect.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.swl.face.controller.StudentController$$EnhancerBySpringCGLIB$$80e30113.login(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:80)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2021-04-30 02:49:22.699 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:25, serverValue:891}] to 182.61.58.17:27017
+2021-04-30 02:49:22.779 [cluster-ClusterId{value='608afc747187a126b5a10c81', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=182.61.58.17:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 4]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=78854000}
+2021-04-30 02:49:26.578 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-04-30 02:49:26.607 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 31252 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-30 02:49:26.608 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-30 02:49:26.665 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in D:\tools\maven_jar\com\sun\xml\bind\jaxb-impl\2.1\jaxb-impl-2.1.jar referenced one or more files that do not exist: file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb-api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/activation.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jsr173_1.0_api.jar,file:/D:/tools/maven_jar/com/sun/xml/bind/jaxb-impl/2.1/jaxb1-impl.jar
+2021-04-30 02:49:26.665 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-30 02:49:26.665 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-30 02:49:28.096 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-30 02:49:28.097 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-30 02:49:28.234 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 131ms. Found 2 MongoDB repository interfaces.
+2021-04-30 02:49:28.248 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-30 02:49:28.251 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-30 02:49:28.293 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-04-30 02:49:28.294 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-04-30 02:49:28.294 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2021-04-30 02:49:28.491 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-30 02:49:28.852 [restartedMain] WARN  o.a.c.core.AprLifecycleListener - The Apache Tomcat Native library failed to load. The error reported was [D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+java.lang.UnsatisfiedLinkError: D:\Program Files\apache-tomcat-9.0.30\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1855)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:193)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:102)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:168)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:119)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$145/21526449.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:212)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:177)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.swl.face.Application.main(Application.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2021-04-30 02:49:29.645 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-04-30 02:49:29.656 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-04-30 02:49:29.657 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-30 02:49:29.657 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-04-30 02:49:29.830 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-30 02:49:29.830 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3165 ms
+2021-04-30 02:49:30.488 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-04-30 02:49:30.488 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-04-30 02:49:30.488 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-04-30 02:49:31.387 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[182.61.58.17:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-04-30 02:49:31.652 [cluster-ClusterId{value='608affbb4496de12c4baf964', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:892}] to 182.61.58.17:27017
+2021-04-30 02:49:31.655 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-30 02:49:31.720 [cluster-ClusterId{value='608affbb4496de12c4baf964', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=182.61.58.17:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 4]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=66137300}
+2021-04-30 02:49:32.449 [restartedMain] WARN  t.m.m.m.resolve.DefaultEntityResolve - 通用 Mapper 警告信息: <[EntityColumn{table=subject, property='signTime', column='sign_time', javaType=long, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2021-04-30 02:49:33.181 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-30 02:49:33.418 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 02:49:33.558 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-30 02:49:33.558 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-30 02:49:33.559 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-30 02:49:33.559 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-04-30 02:49:33.985 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-04-30 02:49:34.174 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-04-30 02:49:34.209 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-04-30 02:49:34.210 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-04-30 02:49:34.229 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-04-30 02:49:34.264 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-04-30 02:49:34.399 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-04-30 02:49:34.410 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: faceLoginUsingPOST_1
+2021-04-30 02:49:34.419 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addFaceUsingPOST_1
+2021-04-30 02:49:34.453 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-04-30 02:49:34.462 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_1
+2021-04-30 02:49:34.475 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_2
+2021-04-30 02:49:34.487 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_3
+2021-04-30 02:49:34.488 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateAvatarUsingPOST_1
+2021-04-30 02:49:34.490 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updatePasswordUsingPOST_1
+2021-04-30 02:49:34.491 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_3
+2021-04-30 02:49:34.510 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 8.563 seconds (JVM running for 11.074)
+2021-04-30 02:49:51.831 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-30 02:49:51.831 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-04-30 02:49:51.843 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2021-04-30 02:49:51.982 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/login
+2021-04-30 02:49:51.983 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/login
+2021-04-30 02:49:51.983 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-04-30 02:49:51.984 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-30 02:49:51.986 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.login
+2021-04-30 02:49:51.986 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=1802343116, password=123456)]
+2021-04-30 02:49:51.987 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:49:52.029 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-04-30 02:49:52.202 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-04-30 02:49:52.295 [http-nio-8888-exec-1] INFO  c.s.s.f.s.impl.StudentServiceImpl - 林俊杰登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYxOTcyMjE5MiwiZXhwIjoxNjIwOTMxNzkyfQ.8q3lAvXIM96WSPWPPnr496mpDMeZX_g7W_Iyh8t83po,有效期到:Fri May 14 02:49:52 GMT+08:00 2021
+2021-04-30 02:49:54.369 [http-nio-8888-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:893}] to 182.61.58.17:27017
+2021-04-30 02:49:54.484 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/9e815f47-9338-4823-9689-ce03b345a5e5.jpg, gender=男), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5p6X5L-K5p2wIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMTgwMjM0MzExNiIsImlhdCI6MTYxOTcyMjE5MiwiZXhwIjoxNjIwOTMxNzkyfQ.8q3lAvXIM96WSPWPPnr496mpDMeZX_g7W_Iyh8t83po, expirationTime=1620931792298), role=student))
+2021-04-30 02:49:54.485 [http-nio-8888-exec-1] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：2506
+2021-04-30 02:50:21.946 [cluster-ClusterId{value='608affbb4496de12c4baf964', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 182.61.58.17:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2021-04-30 02:50:23.886 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/base/uploadFile
+2021-04-30 02:50:23.886 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/base/uploadFile
+2021-04-30 02:50:23.886 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-04-30 02:50:23.886 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：127.0.0.1
+2021-04-30 02:50:23.886 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.BaseController.uploadSingle
+2021-04-30 02:50:23.887 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@11313f2]
+2021-04-30 02:50:23.887 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:50:48.669 [http-nio-8888-exec-2] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: face-manage-kuzma.oss-cn-shanghai.aliyuncs.com
+[ErrorCode]: UnknownHost
+[RequestId]: Unknown
+2021-04-30 02:50:49.282 [http-nio-8888-exec-2] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: face-manage-kuzma.oss-cn-shanghai.aliyuncs.com
+[ErrorCode]: UnknownHost
+[RequestId]: Unknown
+2021-04-30 02:50:50.491 [http-nio-8888-exec-2] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: face-manage-kuzma.oss-cn-shanghai.aliyuncs.com
+[ErrorCode]: UnknownHost
+[RequestId]: Unknown
+2021-04-30 02:50:52.897 [http-nio-8888-exec-2] WARN  com.aliyun.oss - [Client]Unable to execute HTTP request: face-manage-kuzma.oss-cn-shanghai.aliyuncs.com
+[ErrorCode]: UnknownHost
+[RequestId]: Unknown
+2021-04-30 02:50:52.900 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - /base/uploadFile接口调用异常,异常信息{}
+com.aliyun.oss.ClientException: face-manage-kuzma.oss-cn-shanghai.aliyuncs.com
+[ErrorCode]: UnknownHost
+[RequestId]: Unknown
+	at com.aliyun.oss.common.utils.ExceptionFactory.createNetworkException(ExceptionFactory.java:71)
+	at com.aliyun.oss.common.comm.DefaultServiceClient.sendRequestCore(DefaultServiceClient.java:137)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:133)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:70)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:83)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:145)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:102)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1133)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:130)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:512)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:502)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:507)
+	at com.soft1851.swl.face.util.AliOssUtil.upload(AliOssUtil.java:55)
+	at com.soft1851.swl.face.util.AliOssUtil.upload(AliOssUtil.java:42)
+	at com.soft1851.swl.face.controller.BaseController.uploadSingle(BaseController.java:48)
+	at com.soft1851.swl.face.controller.BaseController$$FastClassBySpringCGLIB$$ee6e7448.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.swl.face.aspect.WebLogAspect.doAround(WebLogAspect.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.swl.face.controller.BaseController$$EnhancerBySpringCGLIB$$c11adcc.uploadSingle(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:80)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.UnknownHostException: face-manage-kuzma.oss-cn-shanghai.aliyuncs.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1259)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1171)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1105)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.aliyun.oss.common.comm.DefaultServiceClient.sendRequestCore(DefaultServiceClient.java:134)
+	... 106 common frames omitted
+2021-04-30 02:50:52.928 [http-nio-8888-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.aliyun.oss.ClientException: face-manage-kuzma.oss-cn-shanghai.aliyuncs.com
+[ErrorCode]: UnknownHost
+[RequestId]: Unknown] with root cause
+java.net.UnknownHostException: face-manage-kuzma.oss-cn-shanghai.aliyuncs.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1259)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1171)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1105)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.aliyun.oss.common.comm.DefaultServiceClient.sendRequestCore(DefaultServiceClient.java:134)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:133)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:70)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:83)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:145)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:102)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1133)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:130)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:512)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:502)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:507)
+	at com.soft1851.swl.face.util.AliOssUtil.upload(AliOssUtil.java:55)
+	at com.soft1851.swl.face.util.AliOssUtil.upload(AliOssUtil.java:42)
+	at com.soft1851.swl.face.controller.BaseController.uploadSingle(BaseController.java:48)
+	at com.soft1851.swl.face.controller.BaseController$$FastClassBySpringCGLIB$$ee6e7448.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.swl.face.aspect.WebLogAspect.doAround(WebLogAspect.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.swl.face.controller.BaseController$$EnhancerBySpringCGLIB$$c11adcc.uploadSingle(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:80)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2021-04-30 02:50:53.058 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/updateAvatar
+2021-04-30 02:50:53.058 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/updateAvatar
+2021-04-30 02:50:53.059 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-04-30 02:50:53.059 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-30 02:50:53.059 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.updateAvatar
+2021-04-30 02:50:53.059 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116, false]
+2021-04-30 02:50:53.059 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:50:53.172 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=null)
+2021-04-30 02:50:53.173 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：115
+2021-04-30 02:50:53.238 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/one
+2021-04-30 02:50:53.238 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/one
+2021-04-30 02:50:53.238 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-04-30 02:50:53.238 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-30 02:50:53.238 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.getStudentById
+2021-04-30 02:50:53.238 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116]
+2021-04-30 02:50:53.238 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:50:53.243 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=false, gender=男))
+2021-04-30 02:50:53.244 [http-nio-8888-exec-3] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：6
+2021-04-30 02:51:20.753 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/base/uploadFile
+2021-04-30 02:51:20.753 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/base/uploadFile
+2021-04-30 02:51:20.753 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-04-30 02:51:20.754 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：127.0.0.1
+2021-04-30 02:51:20.754 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.BaseController.uploadSingle
+2021-04-30 02:51:20.754 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@4ea0ba]
+2021-04-30 02:51:20.754 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:51:23.159 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/ccccaa23-4f4e-44c4-8e40-a54bbe414440.jpeg)
+2021-04-30 02:51:23.159 [http-nio-8888-exec-5] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：2406
+2021-04-30 02:51:23.201 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/updateAvatar
+2021-04-30 02:51:23.201 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/updateAvatar
+2021-04-30 02:51:23.201 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-04-30 02:51:23.201 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-30 02:51:23.201 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.updateAvatar
+2021-04-30 02:51:23.201 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116, https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/ccccaa23-4f4e-44c4-8e40-a54bbe414440.jpeg]
+2021-04-30 02:51:23.201 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:51:23.357 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=null)
+2021-04-30 02:51:23.358 [http-nio-8888-exec-6] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：158
+2021-04-30 02:51:23.510 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/one
+2021-04-30 02:51:23.511 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/one
+2021-04-30 02:51:23.511 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-04-30 02:51:23.511 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-30 02:51:23.511 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.getStudentById
+2021-04-30 02:51:23.511 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116]
+2021-04-30 02:51:23.511 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:51:23.514 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=UserDto(id=1802343116, name=林俊杰, phoneNumber=18805167526, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/ccccaa23-4f4e-44c4-8e40-a54bbe414440.jpeg, gender=男))
+2021-04-30 02:51:23.514 [http-nio-8888-exec-7] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：4
+2021-04-30 02:51:32.341 [cluster-ClusterId{value='608affbb4496de12c4baf964', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:894}] to 182.61.58.17:27017
+2021-04-30 02:51:32.421 [cluster-ClusterId{value='608affbb4496de12c4baf964', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=182.61.58.17:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 4]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=78172000}
+2021-04-30 02:52:07.239 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/student/querySubjects
+2021-04-30 02:52:07.239 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/student/querySubjects
+2021-04-30 02:52:07.240 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+2021-04-30 02:52:07.240 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-30 02:52:07.240 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.StudentController.querySubjectsByStudentId
+2021-04-30 02:52:07.240 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116]
+2021-04-30 02:52:07.240 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:52:07.351 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data={studentId=1802343116, subjects=[{signStatue=0, signTime=Tue Apr 27 23:40:16 GMT+08:00 2021, subject=Subject(subjectId=22691860, subjectName=高等数学, signFlag=1, signTime=60000, updateTime=Sun Apr 11 00:25:49 GMT+08:00 2021, beginTime=Fri Apr 23 10:30:00 GMT+08:00 2021, endTime=Fri Apr 23 12:30:00 GMT+08:00 2021, createTime=Sun Apr 11 00:25:49 GMT+08:00 2021, deleteFlag=0)}, {signStatue=1, subject=Subject(subjectId=26641060, subjectName=数据结构, signFlag=1, signTime=60000, updateTime=Tue Apr 27 23:16:36 GMT+08:00 2021, beginTime=Fri Apr 23 08:00:00 GMT+08:00 2021, endTime=Fri Apr 23 12:00:00 GMT+08:00 2021, createTime=Tue Apr 27 23:16:36 GMT+08:00 2021, deleteFlag=0)}, {signStatue=0, signTime=Tue Apr 27 23:39:27 GMT+08:00 2021, subject=Subject(subjectId=80572089, subjectName=数据库基础, signFlag=1, signTime=60000, updateTime=Tue Apr 27 23:17:14 GMT+08:00 2021, beginTime=Fri Apr 23 08:00:00 GMT+08:00 2021, endTime=Fri Apr 23 08:00:00 GMT+08:00 2021, createTime=Tue Apr 27 23:17:14 GMT+08:00 2021, deleteFlag=0)}, {signStatue=1, subject=Subject(subjectId=26412379, subjectName=C++语言基础, signFlag=1, signTime=12000, updateTime=Sun Apr 11 14:46:53 GMT+08:00 2021, beginTime=Sun Apr 11 08:00:00 GMT+08:00 2021, endTime=Sun Apr 11 10:00:00 GMT+08:00 2021, createTime=Sat Apr 10 22:57:52 GMT+08:00 2021, deleteFlag=0)}]})
+2021-04-30 02:52:07.352 [http-nio-8888-exec-9] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：113
+2021-04-30 02:52:24.389 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/base/layout
+2021-04-30 02:52:24.389 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/base/layout
+2021-04-30 02:52:24.389 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-04-30 02:52:24.389 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-30 02:52:24.389 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.BaseController.login
+2021-04-30 02:52:24.389 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[1802343116]
+2021-04-30 02:52:24.390 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:52:24.423 [http-nio-8888-exec-2] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:893}] to 182.61.58.17:27017 because there was a socket exception raised on another connection from this pool.
+2021-04-30 02:52:24.838 [http-nio-8888-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:895}] to 182.61.58.17:27017
+2021-04-30 02:52:24.911 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=null)
+2021-04-30 02:52:24.912 [http-nio-8888-exec-2] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：523
+2021-04-30 02:52:31.261 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URI:/teacher/login
+2021-04-30 02:52:31.261 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求URL:http://localhost:8888/teacher/login
+2021-04-30 02:52:31.261 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求头的User-Agent:Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.03.2011110 MicroMessenger/7.0.4 Language/zh_CN webview/
+2021-04-30 02:52:31.261 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 请求地址：0:0:0:0:0:0:0:1
+2021-04-30 02:52:31.261 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 连接点对象通过反射获得类名和方法名com.soft1851.swl.face.controller.TeacherController.login
+2021-04-30 02:52:31.261 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - AOP拦截获得参数:[LoginDto(id=2001, password=123456)]
+2021-04-30 02:52:31.261 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 执行方法: 
+2021-04-30 02:52:31.337 [http-nio-8888-exec-4] INFO  c.s.s.f.s.impl.TeacherServiceImpl - 张老师登录成功，生成的token = eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5byg6ICB5biIIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMjAwMSIsImlhdCI6MTYxOTcyMjM1MSwiZXhwIjoxNjIwOTMxOTUxfQ.J1REhtL9JUgbiWMvSJZsbXJZEPl0YK42RJkjtNBXZKE,有效期到:Fri May 14 02:52:31 GMT+08:00 2021
+2021-04-30 02:52:31.418 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - RESPONSE:ResponseResult(code=200, msg=成功, data=LoginResDto(userDto=UserDto(id=2001, name=张老师, phoneNumber=18860816379, avatar=https://face-manage-kuzma.oss-cn-shanghai.aliyuncs.com/faces1/57da3c49-7dbd-4a87-bba1-9b18caf6c8e2.jpg, gender=女), token=JwtTokenRespDto(token=eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoi5byg6ICB5biIIiwicGFzc3dvcmQiOiJFMTBBREMzOTQ5QkE1OUFCQkU1NkUwNTdGMjBGODgzRSIsImlkIjoiMjAwMSIsImlhdCI6MTYxOTcyMjM1MSwiZXhwIjoxNjIwOTMxOTUxfQ.J1REhtL9JUgbiWMvSJZsbXJZEPl0YK42RJkjtNBXZKE, expirationTime=1620931951338), role=teacher))
+2021-04-30 02:52:31.419 [http-nio-8888-exec-4] INFO  c.s.swl.face.aspect.WebLogAspect - 耗时：158
+2021-04-30 02:57:01.340 [cluster-ClusterId{value='608affbb4496de12c4baf964', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 182.61.58.17:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2021-04-30 03:01:01.395 [Thread-5] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-30 03:01:01.399 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Could not unregister MBean [com.github.tobato.fastdfs.domain.conn:name=fdfsConnectionPool,type=FdfsConnectionPool] as said MBean is not registered (perhaps already unregistered by an external process)
+2021-04-30 03:01:01.400 [Thread-5] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:8, serverValue:895}] to 182.61.58.17:27017 because there was a socket exception raised on another connection from this pool.
+2021-04-30 03:01:01.527 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-04-30 03:01:01.532 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-04-30 03:01:01.722 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 31252 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-30 03:01:01.722 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-30 03:01:02.469 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-30 03:01:02.469 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-30 03:01:02.541 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72ms. Found 2 MongoDB repository interfaces.
+2021-04-30 03:01:02.548 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-30 03:01:02.548 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-30 03:01:02.577 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-04-30 03:01:02.577 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-04-30 03:01:02.577 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2021-04-30 03:01:02.672 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-30 03:01:03.011 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-04-30 03:01:03.012 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-04-30 03:01:03.012 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-30 03:01:03.012 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-04-30 03:01:03.062 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-30 03:01:03.063 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1335 ms
+2021-04-30 03:01:03.354 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-04-30 03:01:03.354 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-04-30 03:01:03.354 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-04-30 03:01:03.730 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[182.61.58.17:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-04-30 03:01:03.813 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-30 03:01:04.414 [restartedMain] WARN  t.m.m.m.resolve.DefaultEntityResolve - 通用 Mapper 警告信息: <[EntityColumn{table=subject, property='signTime', column='sign_time', javaType=long, jdbcType=null, typeHandler=null, id=false, identity=false, blob=false, generator='null', orderBy='null', orderPriority='0', insertable=true, updatable=true, order=DEFAULT}]> 使用了基本类型，基本类型在动态 SQL 中由于存在默认值，因此任何时候都不等于 null，建议修改基本类型为对应的包装类型!
+2021-04-30 03:01:04.608 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'subjectController' defined in file [C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes\com\soft1851\swl\face\controller\SubjectController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soft1851.swl.face.service.SubjectService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-04-30 03:01:04.614 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-04-30 03:01:04.625 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-30 03:01:04.837 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.soft1851.swl.face.controller.SubjectController required a bean of type 'com.soft1851.swl.face.service.SubjectService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soft1851.swl.face.service.SubjectService' in your configuration.
+
+2021-04-30 03:01:50.379 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 31252 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-30 03:01:50.379 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-30 03:01:50.993 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-30 03:01:50.993 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-30 03:01:51.062 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69ms. Found 2 MongoDB repository interfaces.
+2021-04-30 03:01:51.067 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-30 03:01:51.067 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-30 03:01:51.098 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-04-30 03:01:51.098 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-04-30 03:01:51.098 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2021-04-30 03:01:51.188 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-30 03:01:51.657 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-04-30 03:01:51.659 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-04-30 03:01:51.659 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-30 03:01:51.660 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-04-30 03:01:51.704 [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-30 03:01:51.704 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1322 ms
+2021-04-30 03:01:52.011 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-04-30 03:01:52.011 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-04-30 03:01:52.011 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-04-30 03:01:52.445 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[182.61.58.17:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-04-30 03:01:52.533 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-30 03:01:53.209 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'subjectController': Resolution of declared constructors on bean Class [com.soft1851.swl.face.controller.SubjectController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1e693b9] failed; nested exception is java.lang.NoClassDefFoundError: com/soft1851/swl/face/service/SubjectService
+2021-04-30 03:01:53.220 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-04-30 03:01:53.225 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-30 03:01:53.277 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'subjectController': Resolution of declared constructors on bean Class [com.soft1851.swl.face.controller.SubjectController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1e693b9] failed; nested exception is java.lang.NoClassDefFoundError: com/soft1851/swl/face/service/SubjectService
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1285)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1200)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$145/21526449.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.soft1851.swl.face.Application.main(Application.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: com/soft1851/swl/face/service/SubjectService
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getDeclaredConstructors(Class.java:2020)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:304)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.soft1851.swl.face.service.SubjectService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 29 common frames omitted
+2021-04-30 03:03:32.180 [restartedMain] INFO  com.soft1851.swl.face.Application - Starting Application on LAPTOP-ONOA2219 with PID 31252 (C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api\target\classes started by HP in C:\Users\HP\Desktop\毕业设计\项目\face-recognition-class-api)
+2021-04-30 03:03:32.181 [restartedMain] INFO  com.soft1851.swl.face.Application - No active profile set, falling back to default profiles: default
+2021-04-30 03:03:32.858 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-30 03:03:32.859 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-30 03:03:32.938 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78ms. Found 2 MongoDB repository interfaces.
+2021-04-30 03:03:32.945 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-30 03:03:32.945 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-30 03:03:32.980 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.FaceImg64Repository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-04-30 03:03:32.980 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.soft1851.swl.face.repository.LogRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-04-30 03:03:32.980 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2021-04-30 03:03:33.078 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.swl.face]' package. Please check your configuration.
+2021-04-30 03:03:33.342 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-04-30 03:03:33.343 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-04-30 03:03:33.343 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-30 03:03:33.343 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-04-30 03:03:33.368 [restartedMain] INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-30 03:03:33.368 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1184 ms
+2021-04-30 03:03:33.603 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeyId
+2021-04-30 03:03:33.603 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.accessKeySecret
+2021-04-30 03:03:33.603 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final java.lang.String com.soft1851.swl.face.util.FaceVerifyUtil.gateway
+2021-04-30 03:03:34.062 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[182.61.58.17:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-04-30 03:03:34.193 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-04-30 03:03:34.468 [cluster-ClusterId{value='608b03064496de12c4baf967', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:24, serverValue:896}] to 182.61.58.17:27017
+2021-04-30 03:03:34.597 [cluster-ClusterId{value='608b03064496de12c4baf967', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=182.61.58.17:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 4]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=126715400}
+2021-04-30 03:03:35.525 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-30 03:03:35.666 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 03:03:35.796 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-30 03:03:35.796 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-30 03:03:35.796 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-30 03:03:35.796 [restartedMain] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2021-04-30 03:03:35.962 [restartedMain] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-04-30 03:03:36.115 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-04-30 03:03:36.120 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-04-30 03:03:36.120 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2021-04-30 03:03:36.121 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-04-30 03:03:36.126 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2021-04-30 03:03:36.154 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+2021-04-30 03:03:36.165 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: faceLoginUsingPOST_1
+2021-04-30 03:03:36.172 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: addFaceUsingPOST_1
+2021-04-30 03:03:36.198 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_2
+2021-04-30 03:03:36.207 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_1
+2021-04-30 03:03:36.210 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_3
+2021-04-30 03:03:36.212 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateAvatarUsingPOST_1
+2021-04-30 03:03:36.213 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updatePasswordUsingPOST_1
+2021-04-30 03:03:36.215 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateStatusUsingPOST_2
+2021-04-30 03:03:36.219 [restartedMain] INFO  com.soft1851.swl.face.Application - Started Application in 4.096 seconds (JVM running for 852.783)
+2021-04-30 03:03:36.221 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-04-30 03:08:36.258 [cluster-ClusterId{value='608b03064496de12c4baf967', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 182.61.58.17:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2021-04-30 03:10:16.602 [cluster-ClusterId{value='608b03064496de12c4baf967', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:31, serverValue:897}] to 182.61.58.17:27017
+2021-04-30 03:10:16.670 [cluster-ClusterId{value='608b03064496de12c4baf967', description='null'}-182.61.58.17:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=182.61.58.17:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 4]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=67259000}

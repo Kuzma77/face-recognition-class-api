@@ -20,8 +20,9 @@ public interface SubjectService {
      * 新增课程
      *
      * @param subjectDto
+     * @param teacherId
      */
-    ResponseResult addSubject(SubjectDto subjectDto);
+    ResponseResult addSubject(SubjectDto subjectDto,String teacherId);
 
 
     /**
@@ -30,7 +31,7 @@ public interface SubjectService {
      * @param subjectDto subjectId
      * @return
      */
-    ResponseResult updateSubject(SubjectDto subjectDto,String subjectId);
+    ResponseResult updateSubject(SubjectDto subjectDto,String subjectId,String teacherId);
 
 
     /***
@@ -39,7 +40,7 @@ public interface SubjectService {
      * @param subjectId
      * @return
      */
-    ResponseResult updateSignStatue(String subjectId);
+    ResponseResult updateSignStatue(String subjectId,String teacherId);
 
     /**
      * 签到时间延长
@@ -47,7 +48,7 @@ public interface SubjectService {
      * @param addTime
      * @param subjectId
      */
-    ResponseResult addSignTime(long addTime,String subjectId);
+    ResponseResult addSignTime(long addTime,String subjectId,String teacherId);
 
     /**
      * 更改课程状态
@@ -65,4 +66,12 @@ public interface SubjectService {
      * @return
      */
     ResponseResult querySubjectsBetweenTime(BetTimeDto betTimeDto);
+
+    /**
+     * 通过教工号查询所有课程
+     *
+     * @param teacherId
+     * @return
+     */
+    ResponseResult querySubjectsByTeacherId(String teacherId);
 }

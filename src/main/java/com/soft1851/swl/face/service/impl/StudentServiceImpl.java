@@ -26,6 +26,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.NumberFormat;
 import java.util.*;
 
 /**
@@ -46,7 +47,9 @@ public class StudentServiceImpl implements StudentService {
     public  final LogService logService;
     public final FaceService faceService;
     public final StudentSubjectMapper studentSubjectMapper;
-
+    Double allCount = 0.00;
+    Double signCount = 0.00;
+    Double attendance = 0.00;
 
     @Override
     public List<Student> queryAllStudent() {
@@ -153,7 +156,7 @@ public class StudentServiceImpl implements StudentService {
             Log log = Log.builder()
                     .id(RandomNumUtil.getVerifyCode(8))
                     .type(LogType.UPDATE.value)
-                    .operatorId("001")
+                    .operatorId(studentId)
                     .objectId(studentId)
                     .content("学生删除状态修改")
                     .createTime(new Date())
@@ -251,5 +254,34 @@ public class StudentServiceImpl implements StudentService {
             map.put("subjects",list);
             return ResponseResult.success(map);
         }
+    }
+
+    @Override
+    public ResponseResult queryAttendanceByStudentId(String studentId) {
+        //1.查询当前时间之前的所有课
+        List<StudentSubject> subjects = this.studentSubjectMapper.querySubjectsByStudentId(studentId);
+
+        subjects.forEach(studentSubject -> {
+            if(this.subjectMapper.selectByPrimaryKey(studentSubject.getSubjectId()).getBeginTime().before(new Date())){
+                allCount++;
+                if(studentSubject.getAttendFlag()==0){
+                    signCount++;
+                }
+            }
+        });
+        System.out.println(allCount);
+        System.out.println(signCount);
+        attendance = signCount/allCount;
+        NumberFormat nf = NumberFormat.getInstance();
+        nf.setMaximumFractionDigits(2);
+        System.out.println(nf.format(attendance));
+        SeriesDto[] seriesDtos = new SeriesDto[1];
+        SeriesDto seriesDto = SeriesDto.builder()
+                .color("#1890ff")
+                .name("出勤率")
+                .data(Double.valueOf(nf.format(attendance)))
+                .build();
+        seriesDtos[0] = seriesDto;
+        return ResponseResult.success(seriesDtos);
     }
 }
