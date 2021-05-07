@@ -50,6 +50,10 @@ public class StudentServiceImpl implements StudentService {
     Double allCount = 0.00;
     Double signCount = 0.00;
     Double attendance = 0.00;
+    Integer factAttendance = 0;
+    Integer shouldAttendance = 0;
+    Integer notAttendance = 0;
+    Integer noteAttendance = 0;
 
     @Override
     public List<Student> queryAllStudent() {
@@ -283,5 +287,30 @@ public class StudentServiceImpl implements StudentService {
                 .build();
         seriesDtos[0] = seriesDto;
         return ResponseResult.success(seriesDtos);
+    }
+
+    @Override
+    public ResponseResult queryAttendance(String studentId) {
+        List<StudentSubject> subjects = this.studentSubjectMapper.querySubjectsByStudentId(studentId);
+        subjects.forEach(studentSubject -> {
+            if(this.subjectMapper.selectByPrimaryKey(studentSubject.getSubjectId()).getBeginTime().before(new Date())){
+                shouldAttendance++;
+                if(studentSubject.getAttendFlag()==0){
+                    factAttendance++;
+                }
+                if(studentSubject.getAttendFlag()==1){
+                    notAttendance++;
+                }
+                if(studentSubject.getAttendFlag()==2){
+                    noteAttendance++;
+                }
+            }
+        });
+        Integer[] integers = new Integer[4];
+        integers[0] = factAttendance;
+        integers[1] = shouldAttendance;
+        integers[2] = notAttendance;
+        integers[3] = noteAttendance;
+        return ResponseResult.success(integers);
     }
 }

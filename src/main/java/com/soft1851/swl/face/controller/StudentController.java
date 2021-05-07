@@ -103,4 +103,11 @@ public class StudentController {
         return this.studentService.queryAttendanceByStudentId(studentId);
     }
 
+    @PostMapping("/queryAttendanceNum")
+    @ControllerWebLog
+    @ApiOperation(value = "通过学生id查询具体出勤情况",notes = "通过学生id查询具体出勤情况")
+    public ResponseResult queryAttendance(@Valid @RequestParam String studentId) {
+        return this.studentService.queryAttendance(studentId);
+    }
+
 }

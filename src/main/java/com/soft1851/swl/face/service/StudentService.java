@@ -84,4 +84,11 @@ public interface StudentService {
      */
     ResponseResult queryAttendanceByStudentId(String studentId);
 
+    /**
+     * 通过用户id查询聚体出勤情况
+     * @param studentId
+     * @return
+     */
+    ResponseResult queryAttendance(String studentId);
+
 }
